@@ -8,22 +8,12 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
 
     <title>MySkill</title>
-    @vite('resources/css/app.css')
+    @vite('resources/css/appskill.css')
     @vite('resources/js/navbar.js')
     @vite('resources/js/e-learning.js')
     @vite('resources/js/buttons.js')
-
-    <!-- <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-    <script src="{{ mix('js/navbar.js') }}" defer></script>
-    <script src="{{ mix('js/e-learning.js') }}" defer></script>
-    <script src="{{ mix('js/buttons.js') }}" defer></script> -->
-
-    <!-- <link rel="stylesheet" href="{{ asset('resources/css/app.css') }}"> -->
-    <!-- <script src="{{ asset('resources/js/navbar.js') }}"></script>
-    <script src="{{ asset('resources/js/e-learning.js') }}"></script>
-    <script src="{{ asset('resources/js/button.js') }}"></script> -->
     
-    <link rel="stylesheet" href="../../css/app.css">
+    <link rel="stylesheet" href="../../css/appskill.css">
     
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
