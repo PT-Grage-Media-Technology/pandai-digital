@@ -7,7 +7,7 @@
         onmouseup="this.classList.remove('touching')">
         @foreach($banners as $link )
         <div class="snap-always snap-center flex-shrink-0">
-            <img src="{{ url('foto_banner/' . $link->gambar) }}" alt="" class="h-32 lg:h-80 md:h-60 w-auto mx-auto">
+            <img src="{{ url('foto_banner/' . $link->gambar) }}" alt="" class="h-32 lg:h-80 md:h-60 w-auto mx-auto rounded-2xl">
         </div>
         @endforeach
     </div>
@@ -18,7 +18,7 @@
 
     <div class="grid grid-flow-col lg:grid-cols-5 ps-6 gap-8 overflow-x-auto no-scrollbar no-scrollbar ">
         <div class="w-44 h-60 md:w-52 md:h-64 bg-white border border-black rounded-2xl shadow flex-shrink-0">
-            <img class="mx-auto rounded-t-lg w-28 h-28 lg:w-36 lg:h-36" src="{{ asset('assets/home/image118.svg') }}"
+            <img class="mx-auto rounded-t-lg my-6 w-14 h-24 lg:w-24 lg:h-24" src="{{ asset('../home-myskill/alumny.webp') }}"
                 alt="" />
             <div class="p-5">
                 <h5 class="text-sm text-center font-bold text-gray-900">Noteworthy Lebih dari 1.5 Juta+ Member Belajar
@@ -26,35 +26,31 @@
             </div>
         </div>
         <div class="w-44 h-60 md:w-52 md:h-64 bg-white border border-black rounded-2xl shadow flex-shrink-0">
-            <img class="mx-auto rounded-t-lg w-28 h-28 lg:w-36 lg:h-36" src="{{ asset('assets/home/image118.svg') }}"
+            <img class="mx-auto rounded-t-lg my-6 w-14 h-24 lg:w-24 lg:h-24" src="{{ asset('../home-myskill/existing-member.webp') }}"
                 alt="" />
             <div class="p-5">
-                <h5 class="text-sm text-center font-bold text-gray-900">Noteworthy Lebih dari 1.5 Juta+ Member Belajar
-                    Bersama</h5>
+                <h5 class="text-sm text-center font-bold text-gray-900">Ribuan Alumni Bekerja di National & Global Company</h5>
             </div>
         </div>
         <div class="w-44 h-60 md:w-52 md:h-64 bg-white border border-black rounded-2xl shadow flex-shrink-0">
-            <img class="mx-auto rounded-t-lg w-28 h-28 lg:w-36 lg:h-36" src="{{ asset('assets/home/image118.svg') }}"
+            <img class="mx-auto rounded-t-lg my-6 w-14 h-14 lg:w-24 lg:h-24" src="{{ asset('../home-myskill/new-member.webp') }}"
                 alt="" />
             <div class="p-5">
-                <h5 class="text-sm text-center font-bold text-gray-900">Noteworthy Lebih dari 1.5 Juta+ Member Belajar
-                    Bersama</h5>
+                <h5 class="text-sm text-center font-bold text-gray-900">Praktikal & Bersertifikat. Bangun Skill dan Portfolio</h5>
             </div>
         </div>
         <div class="w-44 h-60 md:w-52 md:h-64 bg-white border border-black rounded-2xl shadow flex-shrink-0">
-            <img class="mx-auto rounded-t-lg w-28 h-28 lg:w-36 lg:h-36" src="{{ asset('assets/home/image118.svg') }}"
+            <img class="mx-auto rounded-t-lg my-6 w-14 h-24 lg:w-24 lg:h-24" src="{{ asset('../home-myskill/practical.webp') }}"
                 alt="" />
             <div class="p-5">
-                <h5 class="text-sm text-center font-bold text-gray-900">Noteworthy Lebih dari 1.5 Juta+ Member Belajar
-                    Bersama</h5>
+                <h5 class="text-sm text-center font-bold text-gray-900">4.9 Rating di Course Report & Award LinkedIn Top Startup</h5>
             </div>
         </div>
         <div class="w-44 h-60 md:w-52 md:h-64 bg-white border border-black rounded-2xl shadow flex-shrink-0">
-            <img class="mx-auto rounded-t-lg w-28 h-28 lg:w-36 lg:h-36" src="{{ asset('assets/home/image118.svg') }}"
+            <img class="mx-auto rounded-t-lg my-6 w-14 h-24 lg:w-24 lg:h-24" src="{{ asset('../home-myskill/rating.webp') }}"
                 alt="" />
             <div class="p-5">
-                <h5 class="text-sm text-center font-bold text-gray-900">Noteworthy Lebih dari 1.5 Juta+ Member Belajar
-                    Bersama</h5>
+                <h5 class="text-sm text-center font-bold text-gray-900">50k++ New Member Ikut Belajar Bulan</h5>
             </div>
         </div>
     </div>
@@ -65,7 +61,7 @@
 <div class="grid grid-flow-col ps-6 gap-8 overflow-x-auto no-scrollbar ">
     <div class="w-44 h-64 md:w-52 md:h-64 bg-white border border-black rounded-2xl shadow flex-shrink-0">
         <div class="flex justify-center">
-            <img class="flex justify-center mt-4 rounded-t-lg w-36 h-36"
+            <img class="flex justify-center mt-4 rounded-t-lg w-28 h-28"
                 src="{{ asset('assets/home/Rectangle51.svg') }}" alt="" />
         </div>
         <div class="p-5 flex justify-center">
@@ -74,7 +70,7 @@
     </div>
     <div class="w-44 h-64 md:w-52 md:h-64 bg-white border border-black rounded-2xl shadow flex-shrink-0">
         <div class="flex justify-center">
-            <img class="flex justify-center mt-4 rounded-t-lg w-36 h-36"
+            <img class="flex justify-center mt-4 rounded-t-lg w-28 h-28"
                 src="{{ asset('assets/home/Rectangle51.svg') }}" alt="" />
         </div>
         <div class="p-5 flex justify-center">
@@ -83,7 +79,7 @@
     </div>
     <div class="w-44 h-64 md:w-52 md:h-64 bg-white border border-black rounded-2xl shadow flex-shrink-0">
         <div class="flex justify-center">
-            <img class="flex justify-center mt-4 rounded-t-lg w-36 h-36"
+            <img class="flex justify-center mt-4 rounded-t-lg w-28 h-28"
                 src="{{ asset('assets/home/Rectangle51.svg') }}" alt="" />
         </div>
         <div class="p-5 flex justify-center">
@@ -92,7 +88,7 @@
     </div>
     <div class="w-44 h-64 md:w-52 md:h-64 bg-white border border-black rounded-2xl shadow flex-shrink-0">
         <div class="flex justify-center">
-            <img class="flex justify-center mt-4 rounded-t-lg w-36 h-36"
+            <img class="flex justify-center mt-4 rounded-t-lg w-28 h-28"
                 src="{{ asset('assets/home/Rectangle51.svg') }}" alt="" />
         </div>
         <div class="p-5 flex justify-center">
@@ -101,7 +97,7 @@
     </div>
     <div class="w-44 h-64 md:w-52 md:h-64 bg-white border border-black rounded-2xl shadow flex-shrink-0">
         <div class="flex justify-center">
-            <img class="flex justify-center mt-4 rounded-t-lg w-36 h-36"
+            <img class="flex justify-center mt-4 rounded-t-lg w-28 h-28"
                 src="{{ asset('assets/home/Rectangle51.svg') }}" alt="" />
         </div>
         <div class="p-5 flex justify-center">
@@ -448,7 +444,7 @@
             alt="" />
     </div>
     <div class="snap-always snap-center flex-shrink-0 w-48 h-24 border border-black rounded-xl">
-        <img class="flex justify-center mx-auto mt-9 w-36" src="{{ asset('assets/home/idn.svg') }}" alt="" />
+        <img class="flex justify-center mx-auto mt-9 w-28" src="{{ asset('assets/home/idn.svg') }}" alt="" />
     </div>
     <div class="snap-always snap-center flex-shrink-0 w-48 h-24 border border-black rounded-xl">
         <img class="flex justify-center mt-6 mx-auto w-40" src="{{ asset('assets/home/cnbc.svg') }}" alt="" />

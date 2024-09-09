@@ -178,9 +178,12 @@ Route::prefix('administrator')->name('administrator.')->group(function () {
 // });
 
 // index
-Route::get('/home', function () {
-    return view('./myskill/pages/home');
-})->name('Home');
+// Route::get('/home', function () {
+//     return view('./myskill/pages/home');
+// })->name('Home');
+
+Route::get('/home', [MainController::class, 'index']);
+
 
 Route::get('/', [MainController::class, 'index']);
 
@@ -203,10 +206,12 @@ Route::get('/bootcamp/digital-marketing', function () {
     return view('./myskill/pages/program/digital-marketing');
 })->name('Digital Marketing');
 
+//cv
 Route::get('/review', function () {
     return view('./myskill/pages/cv/review');
 })->name('Review CV');
 
+//corporate
 Route::get('/corporate-service', function () {
     return view('./myskill/pages/corporate/corporate');
 })->name('Review CV');
@@ -219,18 +224,22 @@ Route::get('/experience', function () {
     return view('./myskill/pages/corporate/experience');
 })->name('Experience');
 
-Route::get('/login', function () {
-    return view('./myskill/pages/auth/login');
-})->name('Login');
+//login & register
+// Route::get('/login', function () {
+//     return view('./myskill/pages/auth/login');
+// })->name('Login');
 
-Route::get('/register', function () {
-    return view('./myskill/pages/auth/register');
-})->name('Register');
+// Route::get('/register', function () {
+//     return view('./myskill/pages/auth/register');
+// })->name('Register');
 
+//payment
 Route::get('/payment', function () {
     return view('./myskill/pages/e-learning/payment');
 })->name('Payment');
 
+
+//profile
 Route::get('/profile/my-purchase', function () {
     return view('./myskill/pages/profile/my-purchase');
 })->name('Purchased');
