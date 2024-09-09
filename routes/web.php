@@ -221,6 +221,26 @@ Route::get('/register', function () {
     return view('./myskill/pages/auth/register');
 })->name('Register');
 
+Route::get('/payment', function () {
+    return view('./myskill/pages/e-learning/payment');
+})->name('Payment');
+
+Route::get('/profile/my-purchase', function () {
+    return view('./myskill/pages/profile/my-purchase');
+})->name('Purchased');
+
+Route::get('/profile/my-activity', function () {
+    return view('./myskill/pages/profile/my-activity');
+})->name('Activity');
+
+Route::get('/profile/my-transaction', function () {
+    return view('./myskill/pages/profile/my-transaction');
+})->name('Transactions');
+
+Route::get('/my-profile', function () {
+    return view('./myskill/pages/profile/my-profile');
+})->name('My Profile');
+
 // Route::get('/', [MainController::class, 'index']);
 Route::get('sejarah-instansi', [HalamanController::class, 'sejarah_instansi']);
 Route::get('struktur-organisasi', [HalamanController::class, 'struktur_organisasi']);
