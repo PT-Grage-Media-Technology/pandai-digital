@@ -8,13 +8,14 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
 
     <title>MySkill</title>
-    @vite('resources/css/appskill.css')
-    @vite('resources/js/navbar.js')
-    @vite('resources/js/e-learning.js')
-    @vite('resources/js/buttons.js')
-    
-    <link rel="stylesheet" href="../../css/appskill.css">
-    
+    {{-- @vite('resources/css/appskill.css') --}}
+
+    <link rel="stylesheet"
+        href="https://rawcdn.githack.com/ArvinoDel/MySkill/db1485d305b176ef2fc16baac98bcef23eb790fd/resources/css/app.css">
+
+
+    {{-- <link rel="stylesheet" href="./resources/css/appskill.css"> --}}
+
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -37,18 +38,31 @@
     @include('./myskill/partials.footer')
 
     <!-- wa button -->
-    <a target="_blank" href="https://wa.me/6285224216499?text=Saya%20tertarik%20untuk%20berlangganan%20bimbel%20online%20MySkill.%20Mohon%20informasi%20lebih%20lanjut%20mengenai%20paket%20langganan%2C%20harga%2C%20dan%20fitur%20yang%20tersedia.%20Terima%20kasih.">
-        <button class="fixed end-12 max-sm:end-2 justify-center bottom-8  bg-orange-500 text-white p-3 rounded-full shadow-lg">
+    <a target="_blank"
+        href="https://wa.me/6285224216499?text=Saya%20tertarik%20untuk%20berlangganan%20bimbel%20online%20MySkill.%20Mohon%20informasi%20lebih%20lanjut%20mengenai%20paket%20langganan%2C%20harga%2C%20dan%20fitur%20yang%20tersedia.%20Terima%20kasih.">
+        <button
+            class="fixed end-12 max-sm:end-2 justify-center bottom-8  bg-orange-500 text-white p-3 rounded-full shadow-lg">
             <i class="fab fa-whatsapp " style="font-size: 20px; padding: 4px; margin-left: 4px;"></i>
             <span class="max-sm:hidden">Whatsapp</span>
         </button>
     </a>
 
-<!-- 
+    <!--
     <script src="../../js/buttons.js"></script>
     <script src="../../js/e-learning.js"></script>
     <script src="../../js/navbar.js"></script> -->
 
+    <script src="https://rawcdn.githack.com/ArvinoDel/MySkill/db1485d305b176ef2fc16baac98bcef23eb790fd/resources/js/app.js"
+        defer></script>
+    <script
+        src="https://rawcdn.githack.com/ArvinoDel/MySkill/db1485d305b176ef2fc16baac98bcef23eb790fd/resources/js/navbar.js"
+        defer></script>
+    <script
+        src="https://rawcdn.githack.com/ArvinoDel/MySkill/db1485d305b176ef2fc16baac98bcef23eb790fd/resources/js/e-learning.js"
+        defer></script>
+    <script
+        src="https://rawcdn.githack.com/ArvinoDel/MySkill/db1485d305b176ef2fc16baac98bcef23eb790fd/resources/js/buttons.js"
+        defer></script>
 
 </body>
 
