@@ -10,9 +10,9 @@ class Trainer extends Model
     use HasFactory;
 
     public $timestamps = false;
-    protected $primaryKey = 'id_trainer';
+    protected $primaryKey = 'id_tra';
     protected $table = 'trainer';
-    protected $fillable = ['id_trainer', 'foto', 'nama_trainer'];
+    protected $fillable = ['id_tra', 'id_trainer', 'foto', 'nama_trainer'];
 
     public function trainer_program_group()
     {

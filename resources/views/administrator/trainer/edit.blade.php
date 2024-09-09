@@ -37,6 +37,44 @@ if($trainers->gambar != NULL){
                                     </div>
                                 </td>
                             </tr>
+                            <tr>
+                                <th style="padding: 5px;">Kategori</th>
+                                <td style="padding: 5px;">
+                                    <select class="form-control" id="id_kat" name="id_kat" required>
+                                        @foreach($kategoriprograms as $kat)
+                                        <option value="{{ $kat->id_kat }}" {{ $trainers->id_tra == $kat->id_kat ? 'selected' : '' }}>
+                                            {{ $kat->nama_kategori }}
+                                        </option>
+                                        @endforeach
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th style="padding: 5px; border: 1px solid #ddd;">Nama Program</th>
+                                <td style="padding: 5px; border: 1px solid #ddd;">
+                                    <div style="max-height: 200px; overflow-y: auto;">
+                                        {{-- @foreach($programs as $program)
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="{{ $program->id_pro }}" id="program" name="program[]">
+                                            <label class="form-check-label" for="program_{{ $program->id_pro }}">
+                                                {{ $program->nama_program }}
+                                            </label>
+                                        </div>
+                                        @endforeach --}}
+                                        @foreach($programs as $program)
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="{{ $program->id_program }}"
+                                                   id="program_{{ $program->id_program }}" name="program[]"
+                                                   @if(in_array($program->id_program, $akses_program)) checked @endif>
+                                            <label class="form-check-label" for="program_{{ $program->id_program }}">
+                                                {{ $program->nama_program }}
+                                            </label>
+                                        </div>
+                                        @endforeach
+                                    </div>
+                                </td>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                     <div class="mt-4 d-flex justify-content-between">

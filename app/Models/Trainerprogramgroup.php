@@ -12,7 +12,7 @@ class Trainerprogramgroup extends Model
     public $timestamps = false;
     protected $primaryKey = 'id_tgroup';
     protected $table = 'trainer_program_group';
-    protected $fillable = ['id_trainer', 'id_kategori'];
+    protected $fillable = ['id_tgroup', 'id_trainer', 'id_kategori'];
 
 
     public function trainer()

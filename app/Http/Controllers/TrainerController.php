@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Kategoriprogram;
 use App\Models\Program;
 use App\Models\Trainer;
 use App\Models\Trainerprogramgroup;
@@ -52,7 +53,8 @@ class TrainerController extends Controller
     {
         //
         $programs = Program::all();
-        return view('administrator.trainer.create', compact('programs'));
+        $kategoriprogram = Kategoriprogram::all();
+        return view('administrator.trainer.create', compact('programs', 'kategoriprogram'));
     }
 
     /**
@@ -67,12 +69,16 @@ class TrainerController extends Controller
 
         $nama_trainer = $request->nama_trainer;
 
-        if ($request->nama_trainer !=''){
-            $link = $request->nama_kategori;
-            $nama_trainer=implode(',',$link);
-        }else{
-            $nama_trainer = '';
-        }
+        // if ($request->nama_trainer != '') {
+        //     $link = $request->nama_kategori;
+        //     if (is_array($link)) {
+        //         $nama_trainer = implode(',', $link);
+        //     } else {
+        //         $nama_trainer = $link; // Atau berikan nilai default jika bukan array
+        //     }
+        // } else {
+        //     $nama_trainer = '';
+        // }
 
         $gambarName = null;
 
@@ -86,7 +92,18 @@ class TrainerController extends Controller
             'nama_trainer' => $nama_trainer,
             'foto' => $gambarName,
             "tanggal" => now(),
+            "id_trainer" => md5($nama_trainer.'-'.date('YmdHis')),
         ]);
+
+        $pro = count($request->program);
+        $program = $request->program;
+        $sess = md5($nama_trainer.'-'.date('YmdHis'));
+        for($i = 0; $i < $pro; $i++){
+            Trainerprogramgroup::create([
+                'id_trainer' =>$sess,
+                'id_kategori' => $program[$i]
+            ]);
+        }
 
         return response()->json([
             'url' => route('administrator.trainer.index'),
@@ -110,14 +127,19 @@ class TrainerController extends Controller
     {
         //
         $trainers = Trainer::findOrFail($id);
-        $traineran = DB::table('trainer')
+        $akses = DB::table('trainer')
         ->join('trainer_program_group', 'trainer.id_trainer', '=', 'trainer_program_group.id_trainer')
-        ->join('kategori_program', 'trainer_program_group.id_kategori', '=', 'kategori_program.id_kategori')
-        ->where('trainer.id_trainer', $id)
-        ->orderBy('trainer_program-group.id_tgroup', 'DESC')
+        ->join('program', 'trainer_program_group.id_kategori', '=', 'program.id_pro') // Perbaiki kolom yang di-join
+        ->where('trainer.id_tra', $id) // Perbaiki nama kolom
+        ->orderBy('trainer_program_group.id_tgroup', 'DESC')
         ->get();
 
-        return view('administrator.trainer.edit', compact('trainers'));
+        $kategoriprograms = Kategoriprogram::all();
+        $programs = Program::all();
+
+        $akses_program = $akses->pluck('id_program')->toArray();
+
+        return view('administrator.trainer.edit', compact('trainers', 'kategoriprograms', 'programs', 'akses_program'));
     }
 
     /**
@@ -137,20 +159,27 @@ class TrainerController extends Controller
             $updateData['gambar'] = $gambarName;
         }
 
+        if ($request->nama_program !=''){
+            $link = $request->nama_program;
+            $nama_program=implode(',',$link);
+        }else{
+            $nama_program = '';
+        }
 
         $trainers->update([
             "nama_trainer" => $nama_trainer,
             "tanggal" => now(),
         ]);
 
-        if ($request->has('nama_trainer')) {
-            $existingPTraineran = Trainerprogramgroup::where('id_trainer', $trainers->id_program)->pluck('id_tgroup')->toArray();
-            $newTraineran = array_diff($request->nama_program, $existingPTraineran);
+        if ($request->has('program')) {
+            // Hapus program lama
+            Trainerprogramgroup::where('id_trainer', $trainers->id_trainer)->delete();
 
-            foreach ($newTraineran as $trainerId) {
+            // Tambahkan program baru
+            foreach ($request->program as $programId) {
                 Trainerprogramgroup::create([
                     'id_trainer' => $trainers->id_trainer,
-                    'id_tgroup' => $trainerId
+                    'id_kategori' => $programId
                 ]);
             }
         }
@@ -165,10 +194,10 @@ class TrainerController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(string $id_tra)
     {
         //
-        $trainers = Trainer::findOrFail($id);
+        $trainers = Trainer::findOrFail($id_tra);
         $trainers->delete();
 
         return response()->json(['message' => 'Data berhasil dihapus.']);
