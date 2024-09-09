@@ -24,7 +24,7 @@ $activeButton = request()->query('activeButton');
         <div class="text-left lg:text-left lg:mr-4 text-black lg:text-white p-4 lg:p-8 lg:ml-16">
             <button type="button"
                 class="focus:outline-none text-white bg-gray-900 font-medium rounded-full text-sm px-5 py-2.5 me-2 dark:focus:ring-yellow-900">
-                GMT for Business
+                Pandai Digital for Business
             </button>
             <p class="text-xl lg:text-5xl font-bold mb-2 lg:mb-4 lg:w-10/12 ">
                 Solusi Meningkatkan Performa Tim & Perusahaan

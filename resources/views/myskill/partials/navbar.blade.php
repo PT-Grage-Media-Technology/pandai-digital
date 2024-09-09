@@ -1,4 +1,5 @@
-<nav id="navbar" class="sticky top-0 px-8 flex justify-between items-center bg-orange-400 z-10 w-screen transition-all duration-300 ease-in-out">
+<nav id="navbar"
+    class="sticky top-0 px-8 flex justify-between items-center bg-orange-400 z-10 w-screen transition-all duration-300 ease-in-out">
     <a class="text-2xl font-bold leading-none" href="#">
         <img class="max-w-xs max-md:w-20 h-auto" src="{{ asset('assets/logo-company.svg') }}" alt="logo-company">
     </a>
@@ -43,6 +44,12 @@
                 Corporate Service
             </a>
         </li>
+        <li>
+            <a href="/company-profile"
+                class="text-nowrap {{ request()->is('company-profile') ? 'text-teal-400 before:scale-x-100' : 'text-black before:scale-x-0' }} lg:text-md text-xs font-medium hover:text-teal-400 relative px-2 py-2 rounded transition-all duration-300 before:absolute before:bottom-0 before:left-0 before:w-full before:h-0.5 before:bg-teal-400 before:scale-x-0 hover:before:scale-x-100 focus:outline-none focus:ring-0 active:text-teal-400 active:before:bg-teal-400">
+                Company Profile
+            </a>
+        </li>
     </ul>
     <div class="max- hidden lg:block space-x-2 justify-items-end mt-1.5">
         <a href="/login">
@@ -80,32 +87,38 @@
                         <div
                             class="flex w-1 scale-y-0 transition-transform origin-top rounded-full duration-400 ease-in">
                         </div>
-                        <a class="flex p-4 text-sm font-semibold text-black" href="/home">Home</a>
+                        <a class="flex p-4 text-sm font-semibold {{ request()->is('home') ? 'text-teal-400' : 'text-black' }}" href="/home">Home</a>
                     </li>
                     <li class="mb-1 inline-flex group rounded w-full">
                         <div
                             class="flex w-1 group0 scale-y-0 transition-transform origin-top rounded-full duration-400 ease-in">
                         </div>
-                        <a class="block p-4 text-sm font-semibold text-black" href="/e-learning">E-learning</a>
+                        <a class="block p-4 text-sm font-semibold {{ request()->is('e-learning') ? 'text-teal-400' : 'text-black' }}" href="/e-learning">E-learning</a>
                     </li>
                     <li class="mb-1 inline-flex group rounded w-full">
                         <div
                             class="flex w-1 group0 scale-y-0 transition-transform origin-top rounded-full duration-400 ease-in">
                         </div>
-                        <a class="block p-4 text-sm font-semibold text-black" href="/bootcamp">Program & Bootcamp</a>
+                        <a class="block p-4 text-sm font-semibold {{ request()->is('bootcamp') ? 'text-teal-400' : 'text-black' }}" href="/bootcamp">Program & Bootcamp</a>
                     </li>
                     <li class="mb-1 inline-flex group rounded w-full">
                         <div
                             class="flex w-1 group0 scale-y-0 transition-transform origin-top rounded-full duration-400 ease-in">
                         </div>
-                        <a class="block p-4 text-sm font-semibold text-black" href="/review">Review CV</a>
+                        <a class="block p-4 text-sm font-semibold {{ request()->is('review') ? 'text-teal-400' : 'text-black' }}" href="/review">Review CV</a>
                     </li>
                     <li class="mb-1 inline-flex group rounded w-full">
                         <div
                             class="flex w-1 scale-y-0 transition-transform origin-top rounded-full duration-400 ease-in">
                         </div>
-                        <a class="block p-4 text-sm font-semibold text-black" href="/corporate-service">Corporate
+                        <a class="block p-4 text-sm font-semibold {{ request()->is('corporate-service') ? 'text-teal-400' : 'text-black' }}" href="/corporate-service">Corporate
                             Service</a>
+                    </li>
+                    <li class="mb-1 inline-flex group rounded w-full">
+                        <div
+                            class="flex w-1 scale-y-0 transition-transform origin-top rounded-full duration-400 ease-in">
+                        </div>
+                        <a class="block p-4 text-sm font-semibold {{ request()->is('company-profile') ? 'text-teal-400' : 'text-black' }}" href="/company-profile">Company Profile</a>
                     </li>
                 </ul>
             </div>

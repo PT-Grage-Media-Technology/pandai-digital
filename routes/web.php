@@ -76,15 +76,15 @@ Route::prefix('administrator')->name('administrator.')->group(function () {
     Route::get('grafik/data', [GrafikController::class, 'fetchGrafikData'])->name('grafik.data'); // Correctly named route
 
     Route::resource('halamanbaru', HalamanbaruController::class)
-    ->middleware('checkModul:halamanbaru');
+        ->middleware('checkModul:halamanbaru');
     // Route::get('identitaswebsite', [IdentitaswebsiteController::class, 'edit'])->name('identitaswebsite.edit');
     // Route::put('identitaswebsite', [IdentitaswebsiteController::class, 'update'])->name('identitaswebsite.update');
     Route::get('identitaswebsite', [IdentitaswebsiteController::class, 'edit'])
-    ->middleware('checkModul:identitaswebsite')
-    ->name('identitaswebsite.edit');
+        ->middleware('checkModul:identitaswebsite')
+        ->name('identitaswebsite.edit');
 
     Route::resource('berita', BeritaController::class)
-    ->middleware('checkModul:berita');
+        ->middleware('checkModul:berita');
     Route::get('berita/publish/{id_berita}', [BeritaController::class, 'publish'])
         ->name('berita.publish')
         ->middleware('checkModul:berita.publish');
@@ -125,9 +125,9 @@ Route::prefix('administrator')->name('administrator.')->group(function () {
 
     // Route::resource('menuwebsite', MenuwebsiteController::class);
     Route::resource('menuwebsite', MenuwebsiteController::class)
-    ->middleware('checkModul:menuwebsite');
+        ->middleware('checkModul:menuwebsite');
     Route::resource('bannerslider', BannersliderController::class)
-    ->middleware('checkModul:bannerslider');
+        ->middleware('checkModul:bannerslider');
     Route::resource('bannerhome', BannerhomeController::class)
         ->middleware('checkModul:bannerhome');
     Route::resource('iklansidebar', IklansidebarController::class)
@@ -158,7 +158,7 @@ Route::prefix('administrator')->name('administrator.')->group(function () {
         ->middleware('checkModul:templatewebsite.active');
 
     // Rute untuk backup database
-     // Rute untuk backup database
+    // Rute untuk backup database
     Route::get('database', [DatabaseController::class, 'index'])
         ->middleware('checkModul:database')
         ->name('database.index');
@@ -177,23 +177,29 @@ Route::prefix('administrator')->name('administrator.')->group(function () {
 //     Route::resource('dashboard',MainController::class );
 // });
 
+// index
 Route::get('/home', function () {
     return view('./myskill/pages/home');
 })->name('Home');
 
-Route::get('/', function () {
-    return view('./myskill/pages/home');
-})->name('Home');
+Route::get('/', [MainController::class, 'index']);
 
+
+// e-learning
 Route::get('/e-learning', function () {
     return view('./myskill/pages/e-learning/e-learning');
 })->name('E-learning');
 
+Route::get('/e-learning/program', function () {
+    return view('./myskill/pages/e-learning/program');
+})->name('Program');
+
+// bootcamp
 Route::get('/bootcamp', function () {
     return view('./myskill/pages/program/bootcamp');
 })->name('Program & Bootcamp');
 
-Route::get('/digital-marketing', function () {
+Route::get('/bootcamp/digital-marketing', function () {
     return view('./myskill/pages/program/digital-marketing');
 })->name('Digital Marketing');
 
@@ -221,9 +227,25 @@ Route::get('/register', function () {
     return view('./myskill/pages/auth/register');
 })->name('Register');
 
-Route::get('/materi', function () {
-    return view('./myskill/pages/e-learning/materi');
-})->name('Register');
+Route::get('/payment', function () {
+    return view('./myskill/pages/e-learning/payment');
+})->name('Payment');
+
+Route::get('/profile/my-purchase', function () {
+    return view('./myskill/pages/profile/my-purchase');
+})->name('Purchased');
+
+Route::get('/profile/my-activity', function () {
+    return view('./myskill/pages/profile/my-activity');
+})->name('Activity');
+
+Route::get('/profile/my-transaction', function () {
+    return view('./myskill/pages/profile/my-transaction');
+})->name('Transactions');
+
+Route::get('/my-profile', function () {
+    return view('./myskill/pages/profile/my-profile');
+})->name('My Profile');
 
 // Route::get('/', [MainController::class, 'index']);
 Route::get('sejarah-instansi', [HalamanController::class, 'sejarah_instansi']);

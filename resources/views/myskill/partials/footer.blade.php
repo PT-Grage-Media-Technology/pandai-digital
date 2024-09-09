@@ -2,8 +2,8 @@
     <div class="container mx-auto">
 
         <div class="text-center">
-            <h2 class="text-xl font-bold">GMTrainer</h2>
-            <p class="mt-2">Mari Kejar Impian Bersama GMT</p>
+            <h2 class="text-xl font-bold">Pandai Digital</h2>
+            <p class="mt-2">Mari Kejar Impian Bersama Pandai Digital</p>
             <p class="mt-2">PT. GRAGE MEDIA TECHNOLOGY</p>
             <p>Kota Baru Keandra, Cluster DrosiaF10</p>
             <p>Sumber - Cirebon</p>
@@ -13,7 +13,7 @@
         {{-- <div class="ml-36 mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left"> --}}
         <div class="mt-10 flex max-sm:flex-col gap-7 justify-around">
             <div class="flex flex-col justify-center max-sm:text-center max-sm:mt-5">
-                <h3 class="font-semibold">GMTrainer</h3>
+                <h3 class="font-semibold">Pandai Digital</h3>
                 <ul class="mt-2 space-y-2">
                     <li><a href="#" class="hover:underline">Tentang</a></li>
                     <li><a href="#" class="hover:underline">Karir</a></li>
