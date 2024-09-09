@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Metodepembayaran;
 use Illuminate\Http\Request;
 
 class MetodepembayaranController extends Controller
@@ -9,9 +10,25 @@ class MetodepembayaranController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
         //
+        $search = $request->search;
+        $tanggal = $request->tanggal;
+
+        $metodes = Metodepembayaran::query();
+
+        if (!empty($search)) {
+            $metodes->where('nama_program', 'like', "%$search%")->orWhere('harga', 'like', "%$search%")->orWhere('judul', 'like', "%$search%")->orWhere('keterangan', 'like', "%$search%");
+        }
+
+        if (!empty($judul)) {
+            $metodes->where('judul', $judul);
+        }
+
+        $programs = $metodes->paginate(10);
+
+        return view('administrator.metodepembayaran.index', compact(['metodes']));
     }
 
     /**

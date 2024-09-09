@@ -182,9 +182,7 @@ Route::get('/home', function () {
     return view('./myskill/pages/home');
 })->name('Home');
 
-Route::get('/', function () {
-    return view('./myskill/pages/home');
-})->name('Home');
+Route::get('/', [MainController::class, 'index']);
 
 
 // e-learning
@@ -201,9 +199,53 @@ Route::get('/bootcamp', function () {
     return view('./myskill/pages/program/bootcamp');
 })->name('Program & Bootcamp');
 
-Route::get('/digital-marketing', function () {
+Route::get('/bootcamp/digital-marketing', function () {
     return view('./myskill/pages/program/digital-marketing');
 })->name('Digital Marketing');
+
+Route::get('/review', function () {
+    return view('./myskill/pages/cv/review');
+})->name('Review CV');
+
+Route::get('/corporate-service', function () {
+    return view('./myskill/pages/corporate/corporate');
+})->name('Review CV');
+
+Route::get('/corporate-training', function () {
+    return view('./myskill/pages/corporate/corporate-training');
+})->name('Corporate Training');
+
+Route::get('/experience', function () {
+    return view('./myskill/pages/corporate/experience');
+})->name('Experience');
+
+Route::get('/login', function () {
+    return view('./myskill/pages/auth/login');
+})->name('Login');
+
+Route::get('/register', function () {
+    return view('./myskill/pages/auth/register');
+})->name('Register');
+
+Route::get('/payment', function () {
+    return view('./myskill/pages/e-learning/payment');
+})->name('Payment');
+
+Route::get('/profile/my-purchase', function () {
+    return view('./myskill/pages/profile/my-purchase');
+})->name('Purchased');
+
+Route::get('/profile/my-activity', function () {
+    return view('./myskill/pages/profile/my-activity');
+})->name('Activity');
+
+Route::get('/profile/my-transaction', function () {
+    return view('./myskill/pages/profile/my-transaction');
+})->name('Transactions');
+
+Route::get('/my-profile', function () {
+    return view('./myskill/pages/profile/my-profile');
+})->name('My Profile');
 
 // Route::get('/', [MainController::class, 'index']);
 Route::get('sejarah-instansi', [HalamanController::class, 'sejarah_instansi']);

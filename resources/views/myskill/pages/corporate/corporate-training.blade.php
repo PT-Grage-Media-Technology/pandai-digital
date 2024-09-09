@@ -145,7 +145,7 @@
     </section>
 
     <h3 class="text-center mt-4 mb-4 text-3xl font-bold text-black mx-4 sm:mx-10 md:mx-20 lg:mx-20">
-        Mengapa Ratusan Perusahaan Memilih GMTrainer?
+        Mengapa Ratusan Perusahaan Memilih Pandai Digital?
     </h3>
 
     <div class="flex flex-wrap justify-center mb-4 space-x-4 space-y-4">
