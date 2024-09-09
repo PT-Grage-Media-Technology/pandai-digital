@@ -197,6 +197,30 @@ Route::get('/digital-marketing', function () {
     return view('./myskill/pages/program/digital-marketing');
 })->name('Digital Marketing');
 
+Route::get('/review', function () {
+    return view('./myskill/pages/cv/review');
+})->name('Review CV');
+
+Route::get('/corporate-service', function () {
+    return view('./myskill/pages/corporate/corporate');
+})->name('Review CV');
+
+Route::get('/corporate-training', function () {
+    return view('./myskill/pages/corporate/corporate-training');
+})->name('Corporate Training');
+
+Route::get('/experience', function () {
+    return view('./myskill/pages/corporate/experience');
+})->name('Experience');
+
+Route::get('/login', function () {
+    return view('./myskill/pages/auth/login');
+})->name('Login');
+
+Route::get('/register', function () {
+    return view('./myskill/pages/auth/register');
+})->name('Register');
+
 // Route::get('/', [MainController::class, 'index']);
 Route::get('sejarah-instansi', [HalamanController::class, 'sejarah_instansi']);
 Route::get('struktur-organisasi', [HalamanController::class, 'struktur_organisasi']);
