@@ -29,7 +29,7 @@
     </section>
 
     <!-- section 2 : Horizontal scrollbar -->
-    <section class="mt-8 lg:ml-10 overflow-x-auto flex gap-4 p-4 w-screen no-scrollbar">
+    <section class="mt-8 lg:ml-6 overflow-x-auto flex gap-6 p-4 w-screen no-scrollbar">
         <!-- text area 1 -->
         <div class="flex-shrink-0 px-2 min-w-[16rem]">
             <article class="bg-white rounded-lg text-balance shadow-md p-4 md:p-6 w-64">
@@ -66,15 +66,786 @@
 
     <!-- Section 3 : Program Lainnya -->
     <section class="w-screen">
-        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between px-6 py-4 w-screen">
-            <h2 class="text-xl font-bold mb-2 sm:mb-0">Marketing Management</h2>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between lg:px-12 md:px-10 max-sm:px-8 py-4 w-screen">
+            <h2 class="text-xl font-bold mb-2 sm:mb-0 ">Marketing Management</h2>
             <br class="max-sm:hidden md:hidden">
             <div class="w-full sm:flex-1 border-t-2 border-orange-500 mb-2 sm:mb-0 sm:mx-4"></div>
-            <button class="bg-orange-500 text-white px-4 sm:px-8 py-2 rounded-md flex items-center">
+            <button class="bg-orange-500 font-bold text-white px-1 lg:mr-10 sm:px-4 py-1 rounded-md flex items-center">
                 Selengkapnya <i class="fa-solid fa-arrow-right ml-2"></i>
             </button>
         </div>
-
+        <!-- program lainnya disini -->
+        <div name="mb-8" class="overflow-x-auto no-scrollbar w-screen md:p-4 max-sm:p-4">
+            <div class="flex space-x-4 w-max lg:px-12 max-sm:px-4 py-3">
+                <!-- Item Bootcamp 1 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 2 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 3 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 4 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 5 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 6 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 7 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item More -->
+                <a href="/e-learning">
+                    <div class="w-screen bg-gray-100 rounded-lg shadow-md lg:p-4 lg:w-48 max-sm:w-40 max-sm:h-56 md:w-48 md:h-48 flex flex-col justify-center items-center md:p-4">
+                        <p class="lg:text-4xl max-sm:text-center max-sm:text-2xl md:text-6xl text-gray-400 mb-4">+</p>
+                        <p class="text-gray-500 max-sm:text-center md:text-center">lihat bootcamp lainnya...</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Section 4 : Program Lainnya -->
+    <section class="w-screen">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between lg:px-12 md:px-10 max-sm:px-8 py-4 w-screen">
+            <h2 class="text-xl font-bold mb-2 sm:mb-0 ">Creative Copywriting</h2>
+            <br class="max-sm:hidden md:hidden">
+            <div class="w-full sm:flex-1 border-t-2 border-orange-500 mb-2 sm:mb-0 sm:mx-4"></div>
+            <button class="bg-orange-500 font-bold text-white px-1 lg:mr-10 sm:px-4 py-1 rounded-md flex items-center">
+                Selengkapnya <i class="fa-solid fa-arrow-right ml-2"></i>
+            </button>
+        </div>
+        <!-- program lainnya disini -->
+        <div name="mb-8" class="overflow-x-auto no-scrollbar w-screen md:p-4 max-sm:p-4">
+            <div class="flex space-x-4 w-max lg:px-12 max-sm:px-4 py-3">
+                <!-- Item Bootcamp 1 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 2 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 3 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 4 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 5 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 6 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 7 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item More -->
+                <a href="/e-learning">
+                    <div class="w-screen bg-gray-100 rounded-lg shadow-md lg:p-4 lg:w-48 max-sm:w-40 max-sm:h-56 md:w-48 md:h-48 flex flex-col justify-center items-center md:p-4">
+                        <p class="lg:text-4xl max-sm:text-center max-sm:text-2xl md:text-6xl text-gray-400 mb-4">+</p>
+                        <p class="text-gray-500 max-sm:text-center md:text-center">lihat bootcamp lainnya...</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Section 5 : Program Lainnya -->
+    <section class="w-screen">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between lg:px-12 md:px-10 max-sm:px-8 py-4 w-screen">
+            <h2 class="text-xl font-bold mb-2 sm:mb-0 ">Social Media Marketing</h2>
+            <br class="max-sm:hidden md:hidden">
+            <div class="w-full sm:flex-1 border-t-2 border-orange-500 mb-2 sm:mb-0 sm:mx-4"></div>
+            <button class="bg-orange-500 font-bold text-white px-1 lg:mr-10 sm:px-4 py-1 rounded-md flex items-center">
+                Selengkapnya <i class="fa-solid fa-arrow-right ml-2"></i>
+            </button>
+        </div>
+        <!-- program lainnya disini -->
+        <div name="mb-8" class="overflow-x-auto no-scrollbar w-screen md:p-4 max-sm:p-4">
+            <div class="flex space-x-4 w-max lg:px-12 max-sm:px-4 py-3">
+                <!-- Item Bootcamp 1 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 2 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 3 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 4 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 5 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 6 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 7 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item More -->
+                <a href="/e-learning">
+                    <div class="w-screen bg-gray-100 rounded-lg shadow-md lg:p-4 lg:w-48 max-sm:w-40 max-sm:h-56 md:w-48 md:h-48 flex flex-col justify-center items-center md:p-4">
+                        <p class="lg:text-4xl max-sm:text-center max-sm:text-2xl md:text-6xl text-gray-400 mb-4">+</p>
+                        <p class="text-gray-500 max-sm:text-center md:text-center">lihat bootcamp lainnya...</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Section 6: Program Lainnya -->
+    <section class="w-screen">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between lg:px-12 md:px-10 max-sm:px-8 py-4 w-screen">
+            <h2 class="text-xl font-bold mb-2 sm:mb-0 ">Campaign and Media Planning</h2>
+            <br class="max-sm:hidden md:hidden">
+            <div class="w-full sm:flex-1 border-t-2 border-orange-500 mb-2 sm:mb-0 sm:mx-4"></div>
+            <button class="bg-orange-500 font-bold text-white px-1 lg:mr-10 sm:px-4 py-1 rounded-md flex items-center">
+                Selengkapnya <i class="fa-solid fa-arrow-right ml-2"></i>
+            </button>
+        </div>
+        <!-- program lainnya disini -->
+        <div name="mb-8" class="overflow-x-auto no-scrollbar w-screen md:p-4 max-sm:p-4">
+            <div class="flex space-x-4 w-max lg:px-12 max-sm:px-4 py-3">
+                <!-- Item Bootcamp 1 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 2 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 3 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 4 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 5 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 6 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 7 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item More -->
+                <a href="/e-learning">
+                    <div class="w-screen bg-gray-100 rounded-lg shadow-md lg:p-4 lg:w-48 max-sm:w-40 max-sm:h-56 md:w-48 md:h-48 flex flex-col justify-center items-center md:p-4">
+                        <p class="lg:text-4xl max-sm:text-center max-sm:text-2xl md:text-6xl text-gray-400 mb-4">+</p>
+                        <p class="text-gray-500 max-sm:text-center md:text-center">lihat bootcamp lainnya...</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Section 7 : Program Lainnya -->
+    <section class="w-screen">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between lg:px-12 md:px-10 max-sm:px-8 py-4 w-screen">
+            <h2 class="text-xl font-bold mb-2 sm:mb-0 ">Facebook Ads</h2>
+            <br class="max-sm:hidden md:hidden">
+            <div class="w-full sm:flex-1 border-t-2 border-orange-500 mb-2 sm:mb-0 sm:mx-4"></div>
+            <button class="bg-orange-500 font-bold text-white px-1 lg:mr-10 sm:px-4 py-1 rounded-md flex items-center">
+                Selengkapnya <i class="fa-solid fa-arrow-right ml-2"></i>
+            </button>
+        </div>
+        <!-- program lainnya disini -->
+        <div name="mb-8" class="overflow-x-auto no-scrollbar w-screen md:p-4 max-sm:p-4">
+            <div class="flex space-x-4 w-max lg:px-12 max-sm:px-4 py-3">
+                <!-- Item Bootcamp 1 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 2 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 3 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 4 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 5 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 6 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item Bootcamp 7 -->
+                <div class="bg-white rounded-lg shadow-md lg:ml-0 lg:p-4 max-sm:p-2 max-sm:w-40 lg:w-48 flex flex-col justify-between md:ml-6 md:p-4">
+                    <img src="{{ asset('./assets/bootcamp/contentdummy.png') }}" class="h-34 w-full rounded-sm">
+                    <p class="mt-2 text-gray-700 font-bold lg:text-lg max-sm:text-base max-sm:truncate">Marketing Introduction</p>
+                    <div class="flex flex-col mt-2 text-gray-500">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-film mr-2"></i>
+                            <p class="text-sm">5 Video</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-user-group mr-1"></i>
+                            <p class="text-sm">50.000</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-regular fa-star mr-1"></i>
+                            <p class="text-sm">4.85/5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item More -->
+                <a href="/e-learning">
+                    <div class="w-screen bg-gray-100 rounded-lg shadow-md lg:p-4 lg:w-48 max-sm:w-40 max-sm:h-56 md:w-48 md:h-48 flex flex-col justify-center items-center md:p-4">
+                        <p class="lg:text-4xl max-sm:text-center max-sm:text-2xl md:text-6xl text-gray-400 mb-4">+</p>
+                        <p class="text-gray-500 max-sm:text-center md:text-center">lihat bootcamp lainnya...</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="w-full flex justify-center mt-8">
+            <hr class="mb-6 mt-4 w-11/12 border-1 ">
+        </div>
     </section>
 
 
