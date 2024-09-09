@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('./myskill/layouts.main')
 @section('container')
 <style>
     /* Hide scrollbar for Chrome, Safari and Opera */

@@ -189,7 +189,7 @@ Route::get('/e-learning', function () {
     return view('./myskill/pages/e-learning/e-learning');
 })->name('E-learning');
 
-Route::get('/program-bootcamp', function () {
+Route::get('/bootcamp', function () {
     return view('./myskill/pages/program/bootcamp');
 })->name('Program & Bootcamp');
 

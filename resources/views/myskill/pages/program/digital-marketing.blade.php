@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('./myskill/layouts.main')
 @section('container')
 <div class="digital-marketing">
     <section
