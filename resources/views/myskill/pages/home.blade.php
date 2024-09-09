@@ -5,21 +5,11 @@
         style="scrollbar-width: none; -ms-overflow-style: none;" ontouchstart="this.classList.add('touching')"
         ontouchend="this.classList.remove('touching')" onmousedown="this.classList.add('touching')"
         onmouseup="this.classList.remove('touching')">
+        @foreach($banners as $link )
         <div class="snap-always snap-center flex-shrink-0">
-            <img src="{{ asset('assets/home/Rectangle.svg') }}" alt="" class="h-32 lg:h-80 md:h-60 w-auto mx-auto">
+            <img src="{{ url('foto_banner/' . $link->gambar) }}" alt="" class="h-32 lg:h-80 md:h-60 w-auto mx-auto">
         </div>
-        <div class="snap-always snap-center flex-shrink-0">
-            <img src="{{ asset('assets/home/Rectangle.svg') }}" alt="" class="h-32 lg:h-80 md:h-60 w-auto mx-auto">
-        </div>
-        <div class="snap-always snap-center flex-shrink-0">
-            <img src="{{ asset('assets/home/Rectangle.svg') }}" alt="" class="h-32 lg:h-80 md:h-60 w-auto mx-auto">
-        </div>
-        <div class="snap-always snap-center flex-shrink-0">
-            <img src="{{ asset('assets/home/Rectangle.svg') }}" alt="" class="h-32 lg:h-80 md:h-60 w-auto mx-auto">
-        </div>
-        <div class="snap-always snap-center flex-shrink-0">
-            <img src="{{ asset('assets/home/Rectangle.svg') }}" alt="" class="h-32 lg:h-80 md:h-60 w-auto mx-auto">
-        </div>
+        @endforeach
     </div>
     <div>
         <h2 class="text-xl md:text-2xl text-center py-14 font-bold text-black">Mari Merintis Karir Bersama GMT</h2>
@@ -397,30 +387,11 @@
 </div>
 <p class="py-20 sm:mx-8 text-center text-2xl font-bold">Bersama Experts dan Case Study dari Beberapa Company</p>
 <div class="grid grid-cols-4 gap-4 px-16">
+    @foreach($links as $link)
     <div class="flex justify-center items-center">
         <img class="w-56 h-auto" src="{{ asset('assets/home/gojek.svg') }}" alt="">
     </div>
-    <div class="flex justify-center items-center">
-        <img class="w-56 h-auto" src="{{ asset('assets/home/shopee.svg') }}" alt="">
-    </div>
-    <div class="flex justify-center items-center">
-        <img class="w-56 h-auto" src="{{ asset('assets/home/astra.svg') }}" alt="">
-    </div>
-    <div class="flex justify-center items-center">
-        <img class="w-56 h-auto" src="{{ asset('assets/home/efishery.svg') }}" alt="">
-    </div>
-    <div class="flex justify-center items-center">
-        <img class="w-56 h-auto" src="{{ asset('assets/home/halodoc.svg') }}" alt="">
-    </div>
-    <div class="flex justify-center items-center">
-        <img class="w-56 h-auto" src="{{ asset('assets/home/kitabisa.svg') }}" alt="">
-    </div>
-    <div class="flex justify-center items-center">
-        <img class="w-56 h-auto" src="{{ asset('assets/home/idn.svg') }}" alt="">
-    </div>
-    <div class="flex justify-center items-center">
-        <img class="w-56 h-auto" src="{{ asset('assets/home/dentsu.svg') }}" alt="">
-    </div>
+    @endforeach
 </div>
 <h3 class="text-center text-2xl font-bold py-16">Investors dan Affiliations</h3>
 <div class="snap-x snap-mandatory flex overflow-x-auto no-scrollbar ps-6 gap-5 lg:gap-11"

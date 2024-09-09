@@ -181,9 +181,7 @@ Route::get('/home', function () {
     return view('./myskill/pages/home');
 })->name('Home');
 
-Route::get('/', function () {
-    return view('./myskill/pages/home');
-})->name('Home');
+Route::get('/', [MainController::class, 'index']);
 
 Route::get('/e-learning', function () {
     return view('./myskill/pages/e-learning/e-learning');
