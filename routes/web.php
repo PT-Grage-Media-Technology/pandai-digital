@@ -221,6 +221,10 @@ Route::get('/register', function () {
     return view('./myskill/pages/auth/register');
 })->name('Register');
 
+Route::get('/materi', function () {
+    return view('./myskill/pages/e-learning/materi');
+})->name('Register');
+
 // Route::get('/', [MainController::class, 'index']);
 Route::get('sejarah-instansi', [HalamanController::class, 'sejarah_instansi']);
 Route::get('struktur-organisasi', [HalamanController::class, 'struktur_organisasi']);
