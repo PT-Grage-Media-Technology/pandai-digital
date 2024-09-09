@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('./myskill/layouts.main')
 @section('container')
 @php
 $buttons = [

@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('./myskill/layouts.main')
 @section('container')
 <div class="corporate">
     <section
@@ -171,7 +171,7 @@
     </div>
 
 
-    @include('partials.hubungi-kami')
+    @include('./myskill/partials.hubungi-kami')
 
 </section>
 </div>

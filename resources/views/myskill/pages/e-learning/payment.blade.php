@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('./myskill/layouts.main')
 @section('container')
     <div class="payment bg-gray-50 font-inter w-screen">
         <div class="max-w-5xl mx-auto py-10 px-4 md:px-10">

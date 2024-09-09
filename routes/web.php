@@ -177,7 +177,27 @@ Route::prefix('administrator')->name('administrator.')->group(function () {
 //     Route::resource('dashboard',MainController::class );
 // });
 
-Route::get('/', [MainController::class, 'index']);
+Route::get('/home', function () {
+    return view('./myskill/pages/home');
+})->name('Home');
+
+Route::get('/', function () {
+    return view('./myskill/pages/home');
+})->name('Home');
+
+Route::get('/e-learning', function () {
+    return view('./myskill/pages/e-learning/e-learning');
+})->name('E-learning');
+
+Route::get('/program-bootcamp', function () {
+    return view('./myskill/pages/program/bootcamp');
+})->name('Program & Bootcamp');
+
+Route::get('/digital-marketing', function () {
+    return view('./myskill/pages/program/digital-marketing');
+})->name('Digital Marketing');
+
+// Route::get('/', [MainController::class, 'index']);
 Route::get('sejarah-instansi', [HalamanController::class, 'sejarah_instansi']);
 Route::get('struktur-organisasi', [HalamanController::class, 'struktur_organisasi']);
 Route::get('visi-dan-misi', [HalamanController::class, 'visi_dan_misi']);

@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('./myskill/layouts.main')
 @section('container')
 <!-- header here -->
 <section class="review w-screen h-auto">

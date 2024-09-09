@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('./myskill/layouts.main')
 @section('container')
 <section class="e-learning w-screen">
     <!-- Section 1: Hero -->
@@ -233,7 +233,7 @@
 
             <!-- Carousel Container -->
             <div class="overflow-x-auto pb-2 no-scrollbar mb-5">
-                @include('partials.cards-elearning')
+                @include('./myskill/partials.cards-elearning')
             </div>
 
             <div class="flex justify-center mt-4 gap-4">

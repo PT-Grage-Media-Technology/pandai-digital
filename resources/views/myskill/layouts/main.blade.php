@@ -28,13 +28,13 @@
 </head>
 
 <body class="">
-    @include('partials.navbar')
+    @include('./myskill/partials.navbar')
 
     <div class="container" id="container">
         @yield('container')
     </div>
 
-    @include('partials.footer')
+    @include('./myskill/partials.footer')
 
     <!-- wa button -->
     <a target="_blank" href="https://wa.me/6285224216499?text=Saya%20tertarik%20untuk%20berlangganan%20bimbel%20online%20MySkill.%20Mohon%20informasi%20lebih%20lanjut%20mengenai%20paket%20langganan%2C%20harga%2C%20dan%20fitur%20yang%20tersedia.%20Terima%20kasih.">

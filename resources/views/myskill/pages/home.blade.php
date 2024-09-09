@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('./myskill/layouts.main')
 @section('container')
 <div class="w-screen h-auto  rounded-b-3xl bg-gradient-to-b from-orange-400 to-red-500">
     <div class="snap-x snap-mandatory flex overflow-x-auto no-scrollbar gap-6 mx-4 lg:mx-4"

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Aug 21, 2024 at 10:29 AM
+-- Generation Time: Sep 09, 2024 at 09:51 AM
 -- Server version: 8.0.30
 -- PHP Version: 5.3.9
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `db_lokodinas`
+-- Database: `db_latihanlokodinas`
 --
 
 -- --------------------------------------------------------
@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `agenda` (
   `dibaca` int NOT NULL DEFAULT '1',
   `username` varchar(50) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   PRIMARY KEY (`id_agenda`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=72 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=73 ;
 
 --
 -- Dumping data for table `agenda`
@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `album` (
   `hari` varchar(20) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   `username` varchar(50) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   PRIMARY KEY (`id_album`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=51 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=52 ;
 
 --
 -- Dumping data for table `album`
@@ -118,7 +118,7 @@ CREATE TABLE IF NOT EXISTS `banner` (
   `tgl_posting` date NOT NULL,
   `deskripsi` text CHARACTER SET latin1 COLLATE latin1_general_ci,
   PRIMARY KEY (`id_banner`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=36 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=38 ;
 
 --
 -- Dumping data for table `banner`
@@ -128,8 +128,7 @@ INSERT INTO `banner` (`id_banner`, `judul`, `url`, `gambar`, `tgl_posting`, `des
 (19, 'CLEAN', '', 'karawang1.jpg', '2018-12-27', 'Dikelola secara profesional, menghindari benturan kepentingan, tidak menoleransi suap, menjunjung tinggi kepercayaan dan integritas. Berpedoman pada asas tata kelola korporasi yang baik.'),
 (20, 'CONFIDENT', 'http://www.lokomedia.web.id', 'karawang2.jpg', '2018-12-27', 'Berperan dalam pembangunan ekonomi nasional, menjadi pelopor dalam reformasi Badan Usaha Milik Negara (BUMN), dan membangun kebanggaan bangsa'),
 (21, 'Commercial', 'http://www.lokomedia.web.id', 'bendungan-walahar.jpg', '2018-12-27', 'Menciptakan nilai tambah dengan orientasi komersial, mengambil keputusan berdasarkan prinsip-prinsip bisnis yang sehat.'),
-(22, 'COMPETITIVE', 'http://www.lokomedia.web.id', 'karawang5.jpg', '2018-12-27', 'Mampu berkompetisi dalam skala regional maupun internasional, mendorong pertumbuhan investasi, membangun budaya sadar biaya dan menghargai kinerja'),
-(35, 'BISA', '#', 'BISA_4JQD01vqHrD8xw45saom7Mwet.png', '2024-08-16', '<p>PASTI BISA</p>');
+(22, 'COMPETITIVE', 'http://www.lokomedia.web.id', 'karawang5.jpg', '2018-12-27', 'Mampu berkompetisi dalam skala regional maupun internasional, mendorong pertumbuhan investasi, membangun budaya sadar biaya dan menghargai kinerja');
 
 -- --------------------------------------------------------
 
@@ -158,7 +157,7 @@ CREATE TABLE IF NOT EXISTS `berita` (
   `tag` varchar(100) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   `status` enum('Y','N') CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL DEFAULT 'Y',
   PRIMARY KEY (`id_berita`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=703 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=706 ;
 
 --
 -- Dumping data for table `berita`
@@ -202,7 +201,8 @@ INSERT INTO `berita` (`id_berita`, `id_kategori`, `username`, `judul`, `sub_judu
 (635, 39, 'admin', 'Foto Bugil Pangeran Harry Beredar', '', '', 'foto-bugil-pangeran-harry-beredar', 'N', 'N', 'N', 'Las Vegas - Pangeran Harry dari Inggris kembali membuat sensasi. Kali ini TMZ, sebuah situs hiburan Amerika Serikat, merilis foto-foto bugil adik Pangeran William itu, Selasa (21/8/2012).<br />\r\n<br />\r\nMenurut TMZ, foto itu diambil ketika putra kedua Pangeran Charles itu berpesta dengan teman-temannya di kamar hotelnya di Las Vegas, Jumat (18/8/2012).<br />\r\n<br />\r\nMengutip sumbernya, TMZ melaporkan, Harry dan teman-temannya turun ke bar hotel dan bertemu sejumlah perempuan, yang kemudian diundangnya ke kamar suite-nya di hotel itu.<br />\r\n<br />\r\nSuasana pun menjadi liar karena anak-anak muda itu mengadakan permainan biliar. Dalam aturan permainan itu, yang kalah harus melepas pakaian, sampai akhirnya semua peserta bugil.<br />\r\n<br />\r\nBeberapa orang yang hadir di pesta itu memotret kehebohan pesta tersebut. Dalam salah satu foto, tampak Harry dalam keadaan telanjang bulat dengan kedua tangan menutupi alat vitalnya. Sementara itu, foto lainnya menunjukkan Harry memeluk seorang perempuan yang juga terlihat bugil.<br />\r\n<br />\r\nKepada TMZ, Keluarga Kerajaan Inggris mengatakan, &quot;Kami tidak berkomentar tentang foto-foto itu saat ini.&quot; \r\n', '', 'Kamis', '2012-08-23', '01:39:51', '92pangeran_harry.jpg', 31, 'internasional', 'Y'),
 (636, 2, 'admin', 'Hukuman Ganda Korea Diperingan, Greysia/Meiliana Tunggu Nasib', 'Buntut Pertandingan "Sabun" di Olimpiade London', '', 'hukuman-ganda-korea-diperingan-greysiameiliana-tunggu-nasib', 'N', 'N', 'N', 'Seoul - Otoritas bulutangkis Korea Selatan, Rabu (22/8) mengurangi hukuman untuk \r\nempat pemain yang diduga sengaja kalah pada pertandingan di Olimpiade \r\nLondon, dari dua tahun menjadi enam bulan setelah terjadi proses \r\nbanding.<br />\r\n&nbsp;&nbsp;&nbsp; &nbsp;<br />\r\nJung Kyung-Eun, Kim Ha-Na, Ha Jung-Eun, dan Kim \r\nMin-Jung dilarang berpartisipasi di kompetisi-kompetisi domestik dan \r\ninternasional selama enam bulan, demikian disampaikan oleh Asosiasi \r\nBulutangkis Korea, Rabu.<br />\r\n&nbsp;&nbsp; &nbsp;<br />\r\nKeempat atlet itu berkata mereka \r\nhanya mengikuti perintah pelatih Sung Han-Kook, dan asisten Kim \r\nMoon-Soo. Sebelumnya, hukuman seumur hidup mereka telah dikurangi \r\nmenjadi dua tahun.<br />\r\n&nbsp;&nbsp; &nbsp;<br />\r\nDelapan pebulutangkis ganda putri, dari \r\nKorea Selatan, Indonesia, dan China didiskualifikasi dari Olimpiade \r\nkarena sengaja mengalah agar dapat mengamankan posisi yang lebih \r\nmenguntungkan di babak berikutnya.<br />\r\n&nbsp;&nbsp; &nbsp;<br />\r\nSkandal ini membuat bintang bulutangkis China, Yu Yang, pensiun dari bulutangkis.<br />\r\n&nbsp;&nbsp; &nbsp;<br />\r\nPresiden\r\nFederasi Bulutangkis Dunia, Kang Young-Joong, telah menepis rumor bahwa\r\npublikasi yang buruk dari olahraga ini dapat membahayakan masa depan \r\nbulutangkis di Olimpiade.<br />\r\n&nbsp;&nbsp; &nbsp;<br />\r\nKorea Selatan mendapat satu medali \r\nperunggu dari cabang olahraga bulutangkis di London - itu merupakan \r\npenampilan terburuk sepanjang partisipasi mereka di Olimpiade.<br />\r\n<br />\r\nSementara\r\ndi Indonesia, PBSI akhirnya memutuskan akan menjatuhkan sanksi kepada \r\ndua pemain ganda putri andalannya, Greysia Polii dan Meiliana Jauhari. \r\nSeperti diketahui, Greysia/Meiliana harus didiskualifkasi dari Olimpiade\r\nLondon 2012 karena diduga sengaja mengalah pada penyisihan grup untuk \r\nmenghindari lawan berat di babak perempat final.<br />\r\n&nbsp;<br />\r\nBadminton World\r\nFederation (BWF) memutuskan Greysia/Meiliana dan lawannya, Ha Jung \r\nEun/Kim Min Jung dari Korea didiskualifikasi dari turnamen paling \r\nbergengsi tersebut. Pasangan terkuat dunia asal China, Wang Xiaoli/Yu \r\nYang dan Kim Ha Na/Jung Kyung Eun dari Korea juga terkena \r\ndiskualifikasi.<br />\r\n<br />\r\n&ldquo;Kami tak mau dipengaruhi oleh keputusan yang \r\ndiambil oleh Korea atau China, karena setiap organisasi memiliki \r\nkebijakan masing-masing. Walaupun demikian, kami menghargai IOC dan BWF \r\nyang telah memutuskan bahwa Greysia/Meiliana bersalah, hal ini tidak \r\nboleh terulang lagi kedepannya. PBSI akan memberikan sanksi, namun belum\r\nbisa diumumkan bentuk sankisnya seperti apa&rdquo; ujar Sekjen PBSI, Yacob \r\nRusdianto di Pelatnas Cipayung, Selasa (21/8) sepersti dikutip situs \r\nPBSI.<br />\r\n&nbsp;<br />\r\nSaat ini PBSI masih dalam proses diskusi mengenai sanksi \r\nyang akan diberikan kepada Greysia/Meiliana dan belum ada keputusan \r\nserta pemberitahuan resmi kepada keduanya. Namun ia mengaku telah \r\nbeberapa kali mengadakan pertemuan kekeluargaan bersama kedua pemain \r\nuntuk membicarakan masalah ini dan kemungkinan-kemungkinan yang akan \r\nterjadi.\r\n', 'Suasana pertandingan memalukan itu.\r\n', 'Kamis', '2012-08-23', '01:47:26', '45bulutangkis_sabun.jpg', 21, 'olahraga', 'Y'),
 (637, 2, 'admin', 'Zeelenberg: Lorenzo Akan Bangkit di Brno', 'MotoGP', '', 'zeelenberg-lorenzo-akan-bangkit-di-brno', 'N', 'N', 'N', 'London - Setelah harus bekerja keras merebut posisi kedua di Indianapolis,  \r\nManajer tim Yamaha, Wilco Zeelenberg, yakin pebalap Jorge Lorenzo akan  \r\nbangkit di MotoGP seri Ceko.\r\n<p>\r\nLorenzo diyakini dapat tampil sebagai\r\npemenang untuk menjaga posisi tertinggi di klasemen sementara.         \r\n&quot;Sirkuit Indianapolis menyulitkan kami saat start. Namun, Sirkuit \r\nBrno memiliki lintasan yang halus dan cepat. Saya yakin kami dapat \r\ntampil lebih baik di sana,&quot; kata Zeelenberg, London, Rabu (22/8/2012) di\r\nLondon.\r\n</p>\r\n<p>\r\nLorenzo menang di Brno pada musim 2010 tetapi finis \r\nkeempat di musim 2011. Lorenzo akan berusaha merebut kemenangan keenam \r\npada musim ini di Brno.\r\n</p>\r\nKemenangan ini penting bagi Lorenzo untuk \r\nmemastikan langkahnya menjadi juara dunia di musim ini. Jika sampai \r\nkalah dari Dani Pedrosa, gelar juara dunia harus ditentukan sampai lomba\r\ndi akhir musim\r\n', 'Pebalap Yamaha, Jorge Lorenzo, dengan motor Jupiter Z1 di paddock Yamaha. \r\n', 'Kamis', '2012-08-23', '01:52:27', '48JorgeLorenzo.jpg', 18, 'olahraga', 'Y'),
-(638, 2, 'admin', 'Tyson Peringatkan "Rapper" 50 Cent', '', '', 'tyson-peringatkan-rapper-50-cent', 'N', 'N', 'N', 'New York - Mantan juara dunia tinju kelas berat Mike Tyson memperingatkan rapper 50 Cent yang kini bertindak sebagai promotor tinju.<br />\r\n<br />\r\nRapper yang bernama asli Curtis Jackson ini baru saja mendirikan The Money Team (TMT) Promotions bersama petinju legendaris AS lainnya, Floyd Mayweather Jr. TMT bergerak di bidang pertandingan tinju profesional.<br />\r\n<br />\r\nSaat mendirikan perusahaan ini, 50 Cent bermaksud melakukan perubahan mendasar pada olahraga tinju profesional di AS.<br />\r\n<br />\r\nNamun, Tyson yang pernah malang melintang di dunia tinju antara 1985 hingga 2005 ini memperingatkan 50 Cent tentang &quot;kotornya&quot; dunia tinju profesional.<br />\r\n<br />\r\n&quot;Anda harus tahu tentang dunia tinju. Ini merupakan bisnis yang legal, tetapi tidak semua berjalan terbuka,&quot; kata Tyson. &quot;Memang seharusnya bisnis ini dikelola pemerintah.&quot;<br />\r\n<br />\r\n&quot;50 (Cent) adalah seorang bintang rap, penghibur, dan enterpreneur. Namun, ia sama sekali tidak mengerti dunia tinju,&quot; lanjut juara dunia tinju kelas berat 1986-1990 ini.<br />\r\n<br />\r\nMenurut Tyson, pengetahuan tentang tinju diperoleh 50 Cent hanya versi dari Floyd Mayweather.&nbsp; &quot;Begitu dia berkecimpung di dunia ini, ia harus tahu bahwa kawan bisa menjadi lawan,&quot; kata Tyson. &quot;Mereka hanya inginkan uang Anda dan ingin terus menguasai dunia ini.&quot;<br />\r\n<br />\r\n50 Cent mendapatkan izin promotornya di New York pada Juli lalu, dan mendapat izin usahanya di Nevada. Saat ini mereka telah mengikat beberapa petinju potensial, seperti petinju kelas bulu Yuriorkis Gamboa dari Kuba dan Billy Dib dari Australia.\r\n', 'Mike Tyson\r\n', 'Kamis', '2012-08-23', '01:56:01', '24mike_tyson.jpg', 33, 'olahraga', 'Y'),
+(703, 76, 'admin', 'RRQ Juara M6', 'Sanz adalah kunci permainan ONIC', 'http://youtube/rrq', 'rrq-juara-m6', 'Y', 'Y', 'Y', '<p><strong>MIMPI WOI</strong></p>', 'thanks', 'Friday', '2024-08-30', '03:05:24', 'Screenshot (9).png', 1, 'hiburan', 'Y'),
+(704, 76, 'admin', 'RRQ Juara dan ONIC runner up', 'Sanz adalah kunci permainan ONIC', 'http://youtube/rrq', 'rrq-juara-dan-onic-runner-up', 'Y', 'Y', 'Y', '<p><strong>CHAMPIONSS</strong></p>', 'thanks', 'Friday', '2024-08-30', '03:02:36', 'Screenshot (10).png', 1, 'hiburan,olahraga,internasional', 'Y'),
 (639, 23, 'admin', 'Hilman Hariwijaya dan Eko Patrio akan Re-cycle Film "Lupus"', '', '', 'hilman-hariwijaya-dan-eko-patrio-akan-recycle-film-lupus', 'N', 'N', 'N', 'Jakarta - Kabar gembira bagi Anda pecinta novel maupun serial Lupus. Pasalnya, tokoh fiksi rekaan Hilman Wijaya ini akan segera diangkat ke layar lebar oleh rumah produksi eKomando Production.<br />\r\n<br />\r\n&quot;Nanti mau produksi film Lupus, kita re-cycle. Kita mudain lagi,&quot; ujar Eko, pemilik eKomando Production, saat ditemui di kawasan dr Saharjo, Jakarta, Kamis (16/8/2012).<br />\r\n<br />\r\nFilm Lupus diangkat kembali ke layar lebar bukan tanpa alasan. Menurut Eko, tokoh Lupus merupakan anak muda yang konyol tetapi inspiratif. Setiap seri Lupus selalu mengangkat unsur persahabatan. Tak ada nuansa politis atau hal lainnya.<br />\r\n<br />\r\n&quot;Di Lupus ada persahabatan yang abadi, bahu-membahu. Tidak pernah berkaitan dengan masalah politik dan sebagainya. Di sini pure banget yang diangkat pertemanan,&quot; tambah Eko.<br />\r\n<br />\r\nSaat ini skenario sudah rampung dibuat oleh penulisnya, Hilman Hariwijaya. Meski demikian, tokoh Lupus hingga saat ini belum ditentukan. Rencananya, Lupus mulai tayang di bioskop pada Februari 2013, bertepatan dengan Hari Valentine.\r\n', '', 'Kamis', '2012-08-23', '02:21:00', '40film_lupus.jpg', 14, 'film,hiburan', 'Y'),
 (640, 23, 'admin', 'Marvel Umumkan Jadwal Rilis "The Avengers 2"', '', '', 'marvel-umumkan-jadwal-rilis-the-avengers-2', 'N', 'N', 'N', 'Los Angeles - The Avengers is back. Setelah memastikan Joss Whedon bakal kembali berada di balik layar, Marvel juga mengumumkan jadwal penayangan perdana The Avengers 2.<br />\r\n<br />\r\nRencanannya, film kumpulan para superhero ini akan dirilis pada tanggal 1 Mei 2015 mendatang setelah mereka menanyangkan film-film terkaitnya seperti Iron 3, Captain America 2 dan Thor 2.<br />\r\n<br />\r\nMeski belum memiliki judul, Marvel dan Disney sudah siap untuk kembali memproduksi film terlaris ketiga box office sepanjang masa. &quot;Walt Disney telah mengumumkan tanggal perilisan sekuel dari film blockbuster superhero terbesar dan film terlaris ketiga sepanjang masa, The Avengers,&quot; tulisnya dalam rilis yang dilansir Digital Spy.<br />\r\n<br />\r\n&quot;Josh Whedon akan kembali menulis naskah dan menyutradarai sekuel Avengers ini dan akan dirilis pada 1 Mei 2015,&quot; tambah Marvel.<br />\r\n<br />\r\nMenyusul pengumuman tersebut, bisa dipastikan bahwa para bintang The Avengers seperti Robert Downey Jr, Chris Hemsworth dan Chris Evens akan kembali tampil untuk memeriahkan film tersebut.\r\n', 'The Avengers\r\n', 'Kamis', '2012-08-23', '02:33:21', '88the_avenger.jpg', 44, 'film,hiburan', 'Y'),
 (641, 23, 'admin', 'Film Dirilis, Dewi Lestari Deg-degan Menunggu Pemutarannya', '', 'http://www.youtube.com/embed/QgDWRe1TNRg', 'film-dirilis-dewi-lestari-degdegan-menunggu-pemutarannya', 'N', 'N', 'N', '<p>Jakarta -&nbsp; Penulis novel laris "Perahu Kertas", Dewi Lestari, mengaku tegang menjelang penayangan perdana film Perahu Kertas di bioskop hari ini. "Sangat deg-degan," kata penulis dengan nama pena Dee itu usai jumpa pembaca novel Perahu Kertas di Gramedia Matraman, Jakarta, Kamis. Film yang diangkat dari novel setebal 456 halaman itu sudah tayang khusus untuk media dan undangan Rabu (8/8/2012) lalu. <br /> <br /> "Kalau yang kemarin kan baru wartawan dan undangan, tetapi kalau sekarang yang dihadapi real judgment (penilaian nyata), sekarang penonton yang menilai. Lama film tayang di bioskop kan ditentukan dari penonton," kata Dee.<br /> <br /> Film&nbsp; Perahu Kertas disutradarai oleh Hanung Bramantyo. Artis muda Maudy Ayunda dan Adipati Dolken yang pernah beradu akting di film&nbsp; Malaikat Tanpa Sayap menjadi pemeran utama film tersebut.<br /> <br /> Meskipun ada beberapa adegan film yang berbeda dengan kisah dalam novel namun Dee mengatakan hampir 80 persen jalan cerita film Perahu Kertas&nbsp; sama dengan novel.<br /> <br /> "Kalau ada yang protes itu risiko ya, pasti ada dan buat saya itu wajar. Komparasi pasti terjadi. Tetapi sebagai film, Perahu Kertas solid," kata ibu dua anak itu.</p>', '', 'Kamis', '2012-08-23', '02:40:30', '65dee.jpg', 36, 'film,hiburan', 'Y'),
@@ -211,11 +211,10 @@ INSERT INTO `berita` (`id_berita`, `id_kategori`, `username`, `judul`, `sub_judu
 (650, 62, 'admin', 'Roy Suryo Menpora, SBY Dipertanyakan', '', '', 'roy-suryo-menpora-sby-dipertanyakan', 'Y', 'N', 'N', '<p>\r\nPengamat politik dari Charta Politika, Yunarto Wijaya mempertanyakan dasar keputusan SBY menunjuk Roy Suryo sebagai Menpora. Apalagi, kata Yunarto, ada pernyataan SBY yang menegaskan Roy cakap untuk mengemban tugas sebagai Menpora.\r\n</p>\r\n<p>\r\nMenurut Yunarto, Roy selama ini lebih dikenal sebagai pakar foto digital dan video serta dosen di sebuah perguruan tinggi negeri. &quot;Namun, belum terdengar kiprahnya di bidang kepemudaan dan olahraga,&quot; kata Yunarto. Sementara, tugas Menpora yang berat dan masa tugasnya relatif singkat idealnya mengutamakan figur yang kompetensinya teruji di bidang kepemudaan dan olahraga.\r\n</p>\r\n<p>\r\nKarena itu, Yunarto menduga penunjukan Roy bukan karena kompetensi, melainkan representasi politik. &quot;Ditunjuknya kader Partai Demokrat Roy Suryo sebagai Menpora menunjukkan faktor politisnya sangat kuat,&quot; katanya. (sumber: republika.co.id)<br />\r\n</p>\r\n', 'Roy Suryo saat dilantik jadi Menpora', 'Jumat', '2013-01-25', '00:01:04', '60roy-suryo.jpg', 98, 'politik', 'Y'),
 (651, 62, 'admin', 'Banjir Jakarta, Kerugian Ekonomi Capai Rp 1 Triliun', 'Jakarta Darurat Banjir', 'http://www.youtube.com/embed/RQMbr4DBqXk', 'banjir-jakarta-kerugian-ekonomi-capai-rp-1-triliun', 'N', 'N', 'Y', '<p>\r\nKetua Asosiasi Pengusaha Indonesia Sofjan Wanandi mengatakan, banjir yang melanda Jakarta sepekan ini telah menimbulkan kerugian ekonomi yang cukup tinggi. Biaya bencana yang ditanggung untuk sekadar menyediakan makan&nbsp; bagi para pengungsi pun mencapai Rp 1 miliar lebih. \r\n</p>\r\n<p>\r\nHal itu disampaikan Sofjan, saat ditemui di area bencana banjir di Penjaringan, Jakarta Utara, Minggu (20/1/2013).\r\n</p>\r\n<p>\r\nSofjan menegaskan, tak bergeraknya roda ekonomi di Jakarta akibat bencana banjir menyebabkan kerugian lebih dari Rp 1 triliun. Aktivitas perdagangan menjadi tidak berjalan, dan kawasan Industri Pulogadung juga ikut lumpuh karena tak memperoleh suplai listrik akibat gardu listrik terendam banjir. \r\n</p>\r\n<p>\r\nNegara importir pun, katanya, mulai mempertanyakan kapan Jakarta bisa pulih, karena ini sangat terkait dengan kegiatan ekspor komoditas keluar negeri dari seluruh daerah di Indonesia yang bertumpu di Jakarta.\r\n</p>\r\n<p>\r\n&rdquo;Importir itu mulai bertanya-tanya, kapan banjir di Jakarta bisa surut. Kendati mereka saat ini memahami Jakarta sedang dilanda bencana,&rdquo; kata Sofjan. (sumber: kompas.com)\r\n</p>\r\n', 'Banjir di daerah Pluit', 'Jumat', '2013-01-25', '00:06:15', '44banjir-lagi.jpg', 13, 'ekonomi', 'Y'),
 (652, 63, 'admin', 'Hary Tanoe Mundur dari Partai Nasdem', '', '', 'hary-tanoe-mundur-dari-partai-nasdem', 'N', 'Y', 'N', '<p>\r\nKetua Dewan Pakar DPP Partai Nasional Demokrat (Nasdem) Hary Tanoesoedibjo menyatakan mundur dari keanggotaan Partai Nasdem. Hal itu disampaikannya secara resmi dalam jumpa pers, Senin (21/1/2013), di Jakarta.\r\n</p>\r\n<p>\r\n&quot;Saya menyatakan mundur dalam kapasitas saya sebagai Ketua Dewan Pakar. Mulai hari ini, saya bukan lagi anggota dari Partai Nasdem. Keputusan ini saya lakukan dengan berat hati,&quot; kata Hary.\r\n</p>\r\n<p>\r\nIa menyatakan, sejak bergabung dengan Partai Nasdem pada 9 Oktober 2011, Hary merasa telah melakukan upaya terbaik, baik energi, pikiran, dana, maupun risiko, untuk berpartisipasi membesarkan Partai Nasdem. &quot;Target utamanya lolos verifikasi dan lolos sebagai partai peserta pemilu. Saya merupakan bagian yang ikut meloloskan Nasdem,&quot; kata bos MNC Grup ini.\r\n</p>\r\n<p>\r\n&quot;Keputusan saya ini tidak mengenakkan, tapi pada satu titik saya harus memutuskan ini. Aktivitas politik harus tetap dijalankan. Destiny keterlibatan saya di politik adalah menjadi bagian dari perubahan untuk bangsa Indonesia menjadi lebih baik. Saya ingin ikut andil secara nyata, langsung. Karena bagaimanapun politik menjadi satu bagian ideologi dan bagian dari masa depan kita,&quot; papar Hary.\r\n</p>\r\n<p>\r\nPerpecahan di tubuh Nasdem mulai merebak ketika beredar kabar adanya faksi di dalam partai itu. Dikabarkan, Surya Paloh yang akan menjadi ketua umum partai itu berseberangan dengan faksi Hary Tanoe. Beberapa waktu lalu, kelompok Surya Paloh memecat Sekjen Garda Pemuda Nasional Demokrat (GPND), Saiful Haq.\r\n</p>\r\n<p>\r\nTentang alasannya mundur, Hary mengatakan karena ada perbedaan pendapat dengan Ketua Majelis Tinggi Partai Nasdem Surya Paloh (sumber: kompas.com) \r\n</p>\r\n', 'Hary Tanoe saat memberikan keterangan pers', 'Jumat', '2013-01-25', '00:58:26', '90hari-tanoesoedibjo.jpg', 15, 'politik', 'Y'),
-(653, 62, 'admin', 'Ketika "Ciyus" Terucap dari Mulut Jokowi', '', '', 'ketika-ciyus-terucap-dari-mulut-jokowi', 'N', 'Y', 'N', '<p>\r\nKata <em>ciyus</em> atau serius sering terdengar diucapkan anak-anak \r\nzaman sekarang yang sering dijuluki anak baru gede (ABG). Nah, ketika \r\nbahasa gaul itu diucapkan oleh Joko Widodo, para pewarta yang bertugas \r\nmeliput kegiatan Gubernur DKI Jakarta itu tak bisa menahan tawa karena \r\nnadanya yang sedikit medok.\r\n</p>\r\n<p>\r\nTerhitung sudah dua kali Jokowi \r\nmelontarkan kata itu kepada wartawan.    Pertama, saat Jumat (18/1/2013)\r\nmalam lalu, ketika Jokowi meninjau perbaikan Tanggul Kanal Banjir Barat\r\n(KBB) di Latuharhary, Jakarta Pusat. Seharian raut muka Jokowi begitu \r\nserius dan tegang karena pengerjaan tanggul yang masih belum selesai, \r\nditambah hujan deras yang terus mengguyur Ibu Kota. Pendek kata, Jokowi \r\ntampak sangat suntuk dan senyum khasnya pun tak terpancar dari dirinya.\r\n</p>\r\n<p>\r\nSaat\r\nitu, Jokowi menghampiri wartawan yang sudah menunggunya di luar rel \r\nkereta api yang terputus. Lantas para wartawan berniat mencairkan \r\nsuasana dengan melontarkan pertanyaan-pertanyaan konyol kepada Jokowi, \r\nseperti &quot;Apabila tanggul selesai, ditandai oleh pemotongan pita di Sency\r\n(Senayan City)?&quot;. Mendengar pertanyaan itu, senyum yang hilang dari \r\nJokowi akhirnya muncul kembali.\r\n</p>\r\n<p>\r\nSeraya mengernyitkan dahinya, \r\nJokowi bertanya, &quot;Apa itu Sency?&quot;   Wartawan pun langsung menjelaskan \r\nkalau Sency itu adalah kependekan dari Senayan City. Mengetahui hal \r\ntersebut, Jokowi pun tertawa dan mengatakan kalau berbicara hendaknya \r\njangan disingkat-singkat. &quot;Oh, <em>kirain </em>saya sensitif itu maksudnya. <em>Mbok</em>, jangan disingkat-singkat, <em>tho</em>,&quot; kata Jokowi.\r\n</p>\r\n<p>\r\nPembicaraan itu pula yang membuat Jokowi melontarkan kata <em>ciyus</em> dan <em>miapah</em> kepada wartawan. &quot;Kalau <em>ciyus miapah </em>itu apa? Ha-ha-ha,&quot; kata Jokowi yang membuat suasana lokasi tersebut yang awalnya tegang menjadi ramai. \r\n</p>\r\n<p>\r\nKata <em>ciyus </em>kembali\r\ndiucapkan Jokowi, Selasa (22/1/2013) kemarin, saat berbincang dengan \r\nwartawan di Balaikota DKI. Bahasa gaul itu keluar kembali setelah ia \r\nditanya terkait kinerjanya 100 hari. \r\n</p>\r\n<p>\r\nSaat itu, Jokowi ditanya \r\nmasalah Jakarta apa yang membuat Jokowi pusing. Jokowi pun menjawab  tak\r\nada persoalan yang membuatnya pusing karena ia telah menghadapi  \r\nmasalah itu sejak ia memimpin Solo selama delapan tahun. Namun, ada satu\r\nmasa Jokowi mengaku tidak memiliki semangat. &quot;Yaitu kalau pas B sama \r\npas T. Apa  itu? Pokoknya pas B sama pas T. <em>Ciyuss</em>,&quot; canda Jokowi yang mengundang  tawa para wartawan. (sumber: kompas.com)\r\n</p>\r\n', '', 'Jumat', '2013-01-25', '01:11:01', '42jokowi.jpg', 21, 'metropolitan', 'Y');
+(653, 62, 'admin', 'Ketika "Ciyus" Terucap dari Mulut Jokowi', '', '', 'ketika-ciyus-terucap-dari-mulut-jokowi', 'N', 'Y', 'N', '<p>\r\nKata <em>ciyus</em> atau serius sering terdengar diucapkan anak-anak \r\nzaman sekarang yang sering dijuluki anak baru gede (ABG). Nah, ketika \r\nbahasa gaul itu diucapkan oleh Joko Widodo, para pewarta yang bertugas \r\nmeliput kegiatan Gubernur DKI Jakarta itu tak bisa menahan tawa karena \r\nnadanya yang sedikit medok.\r\n</p>\r\n<p>\r\nTerhitung sudah dua kali Jokowi \r\nmelontarkan kata itu kepada wartawan.    Pertama, saat Jumat (18/1/2013)\r\nmalam lalu, ketika Jokowi meninjau perbaikan Tanggul Kanal Banjir Barat\r\n(KBB) di Latuharhary, Jakarta Pusat. Seharian raut muka Jokowi begitu \r\nserius dan tegang karena pengerjaan tanggul yang masih belum selesai, \r\nditambah hujan deras yang terus mengguyur Ibu Kota. Pendek kata, Jokowi \r\ntampak sangat suntuk dan senyum khasnya pun tak terpancar dari dirinya.\r\n</p>\r\n<p>\r\nSaat\r\nitu, Jokowi menghampiri wartawan yang sudah menunggunya di luar rel \r\nkereta api yang terputus. Lantas para wartawan berniat mencairkan \r\nsuasana dengan melontarkan pertanyaan-pertanyaan konyol kepada Jokowi, \r\nseperti &quot;Apabila tanggul selesai, ditandai oleh pemotongan pita di Sency\r\n(Senayan City)?&quot;. Mendengar pertanyaan itu, senyum yang hilang dari \r\nJokowi akhirnya muncul kembali.\r\n</p>\r\n<p>\r\nSeraya mengernyitkan dahinya, \r\nJokowi bertanya, &quot;Apa itu Sency?&quot;   Wartawan pun langsung menjelaskan \r\nkalau Sency itu adalah kependekan dari Senayan City. Mengetahui hal \r\ntersebut, Jokowi pun tertawa dan mengatakan kalau berbicara hendaknya \r\njangan disingkat-singkat. &quot;Oh, <em>kirain </em>saya sensitif itu maksudnya. <em>Mbok</em>, jangan disingkat-singkat, <em>tho</em>,&quot; kata Jokowi.\r\n</p>\r\n<p>\r\nPembicaraan itu pula yang membuat Jokowi melontarkan kata <em>ciyus</em> dan <em>miapah</em> kepada wartawan. &quot;Kalau <em>ciyus miapah </em>itu apa? Ha-ha-ha,&quot; kata Jokowi yang membuat suasana lokasi tersebut yang awalnya tegang menjadi ramai. \r\n</p>\r\n<p>\r\nKata <em>ciyus </em>kembali\r\ndiucapkan Jokowi, Selasa (22/1/2013) kemarin, saat berbincang dengan \r\nwartawan di Balaikota DKI. Bahasa gaul itu keluar kembali setelah ia \r\nditanya terkait kinerjanya 100 hari. \r\n</p>\r\n<p>\r\nSaat itu, Jokowi ditanya \r\nmasalah Jakarta apa yang membuat Jokowi pusing. Jokowi pun menjawab  tak\r\nada persoalan yang membuatnya pusing karena ia telah menghadapi  \r\nmasalah itu sejak ia memimpin Solo selama delapan tahun. Namun, ada satu\r\nmasa Jokowi mengaku tidak memiliki semangat. &quot;Yaitu kalau pas B sama \r\npas T. Apa  itu? Pokoknya pas B sama pas T. <em>Ciyuss</em>,&quot; canda Jokowi yang mengundang  tawa para wartawan. (sumber: kompas.com)\r\n</p>\r\n', '', 'Jumat', '2013-01-25', '01:11:01', '42jokowi.jpg', 21, 'metropolitan', 'Y'),
+(654, 61, 'admin', 'Bahaya Mendiagnosis Penyakit Lewat Internet', '', '', 'bahaya-mendiagnosis-penyakit-lewat-internet', 'N', 'Y', 'N', '<p>\r\nApakah Anda mengunjungi &quot;dokter Google&quot; lebih sering dari dokter di \r\nklinik? Anda tidak sendiri. Dalam sebuah survei tahun lalu di Amerika \r\ndiketahui bahwa 35 persen responden mencocokkan gejala penyakitnya di \r\ninternet dan mendiagnosis dirinya sendiri.\r\n</p>\r\n<p>\r\nMasih menurut survei \r\nyang dilakukan The Pew Research Center&#39;s Internet &amp; American Life \r\nProject itu, sekitar 41 responden mengatakan diagnosis sendiri itu \r\nternyata dikonfirmasi kebenarannya oleh dokter. \r\n</p>\r\n<p>\r\nTetapi, sekitar \r\nsatu dari tiga responden mengaku tidak pernah pergi ke dokter untuk \r\nmencari opini kedua. Malahan, 18 persen responden mengatakan bahwa upaya\r\nmendiagnosis sendiri itu ternyata salah ketika ditanyakan ke dokter. \r\n</p>\r\n<p>\r\nMeski\r\nsurvei yang melibatkan 3.000 responden itu sebenarnya dilakukan untuk \r\nmengetahui siapa yang mencari informasi kesehatan secara <em>online</em>, tetapi para profesional medis merasa khawatir dengan tren itu.\r\n</p>\r\n<p>\r\n&quot;Rata-rata\r\ntiap orang mengunjungi empat situs lalu memutuskan ia menderita kanker \r\ndan akan segera meninggal. Padahal, di internet banyak informasi yang \r\nkeliru,&quot; kata Rahul K Khare, dokter unit gawat darurat dari Northwestern\r\nMemorial Hospital.\r\n</p>\r\n<p>\r\nMenurut Khare, ia sering menemukan pasien \r\nyang hidupnya menjadi penuh kecemasan karena mereka merasa menderita \r\npenyakit berat setelah mencocokkan gejala yang dirasakannya dengan \r\ninformasi di internet. (sumber: kompas.com)\r\n</p>\r\n', '', 'Jumat', '2013-01-25', '01:18:13', '60keluarga.jpg', 21, 'kesehatan', 'Y');
 INSERT INTO `berita` (`id_berita`, `id_kategori`, `username`, `judul`, `sub_judul`, `youtube`, `judul_seo`, `headline`, `aktif`, `utama`, `isi_berita`, `keterangan_gambar`, `hari`, `tanggal`, `jam`, `gambar`, `dibaca`, `tag`, `status`) VALUES
-(654, 61, 'admin', 'Bahaya Mendiagnosis Penyakit Lewat Internet', '', '', 'bahaya-mendiagnosis-penyakit-lewat-internet', 'N', 'Y', 'N', '<p>\r\nApakah Anda mengunjungi &quot;dokter Google&quot; lebih sering dari dokter di \r\nklinik? Anda tidak sendiri. Dalam sebuah survei tahun lalu di Amerika \r\ndiketahui bahwa 35 persen responden mencocokkan gejala penyakitnya di \r\ninternet dan mendiagnosis dirinya sendiri.\r\n</p>\r\n<p>\r\nMasih menurut survei \r\nyang dilakukan The Pew Research Center&#39;s Internet &amp; American Life \r\nProject itu, sekitar 41 responden mengatakan diagnosis sendiri itu \r\nternyata dikonfirmasi kebenarannya oleh dokter. \r\n</p>\r\n<p>\r\nTetapi, sekitar \r\nsatu dari tiga responden mengaku tidak pernah pergi ke dokter untuk \r\nmencari opini kedua. Malahan, 18 persen responden mengatakan bahwa upaya\r\nmendiagnosis sendiri itu ternyata salah ketika ditanyakan ke dokter. \r\n</p>\r\n<p>\r\nMeski\r\nsurvei yang melibatkan 3.000 responden itu sebenarnya dilakukan untuk \r\nmengetahui siapa yang mencari informasi kesehatan secara <em>online</em>, tetapi para profesional medis merasa khawatir dengan tren itu.\r\n</p>\r\n<p>\r\n&quot;Rata-rata\r\ntiap orang mengunjungi empat situs lalu memutuskan ia menderita kanker \r\ndan akan segera meninggal. Padahal, di internet banyak informasi yang \r\nkeliru,&quot; kata Rahul K Khare, dokter unit gawat darurat dari Northwestern\r\nMemorial Hospital.\r\n</p>\r\n<p>\r\nMenurut Khare, ia sering menemukan pasien \r\nyang hidupnya menjadi penuh kecemasan karena mereka merasa menderita \r\npenyakit berat setelah mencocokkan gejala yang dirasakannya dengan \r\ninformasi di internet. (sumber: kompas.com)\r\n</p>\r\n', '', 'Jumat', '2013-01-25', '01:18:13', '60keluarga.jpg', 21, 'kesehatan', 'Y'),
 (655, 63, 'admin', 'Microsoft Update Windows 8.2 Agustus?', '', '', 'microsoft-update-windows-82-pada-agustus', 'N', 'Y', 'Y', '<p><span>Kebocoran mengenai update OS Windows 8 yang kedua datang menghinggapi Microsoft. Windows 8.1 update 2 direncanakan diperbarui pada Agustus mendatang.</span><br /><br /><span>Melalui sebuah gambar yang diklaim otentik berasal dari Rusia, informasi dari dokumen itu hampir sama dengan rumor yang beredar selama ini.</span><br /><br /><span>Sementara itu, update untuk Threshold masih menjadi rumor dan belum diketahui kapan akan dilaksanakan. Microsoft belum mengkonfirmasi apapun terkait gambar bocornya&nbsp;</span><em>update</em><span>&nbsp;windows 8.1 update 2 tersebut seperti dilansir&nbsp;</span><em>Neowin</em><span>, Senin (21/7/2014).</span><br /><br /><span>Belum diketahui seperti apa detail fitur yang dihadirkan pada Windows 8.2. Sementara Windows 9 dikabarkan memiliki tampilan antarmuka Metro baru.</span><br /><br /><span>Selain itu, terdapat menu start baru dan aplikasi Metro dengan tampilan jendela yang disertakan dalam&nbsp;</span><em>update&nbsp;</em><span>tersebut. Konon, Microsoft sedang mempertimbangkan membuat versi gratis dari Windows 9.</span><br /><br /><span>Informasi yang beredar juga menyebutkan bahwa Microsoft sedang bekerja pada Windows Cloud. Menurut WZor, ada tim di Microsoft yang bekerja pada prototype sistem operasi, di mana pengguna bisa mengunduh gratis dan menambahkan fungsionalitas melalui sistem berlangganan.</span></p>', '', 'Senin', '2014-07-21', '21:22:52', '55Windows-8.2.png', 133, 'internasional,teknologi', 'Y'),
-(656, 63, 'admin', 'Usai Bertempur, Tentara Israel Hilang di Gaza', 'Hal ini terjadi usai terjadinya pertempuran mematikan yang terjadi di Jalur Gaza pada akhir pekan lalu.\n', 'http://www.youtube.com/embed/hkzpLJjZQbA', 'usai-bertempur-tentara-israel-hilang-di-gaza', 'Y', 'Y', 'Y', '<p>\r\n<strong>YERUSALEMÂ </strong><span>- Seorang tentara Israel dilaporkan menghilang di Jalur Gaza. Hal ini terjadi usai terjadinya pertempuran mematikan yang terjadi di Jalur Gaza pada akhir pekan lalu.</span><br />\r\n<br />\r\n<span>MelansirÂ </span><em>Boston Herald</em><span>, Selasa (22/7/2014), pejabat pertahanan Israel mengatakan, tentaranya hilang usai pertempuran mematikan di Gaza terjadi pada pekan lalu. Namun, tidak jelas apakah tentara tersebut masih hidup atau sudah tewas.</span><br />\r\n<br />\r\n<span>Konflik yang terjadi antara Israel dan Hamas sejauh ini sudah menyebabkan sekira 25 tentara Israel tewas dan ratusan warga Palestina. Sebagian besar korban warga Palestina adalah anak-anak.</span><br />\r\n<br />\r\n<span>Memanasnya situasi itu membuat sejumlah desakan gencatan berdatangan dari sejumlah negara dan organisasi internasional.</span><br />\r\n<br />\r\n<span>Sebelumnya, Sekretaris Jendral Perserikatan Bangsa - Bangsa (PBB) Ban Ki-moon dan Menteri Luar Negeri Amerika Serikat (AS) John Kerry melakukan pertemuan di Kairo, Mesir. Pertemuan di bertujuan untuk mendesak agar konflik yang terjadi di Gaza segera dihentikan.</span><br />\r\n<br />\r\n<span>Mengingat agresi yang militer yang dilancarkan Israel merupakan pelanggaran hukum humaniter internasional. Menyusul banyak warga sipil yang telah menjadi korban akibat pertempuran yang dilakukan Israel dan Hamas.</span> <br />\r\n<br />\r\n<span>Sebelumnya, Sekretaris Jendral Perserikatan Bangsa - Bangsa (PBB) Ban Ki-moon dan Menteri Luar Negeri Amerika Serikat (AS) John Kerry melakukan pertemuan di Kairo, Mesir. Pertemuan di bertujuan untuk mendesak agar konflik yang terjadi di Gaza segera dihentikan.</span><br />\r\n<br />\r\nMengingat agresi yang militer yang dilancarkan Israel merupakan pelanggaran hukum humaniter internasional. Menyusul banyak warga sipil yang telah menjadi korban akibat pertempuran yang dilakukan Israele dan Hamas.\r\n</p>\r\n<p>\r\n<span>Komentar paling pedas Khamenei adalah Iran tidak pernah mengenal Israel. Negara ini juga secara terang-terangan mendukung Hamas. Hamas sendiri sudah dimasukan ke dalam daftar hitam terorisme oleh Israel.</span><br />\r\n<br />\r\n<span>Selain itu, Khamenei dan beberapa pemimpin Iran berjanji akan menghilangkan Israel dari peta dunia. Bahkan, beberapa pekan lalu, Khamenei menyatakan peristiwa pembantaian warga Yahudi oleh Nazi satu abad lalu, hanyalah sebuah ilusi yang tak nyata.</span>\r\n</p>\r\n<p>\r\n<span><span>Komentar paling pedas Khamenei adalah Iran tidak pernah mengenal Israel. Negara ini juga secara terang-terangan mendukung Hamas. Hamas sendiri sudah dimasukan ke dalam daftar hitam terorisme oleh Israel.</span><br />\r\n<br />\r\n<span>Selain itu, Khamenei dan beberapa pemimpin Iran berjanji akan menghilangkan Israel dari peta dunia. Bahkan, beberapa pekan lalu, Khamenei menyatakan peristiwa pembantaian warga Yahudi oleh Nazi satu abad lalu, hanyalah sebuah ilusi yang tak nyata.</span></span>\r\n</p>\r\n', 'Tentara Israel Bersimbah Darah', 'Rabu', '2014-07-23', '14:28:02', '56tentara_israel_hilang_di_palestina.jpg', 311, 'hukum,internasional,israel,palestina,teknologi,yahudi', 'N'),
 (657, 62, 'admin', 'Unjuk Rasa Anti-Yahudi Dikecam Eropa', '', '', 'unjuk-rasa-antiyahudi-dikecam-eropa', 'N', 'Y', 'Y', '<p><strong>PARIS&nbsp;</strong><span>- Demo anti-Yahudi yang menyeruak di dunia mendapat kecaman dari negara besar di Eropa. Kecaman tersebut datang dari Jerman, Prancis dan Italia.</span><br /><br /><span>Melalui menteri luar negerinya, masing-masing negara mengutuk aksi unjuk rasa yang sering berujung dengan kericuhan dan tindak kekerasan.</span><br /><br /><span>"Hasutan, permusuhan, serangan terhadap orang-orang Yahudi tidak memiliki tempat di masyarakat kami,"&nbsp; sebut pernyataan gabungan tiga Menlu tersebut, seperti dikutip dari&nbsp;</span><em>DNA</em><span>, Rabu (23/7/2014).</span><br /><br /><span>Tidak bisa dipungkiri sejak agresi Israel dilancarkan, protes besar terjadi di beberapa negara. Di Prancis, unjuk rasa kelompok Pro-Palestina diakhiri pembakaran di sejumlah objek di depan toko yang dimiliki warga Yahudi.</span><br /><br /><span>Bahkan di negara ini, akibat memanasnya kondisi di Gaza, ketegangan antara kelompok Pro-Palestina dan warga Yahudi di Prancis acap kali terjadi. Prancis sendiri merupakan negara dengan populasi warga Yahudi terbanyak di Eropa.</span><br /><br /><span>Tidak hanya di Prancis, kondisi di Gaza pun jauh lebih buruk. Akibat pertempuran Hamas-Israel jumlah korban, khususnya dari warga sipil Palestina mencapai hampir 600 orang.</span></p>', '', 'Rabu', '2014-07-23', '14:37:32', '32israel_murders.jpg', 32, 'internasional,israel,palestina,yahudi', 'Y'),
 (658, 62, 'admin', 'Inggris Bela Serangan Roket Hamas', '', '', 'anggota-parlemen-inggris-bela-serangan-roket-hamas', 'N', 'Y', 'Y', '<p>LONDON - Seorang anggota Parlemen Inggris membela serangan roket yang dilesakkan oleh Hamas ke arah Israel. Namun pembelaannya itu diganjar dengan sanksi indisipliner terhadapnya.</p>\r\n<p>Anggota Parlemen Inggris dari Partai Liberal Demokrat, David Ward, lewat akun Twitter miliknya menulis pernyataan yang membela serangan roket dari Hamas.</p>\r\n<p>"The big question is - if I lived in #Gaza would I fire a rocket? - probably yes. ''Pertanyaan besar saat ini, apabila saya tinggal di #Gaza apakah saya akan menembakkan roket? mungkin saja iya''," tulis Ward dalam akun pribadinya, seperti dikutip The Guardian, Rabu (23/7/2014).</p>\r\n<p>Pihak Partai Liberal Demokrat pun langsung melontarkan kecaman atas tulisan dari Ward. Juru bicara partai mengatakan bahwa pihak partainya akan menerapkan sanksi terhadap Ward.</p>\r\n<p>Sementara pihak Partai Konservatif yang menguasai koalisi pemerintahan bersama Liberal Demokrat menyatakan Ward harus menarik komentarnya.</p>\r\n<p>"Tidak seharusnya seorang anggota parlemen menulis tindakan yang memicu kekerasan. Tindakannya tidak bertanggung jawab," ucap pihak Konservatif.</p>\r\n<p>Ini bukan pertama kalinya Ward mengecam tindakan Israel. Pada Juli 2013 lalu, Ward menyebut pihak Zionis diambang kekalahan dalam perang. Dirinya pun mempertanyakan sampai kapan negara apartheid seperti Israel bisa bertahan.</p>', '', 'Rabu', '2014-07-23', '14:49:50', '75tentara _hamas_palestina.jpg', 34, 'hukum,internasional,israel,palestina,yahudi', 'Y'),
 (659, 63, 'admin', 'Target-Target Serangan Israel di Gaza', '', '', 'targettarget-serangan-israel-di-gaza', 'N', 'Y', 'Y', '<p><strong>GAZA</strong><span>&nbsp;- Israel makin gencar melakukan serangan ke Gaza, baik melalui udara maupun darat. Masjid menjadi salah satu target serangan dari Negara Yahudi itu.</span><br /><br /><span>Sekira 15 warga Palestina dilaporkan tewas dan 20 lainnya dalam serangan udara Isarel ke sebuah masjid di Kota Gaza pada Sabtu 19 Juli 2014 lalu. Masjid itu terletak tidak jauh dari rumah milik Komandan Polisi Gaza.</span><br /><br /><span>Rudal-rudal dari Israel menghancurkan sebagian dari bangunan masjid. Alquran yang berada di dalam masjid pun tampak rusak akibat serangan. Demikian diberitakan&nbsp;</span><em>Associated Press</em><span>, Rabu (23/7/2014).</span><br /><br /><span>Selain itu, serangan Israel juga diarahkan ke rumah sakit yang berada di Gaza. Blokade yang dilakukan oleh Israel makin membuat rumah sakit sulit untuk beroperasi.</span><br /><br /><span>Kementerian Kesehatan Gaza menjelaskan, blokade telah memperburuk kualitas hidup warga yang terluka akibat konflik ini. 136 obat yang diperlukan sudah makin menipis dan diperkirakan akan habis dalam waktu beberapa hari ke depan.</span><br /><br /><span>Kantung kekuatan Hamas menjadi target penting yang diincar oleh Israel. Namun serangan terhadap basis kekuatan Hamas tersebut justru lebih sering menimpa warga sipil.</span><br /><br /><span>Hingga saat ini lebih dari 630 warga Palestina dilaporkan tewas dalam serangan yang dilakukan Israel ke Gaza. Sementara 30 warga Israel dilakukan turut tewas dalam pertempuran yang sudah berlangsung sekira 15 hari tersebut.</span></p>', '', 'Rabu', '2014-07-23', '15:01:51', '63tentara-israel.jpg', 16, 'israel,palestina,yahudi', 'Y'),
@@ -227,11 +226,7 @@ INSERT INTO `berita` (`id_berita`, `id_kategori`, `username`, `judul`, `sub_judu
 (667, 62, 'admin', 'Apple iWatch Bakal Dirilis Bulan Depan', '', '', 'apple-iwatch-bakal-dirilis-bulan-depan', 'N', 'Y', 'N', '<p>iWatch yang sudah lama dinanti-nanti oleh banyak pihak bakal secara resmi diluncurkan. Salah satu orang yang punya reputasi bagus dalam membocorkan informasi produk Apple, John Gruber, menyatakan bahwa iWatch akan direlease bulan depan.</p>\r\n<p>Peryataan seorang publisher asal Philadelphia ini memang dipercaya banyak orang sebagai kebenaran. Pasalnya, Apple akan menggelar event pada 9 September mendatang. Kemungkinan besar, iPhone 6 sekaligus iWatch bakal secara resmi direlease pada saat yang bersamaan saat itu juga. Keihatannya, Apple benar-benar sibuk untuk menyiapkan dua produk ini mengingat persaingann yang semakin berat. Dengan meluncurkan dua produk sekaligus, diharapkan bakal mendobrak pasar dan menciptakan momentum positif.</p>\r\n<p>Smartwatch ini diprediksi akan direlease dengan inovasi yang &ldquo;out of the box&rdquo; cirikhas Apple. iWatch diberitakan bakal menggunakan beberapa sensor yang dapat metrik-metrik kesehatan, seperti tingkat tekanan darah, tingkat denyut jantung atau bahkan tingkat gula darah si pengguna. Meski begitu, masih menjadi pernyataan bagaimana kualitas sistem internet yang ada pada iWatch.</p>', '', 'Senin', '2014-08-11', '01:04:24', '74apple-iwatch.jpg', 21, 'teknologi', 'Y'),
 (670, 62, 'admin', '7 Efek Buruk dari Konsumsi Obat Tidur', '', '', '7-efek-buruk-dari-konsumsi-obat-tidur', 'N', 'Y', 'N', '<p>Konsumsi obat tidur kerap dipilih bagi mereka yang mengalami kesulitan tidur atau insomnia. Mereka berpikir bahwa obat tidur mampu memberikan apa yang diinginkan, yaitu tidur dengan lelap. Namun kenyataannya, obat tidur tidak dapat mengobati kondisi tersebut, bahkan hanya memperburuk masalah saja.&nbsp;<br /><br />Di bawah ini beberapa jenis masalah terkait dengan pil tidur dan penggunaan yang terlalu berlebihan, seperti dikutip&nbsp;<em>Health Me Up</em>, Senin (11/8/2014):</p>\r\n<p>1. Efek samping dari obat tidur dapat membuat orang yang meminumnya merasa lupa, merasa pusing, bingung, dan sulit untuk berpikir keesokan harinya.</p>\r\n<p>2. Berlebihan dalam mengonsumsinya, akan memaksa Anda untuk meningkatkan asupannya agar Anda benar-benar tertidur. Sudah jelas, akan menimbulkan efek samping yang lebih besar.</p>\r\n<p>3. Terlalu sering mengonsumsi obat tidur akan membuat Anda ketergantungan yang berkepanjangan. Tidur lelap secara alami, tampaknya hanya mimpi yang jauh dari angan, yang hanya akan membuat Anda mengalami sulit tidur dan kerap merasa cemas.</p>\r\n<p>4. Jika Anda berhenti mengonsumsinya, secara perlahan tubuh akan menggigil, berkeringat, dan mual.</p>\r\n<p>5. Anda harus tahu bahwa obat tidur akan memengaruhi proses dari obat jenis lainnya yang sedang Anda konsumsi. Apakah itu obat pusing, demam, dan lain-lain.</p>\r\n<p>6. Kondisi akan semakin parah, saat Anda menggabungkannya dengan obat penghilang rasa sakit atau obat penenang.</p>\r\n<p>7. Anda harus menyadari bahwa masalah tidur mungkin menjadi pemicu terjadinya beberapa penyakit kesehatan mental, yang mendasari terjadinya gangguan tidur. Dan obat tidak selalu menjadi pilihan yang tepat.</p>', '', 'Senin', '2014-08-11', '09:52:26', '71Obat_Tidur_.jpg', 23, 'kesehatan', 'Y'),
 (685, 62, 'admin', 'Paket Wisata ke Seoul Rp 5,2 Juta Siap Memanjakan Liburan Anda', '', '', 'paket-wisata-ke-seoul-rp-52-juta-siap-memanjakan-liburan-anda', 'N', 'N', 'Y', '<p>Seoul, kota metropolitan yang menjadi jantung Korea Selatan telah menjadi daya tarik tersendiri bagi wisatawan mancanegara termasuk wisatawan Indonesia. Bagaimana tidak?</p>\r\n\r\n<p>Semua tren mulai dari musik, busana, hingga teknologi dimiliki negara ini. Wisatawan Indonesia pun tidak mau ketinggalan untuk sesekali berkesempatan mengunjungi kota yang super modern.</p>\r\n\r\n<p>&quot;Kalau Korea kan dibagi menjadi dua bagian kan. Sudah pastikan fokus all spotnya kita ambil di Korea Selatan mulai dari Seoul, Everland, Korean Demilitarized Zone (DMZ), sampai Busan dengan kecantikannya. Pokoknya kita semuanya lengkap,&quot; kata Dian selaku Marketing Communication Panorama JTB Tours di Plenary Hall, Jakarta Convention Center, Jumat (22/9/2017).</p>\r\n\r\n<p>Bagi Anda yang tidak ingin melewatkan liburan ke Korea, Anda dapat menghadiri rangkaian acara travel fair oleh maskapai Garuda Indonesia yang diadakan serentak di beberapa kota di Indonesia pada tanggal 22-24 September 2017.</p>\r\n\r\n<p>Garuda Indonesia Travel Fair (GTF) Fase II yang dihelat di JCC menghadirkan berbagai macam agen travel yang menawarkan ratusan varian tiket promo dan paket wisata ke seluruh penjuru dunia.<br />\r\nUntuk promo paket wisata ke Seoul, Anda dapat menemukan berbagai macam varian promo yang dapat langsung membawa Anda ke Korea.</p>\r\n\r\n<p>Dengan merogoh kocek Rp 5.290.000 Anda sudah dapat menikmati paket wisata selama 5 hari menyusuri kota Seoul hingga Gunung Sorak dan Everland.</p>\r\n\r\n<p>Fasilitas mulai dari tiket pesawat, hotel, tour guide hingga konsumsi sudah tersedia secara lengkap sehingga pengunjung dapat dimanjakan sepenuhnya dengan keindahan kota Seoul.</p>\r\n\r\n<p>Selain itu, untuk promo tiket penerbangan pesawat,&nbsp;GATF 2017&nbsp;Fase II juga menyediakan promo spesial sebesar Rp 4.661.895 untuk tiket penerbangan pulang-pergi.</p>\r\n\r\n<p>Korea menjadi destinasi wisata yang tepat untuk para pencari suasana dan tantangan baru. Maka itu, saatnya bagi Anda untuk menjadwalkan liburan Anda pergi meluncur ke negeri kimchi!</p>\r\n', '', 'Rabu', '2017-09-27', '14:58:58', 'seoul-korea2.jpg', 42, 'wisata', 'Y'),
-(686, 63, 'admin', 'Dijual Mahal, Samsung Galaxy Note 8 Lebih Laku dari Galaxy S8', '', '', 'dijual-mahal-samsung-galaxy-note-8-lebih-laku-dari-galaxy-s8', 'N', 'N', 'Y', '<p>Samsung membanderol Galaxy Note 8 dengan harga lebih tinggi dari Galaxy S8. Kendati demikian, perusahaan mengklaim bahwa Galaxy Note terbaru itu justru lebih laris.</p>\r\n\r\n<p>Hal ini diungkap oleh IT &amp; Mobile VP Samsung Electronics Indonesia, So Djien Gie, saat bincang dengan media usai acara Peluncuran Samsung Galaxy Note 8 di Jakarta, Senin (25/9/2017).</p>\r\n\r\n<p>So Djien Gie enggan mengungkap dengan detail angka penjualan Samsung Galaxy Note 8. Namun dia memastikan bahwa smartphone itu merupakan yang paling laris dibandingkan berbagai jagoan Samsung lain.</p>\r\n\r\n<p>&ldquo;Galaxy Note 8 ini adalah yang paling laris. Saya tidak bisa menyebut detailnya, tapi Anda bisa bayangkan. Pemesanannya saja lebih laris dibandingkan Galaxy S8,&rdquo; katanya.</p>\r\n\r\n<p>&ldquo;Dalam waktu tiga hari kami buka pemesanan Galaxy Note 8, jumlah yang dipesan sudah sama atau melebihi Galaxy S8,&rdquo; imbuhnya.</p>\r\n\r\n<p>Harga Samsung Galaxy Note 8 di Indonesia adalah Rp 13 juta. Sementara itu Samsung Galaxy S8 dan S8 Plus dibanderol lebih murah, yakni Rp 10,5 juta dan 12 juta.</p>\r\n\r\n<p>Menurut Soo Djien Gie, Samsung Galaxy Note 8 laris karena memang banyak penggemar setia yang sudah menunggu-nunggu. Dia juga mengatakan bahwa tipe baru itu dibekali dengan banyak pembaruan dibandingkan tipe Note lain.</p>\r\n\r\n<p>Beberapa di antaranya adalah layar sinematik tanpa bezel dan memiliki lengkungan di kedua tepinya, kamera ganda dengan dual optical image stabilizer (OIS), serta S-Pen dan mendapatkan perbaikan fitur.</p>\r\n\r\n<p>Soal spesifikasi lainnya, Samsung Galaxy Note 8 dibekali dengan layar Super AMOLED berukuran 6,3 inci (2960 x 1440 piksel). Otak pemrosesannya berupa chipset Exynos 8895. Samsung memadukannya dengan RAM 6 GB serta memori internal 64 GB yang disertai slot microSD.</p>\r\n\r\n<p><br />\r\nHal menarik lainnya dari smartphone ini merupakan flagship perdananya yang menggunakan kamera ganda dan sejumlah teknologi pendukung lainnya.</p>\r\n\r\n<p>Dua kamera belakang Galaxy Note 8 menggunakan sensor 12 megapixel, dengan bukaan f/1.7 untuk kamera normal dan f/2.4 untuk kamera dengan lensa telenya. Sedangkan kamera depan 8 megapixel.</p>\r\n\r\n<p>Kemampuan baru S-Pen sendiri antara lain ujungnya yang lebih kecil dan tajam, jumlah Air Command yang bertambah dari enam aplikasi menjadi 10 aplikasi, serta fitur anti air. Adapun baterainya berkapasitas 3.300 mAh.</p>\r\n', '', 'Minggu', '2018-12-30', '16:04:44', 'samsung_note_8.jpg', 6, 'teknologi', 'Y'),
-(687, 63, 'admin', 'Usai Juara di Jepang, Ini Target Kevin/Marcus Selanjutnya', '', '', 'usai-juara-di-jepang-ini-target-kevinmarcus-selanjutnya', 'Y', 'N', 'Y', '<p>Tokyo - Kevin Sanjaya Sukamuljo/Marcus Fernaldi Gideon baru saja menambah koleksi gelar juaranya di Jepang Terbuka Super Series 2017. Mereka kini mengincar hasil yang sama di turnamen berikutnya.</p>\r\n\r\n<p>Kevin/Marcus keluar sebagai juara Jepang Terbuka Super Series usai mengalahkan pasangan tuan rumah Takuto Inoue/Yuki Kaneko dalam laga final yang digelar di Tokyo Metropolitan Gymnasium, Minggu (24/9), dengan skor 21-12, 21-15.</p>\r\n\r\n<p>Bagi Kevin/Marcus, itu adalah gelar keempat yang mereka raih di 2017. Di awal tahun, mereka mengukir prestasi gemilang dengan menjuarai tiga turnamen beruntun yaitu All England, India Terbuka Super Series, dan Malaysia Terbuka Super Series Premier.</p>\r\n\r\n<p>Namun Kevin/Marcus juga sempat mengalami penurunan. Cedera yang dialami Kevin membuat pasangan ganda putra terbaik Indonesia itu tak meraih hasil maksimal di Indonesia Terbuka Super Series Premier dan Kejuaraan Dunia 2017.</p>\r\n\r\n<p>Kevin/Marcus kemudian kembali ke trek dengan mencapai final di Korea Terbuka Super Series 2017 pada pekan lalu kendati harus puas sebagai runner-up. Kevin/Marcus akhirnya kembali naik podium tertinggi di Jepang Terbuka Super Series.</p>\r\n\r\n<p>Usai jadi juara di Jepang, Kevin/Marcus bersiap menghadapi turnamen berikutnya yakni Denmark Terbuka Super Series Premier (17-22 Oktober) dan Prancis Terbuka Super Series (24-29 Oktober). Mereka menargetkan hasil maksimal di kedua turnamen tersebut.</p>\r\n\r\n<p>&quot;Target kedepannya ada Denmark Open dan French Open, itu target terdekat kami,&quot; Marcus mengatakan kepada badmintonindonesia.org.</p>\r\n\r\n<p>&quot;Kalau target besar lainnya tentu masih banyak yang ingin kami raih. Yang pasti saya ingin memberikan yang baik di masa depan,&quot; Kevin menambahkan.</p>\r\n', '', 'Minggu', '2018-12-30', '16:04:34', 'kevinmarcus.jpg', 12, 'olahraga', 'Y'),
-(688, 63, 'admin', 'Solidaritas Tanpa Batas untuk Rohingya', '', '', 'solidaritas-tanpa-batas-untuk-rohingya', 'Y', 'Y', 'N', '<p>Kekerasan pecah setelah bentrokan antara kelompok bersenjata dan militer Myanmar akhir Agustus lalu menyebabkan ratusan ribu pengungsi Rohingya melarikan diri ke Bangladesh serta sejumlah negara lainnya. Selain itu, krisis kemanusiaan ini diperkirakan telah menelan 1.000 jiwa.</p>\r\n\r\n<p>Mendengar etnis minoritas Rohingya mendapatkan persekusi di Rakhine Myanmar, kelompok-kelompok Islam di Indonesia geram dan menggalang aksi solidaritas untuk etnis muslim tersebut. Massa menggelar aksi solidaritas untuk Rohingya di Jakarta, Rabu (6/9). Dalam aksinya mereka mengutuk keras pembantaian umat muslim Rohingnya di Myanmar.</p>\r\n\r\n<p>&nbsp;</p>\r\n', '', 'Minggu', '2018-12-30', '16:04:28', 'save-rohingya.jpg', 13, 'internasional', 'Y'),
-(702, 61, 'admin', 'RRQ Juara M99 Asmaul Husna', 'Sanz adalah kunci permainan ONIC', 'http://youtube/rrq', 'rrq-juara-m99-asmaul-husna', 'Y', 'N', 'Y', '<p><strong>AKU KAYAA</strong></p>', 'thanks', 'Monday', '2024-08-18', '03:30:25', 'RRQ Juara M99 Asmaul Husna_SvY5BrfP5k0pRjvC9S99dwF50.png', 1, 'hiburan,nasional,internasional', 'Y'),
-(701, 61, 'admin', 'Dugong Terdampar', 'Sangat Tragis', 'https://apaaja.com', 'dugong-terdampar', 'N', 'Y', 'N', '<p>CUKUP MENGENASKAN KEADAANNYA</p>', 'keterangan gambar', 'Saturday', '2024-08-17', '09:30:28', 'Dugong Terdampar_ghSE2DrzOKki0nFxvfhW6LBlO.png', 1, 'hiburan,metropolitan,nasional', 'Y');
+(686, 63, 'admin', 'Dijual Mahal, Samsung Galaxy Note 8 Lebih Laku dari Galaxy S8', '', '', 'dijual-mahal-samsung-galaxy-note-8-lebih-laku-dari-galaxy-s8', 'N', 'N', 'Y', '<p>Samsung membanderol Galaxy Note 8 dengan harga lebih tinggi dari Galaxy S8. Kendati demikian, perusahaan mengklaim bahwa Galaxy Note terbaru itu justru lebih laris.</p>\r\n\r\n<p>Hal ini diungkap oleh IT &amp; Mobile VP Samsung Electronics Indonesia, So Djien Gie, saat bincang dengan media usai acara Peluncuran Samsung Galaxy Note 8 di Jakarta, Senin (25/9/2017).</p>\r\n\r\n<p>So Djien Gie enggan mengungkap dengan detail angka penjualan Samsung Galaxy Note 8. Namun dia memastikan bahwa smartphone itu merupakan yang paling laris dibandingkan berbagai jagoan Samsung lain.</p>\r\n\r\n<p>&ldquo;Galaxy Note 8 ini adalah yang paling laris. Saya tidak bisa menyebut detailnya, tapi Anda bisa bayangkan. Pemesanannya saja lebih laris dibandingkan Galaxy S8,&rdquo; katanya.</p>\r\n\r\n<p>&ldquo;Dalam waktu tiga hari kami buka pemesanan Galaxy Note 8, jumlah yang dipesan sudah sama atau melebihi Galaxy S8,&rdquo; imbuhnya.</p>\r\n\r\n<p>Harga Samsung Galaxy Note 8 di Indonesia adalah Rp 13 juta. Sementara itu Samsung Galaxy S8 dan S8 Plus dibanderol lebih murah, yakni Rp 10,5 juta dan 12 juta.</p>\r\n\r\n<p>Menurut Soo Djien Gie, Samsung Galaxy Note 8 laris karena memang banyak penggemar setia yang sudah menunggu-nunggu. Dia juga mengatakan bahwa tipe baru itu dibekali dengan banyak pembaruan dibandingkan tipe Note lain.</p>\r\n\r\n<p>Beberapa di antaranya adalah layar sinematik tanpa bezel dan memiliki lengkungan di kedua tepinya, kamera ganda dengan dual optical image stabilizer (OIS), serta S-Pen dan mendapatkan perbaikan fitur.</p>\r\n\r\n<p>Soal spesifikasi lainnya, Samsung Galaxy Note 8 dibekali dengan layar Super AMOLED berukuran 6,3 inci (2960 x 1440 piksel). Otak pemrosesannya berupa chipset Exynos 8895. Samsung memadukannya dengan RAM 6 GB serta memori internal 64 GB yang disertai slot microSD.</p>\r\n\r\n<p><br />\r\nHal menarik lainnya dari smartphone ini merupakan flagship perdananya yang menggunakan kamera ganda dan sejumlah teknologi pendukung lainnya.</p>\r\n\r\n<p>Dua kamera belakang Galaxy Note 8 menggunakan sensor 12 megapixel, dengan bukaan f/1.7 untuk kamera normal dan f/2.4 untuk kamera dengan lensa telenya. Sedangkan kamera depan 8 megapixel.</p>\r\n\r\n<p>Kemampuan baru S-Pen sendiri antara lain ujungnya yang lebih kecil dan tajam, jumlah Air Command yang bertambah dari enam aplikasi menjadi 10 aplikasi, serta fitur anti air. Adapun baterainya berkapasitas 3.300 mAh.</p>\r\n', '', 'Minggu', '2018-12-30', '16:04:44', 'samsung_note_8.jpg', 6, 'teknologi', 'Y');
 
 -- --------------------------------------------------------
 
@@ -240,11 +235,19 @@ INSERT INTO `berita` (`id_berita`, `id_kategori`, `username`, `judul`, `sub_judu
 --
 
 CREATE TABLE IF NOT EXISTS `cache` (
-  `key` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `value` mediumtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `key` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `value` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `expiration` int NOT NULL,
   PRIMARY KEY (`key`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `cache`
+--
+
+INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
+('admin@gmail.com|127.0.0.1', 'i:1;', 1725505740),
+('admin@gmail.com|127.0.0.1:timer', 'i:1725505740;', 1725505740);
 
 -- --------------------------------------------------------
 
@@ -253,8 +256,8 @@ CREATE TABLE IF NOT EXISTS `cache` (
 --
 
 CREATE TABLE IF NOT EXISTS `cache_locks` (
-  `key` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `owner` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `key` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `owner` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `expiration` int NOT NULL,
   PRIMARY KEY (`key`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -272,7 +275,7 @@ CREATE TABLE IF NOT EXISTS `download` (
   `tgl_posting` date NOT NULL,
   `hits` int NOT NULL,
   PRIMARY KEY (`id_download`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=33 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=38 ;
 
 --
 -- Dumping data for table `download`
@@ -292,12 +295,15 @@ INSERT INTO `download` (`id_download`, `judul`, `nama_file`, `tgl_posting`, `hit
 (21, 'Penyusunan PAGU Indikatif Tahun Anggaran 2015', 'Contoh_File_Download_1.txt', '2014-09-23', 57),
 (22, 'Revisi Tata Cara Restore Backup SAKPA13 Audited', 'Contoh_File_Download_1.txt', '2014-09-23', 44),
 (23, 'Penyusunan RKAKL Alokasi Anggaran DIPA (04)', 'Contoh_File_Download_1.txt', '2014-09-23', 24),
-(24, 'Tindaklanjut Temuan Pemeriksaan BPK RI', 'Contoh_File_Download_1.txt', '2014-09-23', 12),
+(24, 'Tindaklanjut Temuan Pemeriksaan BPK RI', 'Contoh_File_Download_1.txt', '2014-09-23', 13),
 (25, 'Verifikasi Kewajaran Nilai Tanah SIMAK-BMN', 'Contoh_File_Download_1.txt', '2014-09-23', 3),
-(26, 'Instruksi Ketua Umum IPASPI Pusat (new)', 'Contoh_File_Download_1.txt', '2014-09-23', 24),
-(27, 'Relaas Perkara No.0081/Pdt.G/2013/PA.Stg', 'Contoh_File_Download_1.txt', '2014-09-23', 7),
+(26, 'Instruksi Ketua Umum IPASPI Pusat (new)', 'Contoh_File_Download_1.txt', '2014-09-23', 25),
+(27, 'Relaas Perkara No.0081/Pdt.G/2013/PA.Stg', 'Contoh_File_Download_1.txt', '2014-09-23', 9),
 (31, 'sdfdfsdf', 'lndex.php', '2017-01-27', 8),
-(32, 'xxxx', 'lndex.php', '2017-10-11', 0);
+(32, 'xxxx', 'lndex.php', '2017-10-11', 5),
+(33, 'sidreywu', 'sidreywu_u33pyo1KxlRe0zD4kjRWwn6fm.txt', '2024-08-27', 1),
+(34, 'apa aja lah semoga bisa', 'apa aja lah semoga bisa_7oV81pcYO3RwoQj3MRdQtFjAK.png', '2024-08-27', 1),
+(35, 'Percobaan', 'ASLIICAPTCHA.png', '2024-08-27', 1);
 
 -- --------------------------------------------------------
 
@@ -307,11 +313,11 @@ INSERT INTO `download` (`id_download`, `judul`, `nama_file`, `tgl_posting`, `hit
 
 CREATE TABLE IF NOT EXISTS `failed_jobs` (
   `id` bigint unsigned NOT NULL AUTO_INCREMENT,
-  `uuid` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `connection` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `queue` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `payload` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
-  `exception` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `uuid` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `connection` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `queue` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `payload` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `exception` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `failed_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `failed_jobs_uuid_unique` (`uuid`)
@@ -332,7 +338,7 @@ CREATE TABLE IF NOT EXISTS `gallery` (
   `keterangan` text CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   `gbr_gallery` varchar(100) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   PRIMARY KEY (`id_gallery`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=259 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=263 ;
 
 --
 -- Dumping data for table `gallery`
@@ -364,7 +370,9 @@ INSERT INTO `gallery` (`id_gallery`, `id_album`, `username`, `jdl_gallery`, `gal
 (218, 28, 'admin', 'Seorang Wanita Pedagang', 'seorang-wanita-pedagang', 'Seorang wanita sedang menunggu kios aksesorisnya.\r\n', '7asemka6.jpeg'),
 (217, 28, 'admin', 'Suasana Pasar', 'suasana-pasar', 'Suasana di Pasar Asemka yang senantiasa ramai. Dan pengunjung bebas memilih berbagai jenis aksesoris.\r\n', '22asemka5.jpeg'),
 (216, 28, 'admin', 'Pedagang', 'pedagang', 'Seorang pedagang sedang membungkus souvenir penikahan yang akan dijual ataupun pesanan dari pelanggangnnya.\r\n', '84asemka2.jpg'),
-(254, 1, 'admin', 'Screenshot 1 ', 'screenshot-1-', 'Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 ', '911.jpg');
+(254, 1, 'admin', 'Screenshot 1 ', 'screenshot-1-', 'Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 Screenshot 1 ', '911.jpg'),
+(259, 31, 'admin', 'Minecraft Survival Indonesia', 'minecraft-survival-indonesia', '<p><strong>WOI BISAAA</strong></p>', 'Minecraft Survival Indonesia_2M7E22WulLJNiVU26v7huF6OA.png'),
+(261, 30, 'admin', 'galeriku', 'galeriku', '<p>bisa yu</p>', '1');
 
 -- --------------------------------------------------------
 
@@ -384,7 +392,7 @@ CREATE TABLE IF NOT EXISTS `halamanstatis` (
   `jam` time NOT NULL,
   `hari` varchar(20) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   PRIMARY KEY (`id_halaman`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=66 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=74 ;
 
 --
 -- Dumping data for table `halamanstatis`
@@ -394,8 +402,10 @@ INSERT INTO `halamanstatis` (`id_halaman`, `judul`, `judul_seo`, `isi_halaman`, 
 (46, 'Tentang Kami', 'tentang-kami', '<p>Swarakalibata merupakan portal online berita dan hiburan yang berfokus pada pembaca Indonesia baik yang berada di tanah air maupun yang tinggal di luar negeri. Berita Swarakalibata diupdate selama 24 jam dan mendapatkan kunjungan lebih dari 190 juta pageviews setiap bulannya (Sumber: Google Analytics).</p>\r\n\r\n<p>Swarakalibata memiliki beragam konten dari berita umum, politik, peristiwa, internasional, ekonomi, lifestyle, selebriti, sports, bola, auto, teknologi, dan lainya. Swarakalibata juga merupakan salah satu portal pertama yang memberikan inovasi konten video dan mobile (handphone). Para pembaca kami adalah profesional, karyawan kantor, pengusaha, politisi, pelajar, dan ibu rumah tangga.</p>\r\n\r\n<p>Konten berita Swarakalibata ditulis secara tajam, singkat, padat, dan dinamis sebagai respons terhadap tuntutan masyarakat yang semakin efisien dalam membaca berita. Selain itu konsep portal berita online juga semakin menjadi pilihan masyarakat karena sifatnya yang up-to-date dan melaporkan kejadian peristiwa secara instant pada saat itu juga sehingga masyarakat tidak perlu menunggu sampai esok harinya untuk membaca berita yang terjadi.</p>\r\n\r\n<p>Swarakalibata resmi diluncurkan (Commercial Launch) sebagai portal berita pada 1 Maret 2007) dan merupakan cikal-bakal bisnis online pertama milik PT Php MU Tbk, sebuah perusahan media terintegrasi yang terbesar di Indonesia dan di Asia Tenggara. PHPMU juga memiliki dan mengelola bisnis media TV (RCTI, MNC TV, Global TV), media cetak (Koran Seputar Indonesia, Tabloid Genie, Tabloid Mom &amp; Kiddie, majalah HighEnd, dan Trust), media radio (SINDO, Trijaya FM, ARH Global, Radio Dangdut Indonesia, V Radio), serta sejumlah bisnis media lainnya (mobile VAS, Manajemen artis, rumah produksi film, agen iklan, dll).</p>\r\n\r\n<p>Sampai dengan bulan Oktober 2008, Swarakalibata mendapatkan peringkat ke 24 dari Top 100 website terpopuler di Indonesia (Sumber: Alexa.com), peringkat ini terus naik yang disebabkan semakin banyak pengunjung situs yang mengakses Swarakalibata setiap harinya. Selain itu, jumlah pengguna internet yang mencapai 25 juta (Sumber: data APJII per 2005) diperkirakan untuk terus tumbuh dengan signifikan dalam beberapa tahun ke depan.</p>', '2024-08-15', '', 'admin', 61, '04:05:05', 'Thursday'),
 (48, 'Alamat Perusahaan', 'alamat-perusahaan', '<p>Swarakalibata merupakan portal online berita dan hiburan yang berfokus pada pembaca Indonesia baik yang berada di tanah air maupun yang tinggal di luar negeri. Berita Swarakalibata diupdate selama 24 jam dan mendapatkan kunjungan lebih dari 190 juta pageviews setiap bulannya (Sumber: Google Analytics).</p>\r\n\r\n<p>Swarakalibata memiliki beragam konten dari berita umum, politik, peristiwa, internasional, ekonomi, lifestyle, selebriti, sports, bola, auto, teknologi, dan lainya. Swarakalibata juga merupakan salah satu portal pertama yang memberikan inovasi konten video dan mobile (handphone). Para pembaca kami adalah profesional, karyawan kantor, pengusaha, politisi, pelajar, dan ibu rumah tangga.</p>\r\n\r\n<p>Konten berita Swarakalibata ditulis secara tajam, singkat, padat, dan dinamis sebagai respons terhadap tuntutan masyarakat yang semakin efisien dalam membaca berita. Selain itu konsep portal berita online juga semakin menjadi pilihan masyarakat karena sifatnya yang up-to-date dan melaporkan kejadian peristiwa secara instant pada saat itu juga sehingga masyarakat tidak perlu menunggu sampai esok harinya untuk membaca berita yang terjadi.</p>\r\n\r\n<p>Swarakalibata resmi diluncurkan (Commercial Launch) sebagai portal berita pada 1 Maret 2007) dan merupakan cikal-bakal bisnis online pertama milik PT Php MU Tbk, sebuah perusahan media terintegrasi yang terbesar di Indonesia dan di Asia Tenggara. PHPMU juga memiliki dan mengelola bisnis media TV (RCTI, MNC TV, Global TV), media cetak (Koran Seputar Indonesia, Tabloid Genie, Tabloid Mom &amp; Kiddie, majalah HighEnd, dan Trust), media radio (SINDO, Trijaya FM, ARH Global, Radio Dangdut Indonesia, V Radio), serta sejumlah bisnis media lainnya (mobile VAS, Manajemen artis, rumah produksi film, agen iklan, dll).</p>\r\n\r\n<p>Sampai dengan bulan Oktober 2008, Swarakalibata mendapatkan peringkat ke 24 dari Top 100 website terpopuler di Indonesia (Sumber: Alexa.com), peringkat ini terus naik yang disebabkan semakin banyak pengunjung situs yang mengakses Swarakalibata setiap harinya. Selain itu, jumlah pengguna internet yang mencapai 25 juta (Sumber: data APJII per 2005) diperkirakan untuk terus tumbuh dengan signifikan dalam beberapa tahun ke depan.</p>', '2024-08-14', '', 'admin', 23, '07:46:44', 'Wednesday'),
 (52, 'Struktur Organisasi', 'struktur-organisasi', '<p>STRUKTUR ORGANISASI DPPKB KARAWANG</p>\r\n\r\n<p>1. KEPALA DINAS</p>\r\n\r\n<p>2. SEKRETARIS DINAS</p>\r\n\r\n<p>3. 3 KEPALA BIDANG</p>\r\n\r\n<p>4. 1 KASUBAG TU</p>\r\n\r\n<p>5 . 1 KASUBAG KEUANGAN</p>\r\n\r\n<p>6.&nbsp; 9 Kepala Seksi</p>\r\n\r\n<p>7. 12 UPTD yang ada di Kecamatan Kota Bekasi</p>\r\n', '2019-02-11', '', 'admin', 68, '15:21:50', 'Senin'),
-(53, 'Sejarah Instansi', 'sejarah-instansi', '<p style="text-align:justify">Sejarah</p>\r\n\r\n<p style="text-align:justify">Hiasan penanda hajatan pernikahan pada masyarakat wilayah Kabupaten Karawang wilayah selatan, hiasan terbuat dari batang bambu utuh yang disisakan daun bagian atasnya dilengkapi dengan topi caping yang digantung lengkap dengan tali-tali berwarna-warni dibawahnya yang menjuntai (penggunaan tali bisa disubtitusi atau digantikan dengan kertas warna-warni).</p>\r\n\r\n<p style="text-align:justify">Hiasan ini merupakan kearifan lokal masyarakat Kabupaten Karawang bagian selatan yang ditumbuhi banyak pohon bambu.<br />\r\nPemukiman awal<br />\r\nWilayah Karawang sudah sejak lama dihuni manusia. Peninggalan Situs Batujaya dan Situs Cibuaya yang luas menunjukkan pemukiman pada awal masa modern yang mungkin mendahului masa Kerajaan Tarumanagara. Penduduk Karawang semula beragama Hindu dan Budha dan wilayah ini berada di bawah kekuasaan Kerajaan Sunda.</p>\r\n\r\n<p style="text-align:justify">Penyebaran Islam<br />\r\nAgama Islam mulai dianut masyarakat setempat pada masa Kerajaan Sunda, setelah seorang patron bernama Syekh Hasanudin bin Yusuf Idofi, konon dari Makkah, yang terkenal dengan sebutan &quot;Syekh Quro&quot;, Syekh Quro merupakan seorang utusan Raja Campa yang mengikuti pelayaran persahabatan ke Majapahit dari Dinasti Ming yang dipimpin oleh Laksamana Cheng Ho (Kapal Laksamana Cheng Ho tercatat mendarat di Pelabuhan Muara Jati, Kerajaan Singapura (cikal bakal Kesultanan Cirebon pada tahun 1415[9].), ketika kapal sudah berada di Pura, Karawang, Syekh Quro beserta pengikutnya turun dan tinggal untuk menyebarkan agama Islam di wilayah Pura dan kemudian menikah dengan Putri Ki Gede Karawang yang bernama Ratna sondari dan meluaskan pengajarannya hingga ke wilayah Pura Dalem (Pedalaman Pura) kemudian mendirikan pesantren di Desa Pulo Kelapa (sekarang masuk kecamatan Lemah Abang, Kabupaten Karawang)</p>\r\n\r\n<p style="text-align:justify">Dari pernikahannya dengan Ratna Sondari, Syekh Quro memiliki seorang anak yang diberi nama Ahmad, Ahmad inilah yang kemudian dikenal dengan nama Syekh Ahmad (Penghulu Pertama di Karawang), Syekh Ahmad pernah diperintahkan oleh ayahnya untuk membantu Syekh Nur Jati atau Syekh Datuk Kahfi di Pesambangan (sekarang masuk wilayah kecamatan Gunung Jati, Kabupaten Cirebon).</p>\r\n\r\n<p style="text-align:justify">Hubungan penyebaran Islam di Karawang dengan Kesultanan Cirebon</p>\r\n\r\n<p style="text-align:justify">Wayang kulit Cirebon gaya Cilamaya karya Ki Ardi, disungging ulang oleh Ki Enang Sutria dan dibrom ulang oleh Arie Nugraha<br />\r\nPuteri Ki Gede Karawang yaitu Ratna sondari memberikan sumbangan hartanya untuk mendirikan sebuah masjid di Gunung Sembung (letaknya berdekatan dengan Gunung Jati) atau dikenal dengan sebutan (Nur Giri Cipta Rengga) yang bernama Masjid Dog Jumeneng atau Masjid Sang Saka Ratu, yang sampai sekarang masih digunakan dan terawat baik.</p>\r\n\r\n<p style="text-align:justify">Syekh Ahmad (Anak Syekh Quro dengan Ratna sondari) kemudian berkeluarga dan memiliki seorang putera bernama Musanudin, Musanudin inilah yang kemudian menjadi Lebai di Kesultanan Cirebon dan memimpim Masjid Agung Sang Cipta Rasa pada masa kepemimpinan Sunan Gunung Jati</p>\r\n\r\n<p style="text-align:justify">Pengangkatan juru kunci di situs makam Syekh Quro dikuatkan oleh pihak Keraton Kanoman, Cirebon.</p>\r\n\r\n<p style="text-align:justify">Syekh Quro memberikan ajaran yang kemudian dilanjutkan oleh murid-murid Wali Sanga. Makam Syeikh Quro terletak di Pulobata, Kecamatan Lemahabang.</p>\r\n\r\n<p style="text-align:justify">Masa Kesultanan Cirebon<br />\r\nSetelah Kerajaan Sunda runtuh maka wilayah antara sungai Angke dan sungai Cipunegara terbagi dua. Menurut Carita Sajarah Banten, Sunan Gunung Jati pada abad ke 15 membagi wilayah antara sungai Angke dan sungai Cipunegara menjadi dua bagian dengan sungai Citarum sebagai pembatasnya, sebelah timur sungai Citarum hingga sungai Cipunegara masuk wilayah Kesultanan Cirebon yang sekarang menjadi Kabupaten Karawang, Kabupaten Purwakarta dan Kabupaten Subang dan sebelah barat sungai Citarum hingga sungai Angke menjadi wilayah bawahan Kesultanan Banten dengan nama Jayakarta.</p>\r\n\r\n<p style="text-align:justify">Pemerintahan mandiri<br />\r\nSebagai suatu daerah berpemerintahan sendiri tampaknya dimulai semenjak Karawang diduduki oleh Kesultanan Mataram, di bawah pimpinan Wiraperbangsa dari Sumedang Larang tahun 1632. Kesuksesannya menempatkannya sebagai wedana pertama dengan gelar Adipati Kertabumi III. Semenjak masa ini, sistem pertanian melalui pengairan irigasi mulai dikembangkan di Karawang dan perlahan-lahan daerah ini menjadi daerah pusat penghasil beras utama di Pulau Jawa hingga akhir abad ke-20.</p>\r\n\r\n<p style="text-align:justify">Selanjutnya, Karawang menjadi kabupaten dengan bupati pertama Raden Adipati Singaperbangsa bergelar Kertabumi IV yang dilantik 14 September 1633. Tanggal ini dinobatkan menjapada hari jadi Kabupaten Karawang. Selanjutnya, bupatinya berturut-turut adalah R. Anom Wirasuta 1677-1721, R. Jayanegara (gelar R.A Panatayuda II) 1721-1731, R. Martanegara (R. Singanagara dengan gelar R. A Panatayuda III) 1731-1752, R. Mohamad Soleh (gelar R. A Panatayuda IV) 1752-1786. Pada rentang ini terjadi peralihan penguasa dari Mataram kepada VOC (Belanda).</p>\r\n\r\n<p style="text-align:justify">Menjelang Kemerdekaan Indonesia<br />\r\nPada masa menjelang Kemerdekaan Indonesia, Kabupaten Karawang menyimpan banyak catatan sejarah. Rengasdengklok merupakan tempat disembunyikannya Soekarno dan Hatta oleh para pemuda Indonesia untuk secepatnya merumuskan naskah Proklamasi Kemerdekaan Indonesia pada tanggal 16 Agustus 1945.</p>\r\n\r\n<p style="text-align:justify">Kabupaten Karawang juga menjadi inspirasi sastrawan Chairil Anwar menulis karya Antara Karawang-Bekasi karena peristiwa pertempuran di daerah sewaktu pasukan dari Divisi Siliwangi harus meninggalkan Bekasi menuju Karawang yang masih menjadi daerah kekuasaan Republik.</p>\r\n\r\n<p style="text-align:justify">Kecamatan Rengasdengklok adalah daerah pertama milik Republik Indonesia yang gagah berani mengibarkan bendera Merah Putih sebelum Proklamasi kemerdekaan Indonesia di Gaungkan.[butuh rujukan] Oleh karena itu selain dikenal dengan sebutan Lumbung Padi Karawang juga sering disebut sebagai Kota Pangkal Perjuangan. Di Rengasdengklok didirikan sebuah monumen yang dibangun oleh masyarakat sekitar, kemudian pada masa pemerintahan Megawati didirikan Tugu Kebulatan Tekad untuk mengenang sejarah Republik Indonesia.</p>\r\n\r\n<p style="text-align:justify">Setelah Kemerdekaan Indonesia<br />\r\nWilayah Karawang pada masa lalu (hasil pembagian oleh Sunan Gunung Jati pada abad ke 15) kemudian dipecah menjadi dua bagian pada masa perang kemerdekaan sekitar tahun 1948 dengan sungai Citarum dan sungai Cilamaya menjadi pembatasnya, wilayah Kabupaten Karawang Barat meliputi wilayah Kabupaten Karawang sekarang ditambah desa-desa di sebelah barat Citarum yaitu desa-desa Sukasari dan Kertamanah dengan ibukota di kecamatan Karawang, sementara Kabupaten Karawang Timur meliputi wilayah Kabupaten Purwakarta dikurangi desa-desa di kecamatan Sukasari (yang dahulu masih bagian dari Kabupaten Karawang) dan Kabupaten Subang dengan ibukota di kecamatan Subang.</p>\r\n\r\n<p style="text-align:justify">lalu kemudian pada tahun 1950 nama Kabupaten Karawang Timur diubah menjadi Kabupaten Purwakarta dengan ibukota di kecamatan Subang dan Kabupaten Karawang Barat menjadi Krawang dengan ibukota di kecamatan Karawang..</p>\r\n\r\n<p style="text-align:justify">Pada tahun 1968 terjadi pemekaran wilayah Kabupaten Purwakarta yang sebelumnya bernama Kabupaten Karawang Timur menjadi Kabupaten Subang dengan ibukota di kecamatan Subang dan Kabupaten Purwakarta dengan ibukota di kecamatan Purwakarta, karena pada tahun yang sama berlangsung proyek besar bendungan Ir. Djuanda atau yang dikenal dengan nama Bendungan Jatiluhur maka pemerintah pusat pada masa itu merasa perlu untuk menyatukan wilayah waduk Jatiluhur ke dalam satu wilayah kerja yang akhirnya diputuskan dimasukan ke dalam wilayah Kabupaten Purwakarta sehingga pada tahun 1968 wilayah Kabupaten Krawang harus melepaskan desa-desa yang berada disebelah barat sungai Citarum yang masuk dalam proyek besar bendungan Ir. Djuanda atau Bendungan Jatiluhur, desa-desa tersebut adalah desa-desa Sukasari dan Kertamanah yang sekarang masuk dalam kecamatan Sukasari, Kabupaten Purwakarta, sehingga dengan diterbitkannya Undang-Undang No. 4 Tahun 1968 maka wilayah Kabupaten Krawang menjadi berkurang dan wilayah inilah yang dikemudian hari disebut sebagai Kabupaten Karawang</p>\r\n', '2019-02-13', '', 'admin', 29, '14:43:03', 'Rabu'),
-(54, 'Visi dan Misi yaaa', 'visi-dan-misi-yaaa', '<p><strong>VISI DAN MISI<br />\r\nPEMERINTAH KABUPATEN KARAWANG<br />\r\nPERIODE 2016 - 2021</strong></p>\r\n\r\n<p><br />\r\n<strong>VISI :</strong><br />\r\nKARAWANG YANG MANDIRI MAJU ADIL DAN MAKMUR<br />\r\n<strong>MISI :</strong><br />\r\n1. Mewujudkan Aparatur Pemerintah Daerah yang Bersih dan Berwibawa.<br />\r\n2. Mewujudkan Kabupaten Karawang yang Berdaya Saing.<br />\r\n3. Mewujudkan Masyarakat Demokratis Berlandaskan Hukum.<br />\r\n4. Mewujudkan Kabupaten Karawang yang Asri dan Lestari.<br />\r\n5. Membangun Kabupaten Karawang Melalui Penguatan Desa.</p>', '2024-08-11', '1723387707_Screenshot (10).png', 'admin', 17, '16:17:33', 'Rabu');
+(53, 'Sejarah Instansi', 'sejarah-instansi', '<p style="text-align:justify">Sejarah</p>\n\n<p style="text-align:justify">Hiasan penanda hajatan pernikahan pada masyarakat wilayah Kabupaten Karawang wilayah selatan, hiasan terbuat dari batang bambu utuh yang disisakan daun bagian atasnya dilengkapi dengan topi caping yang digantung lengkap dengan tali-tali berwarna-warni dibawahnya yang menjuntai (penggunaan tali bisa disubtitusi atau digantikan dengan kertas warna-warni).</p>\n\n<p style="text-align:justify">Hiasan ini merupakan kearifan lokal masyarakat Kabupaten Karawang bagian selatan yang ditumbuhi banyak pohon bambu.<br />\nPemukiman awal<br />\nWilayah Karawang sudah sejak lama dihuni manusia. Peninggalan Situs Batujaya dan Situs Cibuaya yang luas menunjukkan pemukiman pada awal masa modern yang mungkin mendahului masa Kerajaan Tarumanagara. Penduduk Karawang semula beragama Hindu dan Budha dan wilayah ini berada di bawah kekuasaan Kerajaan Sunda.</p>\n\n<p style="text-align:justify">Penyebaran Islam<br />\nAgama Islam mulai dianut masyarakat setempat pada masa Kerajaan Sunda, setelah seorang patron bernama Syekh Hasanudin bin Yusuf Idofi, konon dari Makkah, yang terkenal dengan sebutan &quot;Syekh Quro&quot;, Syekh Quro merupakan seorang utusan Raja Campa yang mengikuti pelayaran persahabatan ke Majapahit dari Dinasti Ming yang dipimpin oleh Laksamana Cheng Ho (Kapal Laksamana Cheng Ho tercatat mendarat di Pelabuhan Muara Jati, Kerajaan Singapura (cikal bakal Kesultanan Cirebon pada tahun 1415[9].), ketika kapal sudah berada di Pura, Karawang, Syekh Quro beserta pengikutnya turun dan tinggal untuk menyebarkan agama Islam di wilayah Pura dan kemudian menikah dengan Putri Ki Gede Karawang yang bernama Ratna sondari dan meluaskan pengajarannya hingga ke wilayah Pura Dalem (Pedalaman Pura) kemudian mendirikan pesantren di Desa Pulo Kelapa (sekarang masuk kecamatan Lemah Abang, Kabupaten Karawang)</p>\n\n<p style="text-align:justify">Dari pernikahannya dengan Ratna Sondari, Syekh Quro memiliki seorang anak yang diberi nama Ahmad, Ahmad inilah yang kemudian dikenal dengan nama Syekh Ahmad (Penghulu Pertama di Karawang), Syekh Ahmad pernah diperintahkan oleh ayahnya untuk membantu Syekh Nur Jati atau Syekh Datuk Kahfi di Pesambangan (sekarang masuk wilayah kecamatan Gunung Jati, Kabupaten Cirebon).</p>\n\n<p style="text-align:justify">Hubungan penyebaran Islam di Karawang dengan Kesultanan Cirebon</p>\n\n<p style="text-align:justify">Wayang kulit Cirebon gaya Cilamaya karya Ki Ardi, disungging ulang oleh Ki Enang Sutria dan dibrom ulang oleh Arie Nugraha<br />\nPuteri Ki Gede Karawang yaitu Ratna sondari memberikan sumbangan hartanya untuk mendirikan sebuah masjid di Gunung Sembung (letaknya berdekatan dengan Gunung Jati) atau dikenal dengan sebutan (Nur Giri Cipta Rengga) yang bernama Masjid Dog Jumeneng atau Masjid Sang Saka Ratu, yang sampai sekarang masih digunakan dan terawat baik.</p>\n\n<p style="text-align:justify">Syekh Ahmad (Anak Syekh Quro dengan Ratna sondari) kemudian berkeluarga dan memiliki seorang putera bernama Musanudin, Musanudin inilah yang kemudian menjadi Lebai di Kesultanan Cirebon dan memimpim Masjid Agung Sang Cipta Rasa pada masa kepemimpinan Sunan Gunung Jati</p>\n\n<p style="text-align:justify">Pengangkatan juru kunci di situs makam Syekh Quro dikuatkan oleh pihak Keraton Kanoman, Cirebon.</p>\n\n<p style="text-align:justify">Syekh Quro memberikan ajaran yang kemudian dilanjutkan oleh murid-murid Wali Sanga. Makam Syeikh Quro terletak di Pulobata, Kecamatan Lemahabang.</p>\n\n<p style="text-align:justify">Masa Kesultanan Cirebon<br />\nSetelah Kerajaan Sunda runtuh maka wilayah antara sungai Angke dan sungai Cipunegara terbagi dua. Menurut Carita Sajarah Banten, Sunan Gunung Jati pada abad ke 15 membagi wilayah antara sungai Angke dan sungai Cipunegara menjadi dua bagian dengan sungai Citarum sebagai pembatasnya, sebelah timur sungai Citarum hingga sungai Cipunegara masuk wilayah Kesultanan Cirebon yang sekarang menjadi Kabupaten Karawang, Kabupaten Purwakarta dan Kabupaten Subang dan sebelah barat sungai Citarum hingga sungai Angke menjadi wilayah bawahan Kesultanan Banten dengan nama Jayakarta.</p>\n\n<p style="text-align:justify">Pemerintahan mandiri<br />\nSebagai suatu daerah berpemerintahan sendiri tampaknya dimulai semenjak Karawang diduduki oleh Kesultanan Mataram, di bawah pimpinan Wiraperbangsa dari Sumedang Larang tahun 1632. Kesuksesannya menempatkannya sebagai wedana pertama dengan gelar Adipati Kertabumi III. Semenjak masa ini, sistem pertanian melalui pengairan irigasi mulai dikembangkan di Karawang dan perlahan-lahan daerah ini menjadi daerah pusat penghasil beras utama di Pulau Jawa hingga akhir abad ke-20.</p>\n\n<p style="text-align:justify">Selanjutnya, Karawang menjadi kabupaten dengan bupati pertama Raden Adipati Singaperbangsa bergelar Kertabumi IV yang dilantik 14 September 1633. Tanggal ini dinobatkan menjapada hari jadi Kabupaten Karawang. Selanjutnya, bupatinya berturut-turut adalah R. Anom Wirasuta 1677-1721, R. Jayanegara (gelar R.A Panatayuda II) 1721-1731, R. Martanegara (R. Singanagara dengan gelar R. A Panatayuda III) 1731-1752, R. Mohamad Soleh (gelar R. A Panatayuda IV) 1752-1786. Pada rentang ini terjadi peralihan penguasa dari Mataram kepada VOC (Belanda).</p>\n\n<p style="text-align:justify">Menjelang Kemerdekaan Indonesia<br />\nPada masa menjelang Kemerdekaan Indonesia, Kabupaten Karawang menyimpan banyak catatan sejarah. Rengasdengklok merupakan tempat disembunyikannya Soekarno dan Hatta oleh para pemuda Indonesia untuk secepatnya merumuskan naskah Proklamasi Kemerdekaan Indonesia pada tanggal 16 Agustus 1945.</p>\n\n<p style="text-align:justify">Kabupaten Karawang juga menjadi inspirasi sastrawan Chairil Anwar menulis karya Antara Karawang-Bekasi karena peristiwa pertempuran di daerah sewaktu pasukan dari Divisi Siliwangi harus meninggalkan Bekasi menuju Karawang yang masih menjadi daerah kekuasaan Republik.</p>\n\n<p style="text-align:justify">Kecamatan Rengasdengklok adalah daerah pertama milik Republik Indonesia yang gagah berani mengibarkan bendera Merah Putih sebelum Proklamasi kemerdekaan Indonesia di Gaungkan.[butuh rujukan] Oleh karena itu selain dikenal dengan sebutan Lumbung Padi Karawang juga sering disebut sebagai Kota Pangkal Perjuangan. Di Rengasdengklok didirikan sebuah monumen yang dibangun oleh masyarakat sekitar, kemudian pada masa pemerintahan Megawati didirikan Tugu Kebulatan Tekad untuk mengenang sejarah Republik Indonesia.</p>\n\n<p style="text-align:justify">Setelah Kemerdekaan Indonesia<br />\nWilayah Karawang pada masa lalu (hasil pembagian oleh Sunan Gunung Jati pada abad ke 15) kemudian dipecah menjadi dua bagian pada masa perang kemerdekaan sekitar tahun 1948 dengan sungai Citarum dan sungai Cilamaya menjadi pembatasnya, wilayah Kabupaten Karawang Barat meliputi wilayah Kabupaten Karawang sekarang ditambah desa-desa di sebelah barat Citarum yaitu desa-desa Sukasari dan Kertamanah dengan ibukota di kecamatan Karawang, sementara Kabupaten Karawang Timur meliputi wilayah Kabupaten Purwakarta dikurangi desa-desa di kecamatan Sukasari (yang dahulu masih bagian dari Kabupaten Karawang) dan Kabupaten Subang dengan ibukota di kecamatan Subang.</p>\n\n<p style="text-align:justify">lalu kemudian pada tahun 1950 nama Kabupaten Karawang Timur diubah menjadi Kabupaten Purwakarta dengan ibukota di kecamatan Subang dan Kabupaten Karawang Barat menjadi Krawang dengan ibukota di kecamatan Karawang..</p>\n\n<p style="text-align:justify">Pada tahun 1968 terjadi pemekaran wilayah Kabupaten Purwakarta yang sebelumnya bernama Kabupaten Karawang Timur menjadi Kabupaten Subang dengan ibukota di kecamatan Subang dan Kabupaten Purwakarta dengan ibukota di kecamatan Purwakarta, karena pada tahun yang sama berlangsung proyek besar bendungan Ir. Djuanda atau yang dikenal dengan nama Bendungan Jatiluhur maka pemerintah pusat pada masa itu merasa perlu untuk menyatukan wilayah waduk Jatiluhur ke dalam satu wilayah kerja yang akhirnya diputuskan dimasukan ke dalam wilayah Kabupaten Purwakarta sehingga pada tahun 1968 wilayah Kabupaten Krawang harus melepaskan desa-desa yang berada disebelah barat sungai Citarum yang masuk dalam proyek besar bendungan Ir. Djuanda atau Bendungan Jatiluhur, desa-desa tersebut adalah desa-desa Sukasari dan Kertamanah yang sekarang masuk dalam kecamatan Sukasari, Kabupaten Purwakarta, sehingga dengan diterbitkannya Undang-Undang No. 4 Tahun 1968 maka wilayah Kabupaten Krawang menjadi berkurang dan wilayah inilah yang dikemudian hari disebut sebagai Kabupaten Karawang</p>\n', '2019-02-13', '', 'admin', 29, '14:43:03', 'Rabu'),
+(54, 'Visi dan Misi yaaa', 'visi-dan-misi', '<p><strong>VISI DAN MISI<br />\r\nPEMERINTAH KABUPATEN KARAWANG<br />\r\nPERIODE 2016 - 2021</strong></p>\r\n\r\n<p><br />\r\n<strong>VISI :</strong><br />\r\nKARAWANG YANG MANDIRI MAJU ADIL DAN MAKMUR<br />\r\n<strong>MISI :</strong><br />\r\n1. Mewujudkan Aparatur Pemerintah Daerah yang Bersih dan Berwibawa.<br />\r\n2. Mewujudkan Kabupaten Karawang yang Berdaya Saing.<br />\r\n3. Mewujudkan Masyarakat Demokratis Berlandaskan Hukum.<br />\r\n4. Mewujudkan Kabupaten Karawang yang Asri dan Lestari.<br />\r\n5. Membangun Kabupaten Karawang Melalui Penguatan Desa.</p>', '2024-08-11', '1723387707_Screenshot (10).png', 'admin', 17, '16:17:33', 'Rabu'),
+(68, 'Kiruma Souichi', 'kiruma-souichi', '<p><strong>Kiruma Souichi, The Perfect Leader!!</strong></p>', '2024-08-29', 'Screenshot (9).png', 'admin', 1, '08:03:32', 'Thursday'),
+(73, 'adnadn', 'adnadn', '<p>sfbmfw</p>', '2024-09-01', 'Screenshot (4).png', 'admin', 1, '12:50:45', 'Sunday');
 
 -- --------------------------------------------------------
 
@@ -437,7 +447,7 @@ CREATE TABLE IF NOT EXISTS `hubungi` (
   `jam` time NOT NULL,
   `dibaca` enum('Y','N') CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL DEFAULT 'N',
   PRIMARY KEY (`id_hubungi`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=41 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=44 ;
 
 --
 -- Dumping data for table `hubungi`
@@ -446,7 +456,10 @@ CREATE TABLE IF NOT EXISTS `hubungi` (
 INSERT INTO `hubungi` (`id_hubungi`, `nama`, `email`, `subjek`, `pesan`, `tanggal`, `jam`, `dibaca`) VALUES
 (39, 'Admin Lokomedia', 'dankrez48@gmail.com', '::1', 'Selamat bergabung di CMS Lokomedia. Jaminan kenyamanan dalam pengelolaan konten website menjadi hal yang kami utamakan. Aapabila anda menemukan kendala, segera hubungi kami.', '2017-01-23', '21:56:12', 'Y'),
 (35, 'yusri renor', 'aciafifah@gmail.com', 'pertanyaan', 'bagaimana cara mengunduh nomor ujian fak. pertanian', '2014-01-19', '00:00:00', 'Y'),
-(38, 'Udin Sedunia', 'udin.sedunia@gmail.com', 'Ip Pengirim : 120.177.28.244', 'Silahkan menghubungi kami melalui private message melalui form yang berada pada bagian kanan halaman ini. Kritik dan saran Anda sangat penting bagi kami untuk terus meningkatkan kualitas produk dan layanan yang kami berikan kepada Anda.', '2015-06-02', '00:00:00', 'Y');
+(38, 'Udin Sedunia', 'udin.sedunia@gmail.com', 'Ip Pengirim : 120.177.28.244', 'Silahkan menghubungi kami melalui private message melalui form yang berada pada bagian kanan halaman ini. Kritik dan saran Anda sangat penting bagi kami untuk terus meningkatkan kualitas produk dan layanan yang kami berikan kepada Anda.', '2015-06-02', '00:00:00', 'Y'),
+(41, 'saya siapagug', 'ihih@gmail.com', 'pertanyaan', 'iaygdyasg', '2024-09-05', '09:27:58', 'Y'),
+(42, 'saya siapagug', 'ihih@gmail.com', 'pertanyaan', 'iaygdyasgd', '2024-09-05', '09:29:16', 'N'),
+(43, 'raja', 'ic@gmail.com', 'dealer', 'aja', '2024-09-06', '04:27:42', 'N');
 
 -- --------------------------------------------------------
 
@@ -490,7 +503,7 @@ CREATE TABLE IF NOT EXISTS `iklanatas` (
   `gambar` varchar(100) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   `tgl_posting` date NOT NULL,
   PRIMARY KEY (`id_iklanatas`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=43 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=44 ;
 
 --
 -- Dumping data for table `iklanatas`
@@ -513,7 +526,7 @@ CREATE TABLE IF NOT EXISTS `iklantengah` (
   `gambar` varchar(100) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   `tgl_posting` date NOT NULL,
   PRIMARY KEY (`id_iklantengah`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=43 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=45 ;
 
 --
 -- Dumping data for table `iklantengah`
@@ -537,8 +550,8 @@ INSERT INTO `iklantengah` (`id_iklantengah`, `judul`, `username`, `url`, `gambar
 
 CREATE TABLE IF NOT EXISTS `jobs` (
   `id` bigint unsigned NOT NULL AUTO_INCREMENT,
-  `queue` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `payload` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `queue` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `payload` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `attempts` tinyint unsigned NOT NULL,
   `reserved_at` int unsigned DEFAULT NULL,
   `available_at` int unsigned NOT NULL,
@@ -554,13 +567,13 @@ CREATE TABLE IF NOT EXISTS `jobs` (
 --
 
 CREATE TABLE IF NOT EXISTS `job_batches` (
-  `id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `total_jobs` int NOT NULL,
   `pending_jobs` int NOT NULL,
   `failed_jobs` int NOT NULL,
-  `failed_job_ids` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
-  `options` mediumtext COLLATE utf8mb4_unicode_ci,
+  `failed_job_ids` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `options` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
   `cancelled_at` int DEFAULT NULL,
   `created_at` int NOT NULL,
   `finished_at` int DEFAULT NULL,
@@ -579,7 +592,7 @@ CREATE TABLE IF NOT EXISTS `katajelek` (
   `username` varchar(50) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   `ganti` varchar(60) CHARACTER SET latin1 COLLATE latin1_general_ci DEFAULT NULL,
   PRIMARY KEY (`id_jelek`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=11 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=12 ;
 
 --
 -- Dumping data for table `katajelek`
@@ -606,7 +619,7 @@ CREATE TABLE IF NOT EXISTS `kategori` (
   `aktif` enum('Y','N') CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL DEFAULT 'Y',
   `sidebar` int NOT NULL,
   PRIMARY KEY (`id_kategori`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=76 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=80 ;
 
 --
 -- Dumping data for table `kategori`
@@ -615,7 +628,75 @@ CREATE TABLE IF NOT EXISTS `kategori` (
 INSERT INTO `kategori` (`id_kategori`, `nama_kategori`, `username`, `kategori_seo`, `aktif`, `sidebar`) VALUES
 (61, 'Berita Daerah', 'admin', 'berita-daerah', 'Y', 1),
 (62, 'Berita OPD', 'admin', 'berita-opd', 'Y', 2),
-(75, 'AKU KAYA', 'admin', 'aku-kaya', 'Y', 2);
+(77, 'Bismillah bisa yukk', 'admin', 'bismillah-bisa-yukk', 'Y', 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `kategori_program`
+--
+
+CREATE TABLE IF NOT EXISTS `kategori_program` (
+  `id_kat` int NOT NULL AUTO_INCREMENT,
+  `id_kategori` varchar(255) NOT NULL,
+  `nama_kategori` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id_kat`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb3 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `kategori_program`
+--
+
+INSERT INTO `kategori_program` (`id_kat`, `id_kategori`, `nama_kategori`) VALUES
+(1, '03b194c1a2db237106509bf1a8ff51fc', 'Laravel'),
+(2, 'e242e42cff2cec1d5c2d1c72c35481a7', 'React JS'),
+(3, 'a883896cfd35d58444ed0d84afe787ed', 'Node JS'),
+(4, 'b0b067cded7d76a22162d1f88628fa7b', 'Tailwind'),
+(5, 'ef0b03bdadc04cfc97b779f646e5d3e9', 'Figma'),
+(6, '7ec18e60651ca35630fa863629592759', 'Flatter'),
+(7, '07fdb58433ec9999b4ecd92aa65220da', 'CodeIgniter');
+
+--
+-- Triggers `kategori_program`
+--
+DROP TRIGGER IF EXISTS `after_insert_kategori_program`;
+DELIMITER //
+CREATE TRIGGER `after_insert_kategori_program` AFTER INSERT ON `kategori_program`
+ FOR EACH ROW BEGIN
+        INSERT INTO kategori_program_group (id_program, id_kategori)
+        SELECT id_program, NEW.id_kategori FROM Program;
+        
+        INSERT INTO trainer_program_group (id_trainer, id_kategori)
+        SELECT id_trainer, NEW.id_kategori FROM Trainer;
+    END
+//
+DELIMITER ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `kategori_program_group`
+--
+
+CREATE TABLE IF NOT EXISTS `kategori_program_group` (
+  `id_kgroup` int NOT NULL AUTO_INCREMENT,
+  `id_program` varchar(255) NOT NULL,
+  `id_kategori` varchar(255) NOT NULL,
+  PRIMARY KEY (`id_kgroup`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb3 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `kategori_program_group`
+--
+
+INSERT INTO `kategori_program_group` (`id_kgroup`, `id_program`, `id_kategori`) VALUES
+(1, '2f22c05b2de0041c258ed401e593c0d8', '03b194c1a2db237106509bf1a8ff51fc'),
+(2, '2f22c05b2de0041c258ed401e593c0d8', 'e242e42cff2cec1d5c2d1c72c35481a7'),
+(3, '2f22c05b2de0041c258ed401e593c0d8', 'a883896cfd35d58444ed0d84afe787ed'),
+(4, '2f22c05b2de0041c258ed401e593c0d8', 'b0b067cded7d76a22162d1f88628fa7b'),
+(5, '2f22c05b2de0041c258ed401e593c0d8', 'ef0b03bdadc04cfc97b779f646e5d3e9'),
+(6, '2f22c05b2de0041c258ed401e593c0d8', '7ec18e60651ca35630fa863629592759'),
+(7, '2f22c05b2de0041c258ed401e593c0d8', '07fdb58433ec9999b4ecd92aa65220da');
 
 -- --------------------------------------------------------
 
@@ -641,7 +722,7 @@ CREATE TABLE IF NOT EXISTS `komentar` (
 --
 
 INSERT INTO `komentar` (`id_komentar`, `id_berita`, `nama_komentar`, `url`, `isi_komentar`, `tgl`, `jam_komentar`, `aktif`, `email`) VALUES
-(84, 650, 'Agung Wicaksana', 'dankrez48@gmail.com', 'Nice  story, Roy suryo dan Susilo bambang yudhoyono memang cucak rowo. :)   ', '2012-01-05', '00:15:45', 'N', 'dankrez48@gmail.com'),
+(84, 650, 'Agung Wicaksana', 'dankrez48@gmail.com', 'Nice  story, Roy suryo dan Susilo bambang yudhoyono memang cucak rowo. :)', '2024-08-31', '00:26:57', 'N', 'dankrez48@gmail.com'),
 (88, 650, 'Udin Sedunia', 'www.belajarkonseling.com', ' hm...  kae.x  perlu  juga  ne  bantuan  dari  para  konselor...:)		   ', '2012-01-13', '20:09:07', 'Y', 'www.belajarkonseling.com'),
 (90, 650, 'Rizal Faizal', 'www.rizal-online.co.cc', ' asyik  aja  dehh...   ', '2012-02-25', '15:01:40', 'Y', 'www.rizal-online.co.cc'),
 (91, 645, 'Eka Praja W', 'komputerkampus.com', ' makin  parah  aja  nih  ...\r\nmudah2n  bisa  berbenah  negeri  ku  yg  q  banggakan   ', '2012-03-08', '20:06:07', 'Y', 'komputerkampus.com'),
@@ -655,7 +736,9 @@ INSERT INTO `komentar` (`id_komentar`, `id_berita`, `nama_komentar`, `url`, `isi
 (152, 650, 'Dewi Safitriir', 'dewi_safitri@gmail.com', 'Peremimpin  tertinggi  Iran,  Ayatollah  Ali  Khamenei  menyampaikan  pernyataan  kontroversial  terkait  ketegangan  di  Gaza.Israele.   ', '2014-08-17', '17:46:28', 'N', 'dewi_safitri@gmail.com'),
 (153, 662, 'Agung Wicaksana', 'ww.phpmu.com', 'Anda penyuka Transformer? Tentu hal yang paling menarik saat menonton film Transformer salah satunya adalah saat adegan transformasi yang begitu keren dari sebuah mobil atau truk menjadi robot yang gagah.\r\n\r\nAnda penyuka Transformer? Tentu hal yang paling menarik saat menonton film Transformer salah satunya adalah saat adegan transformasi yang begitu keren dari sebuah mobil atau truk menjadi robot yang gagah.', '2015-03-25', '06:10:12', 'Y', 'dankrez48@gmail.com'),
 (154, 642, 'Tommy Utama', 'tommyutama.com', ' Para  pengunjuk  rasa  membawa  bendera-bendera  Palestina  dan  foro-foto  pemimpin  tertinggi  Iran,  Ayatollah  Ali  Khamenei.   ', '2016-11-24', '10:24:15', 'Y', 'tommy.utama@gmail.com'),
-(162, 687, 'mas marno', '', 'maju terus indonesia', '2017-10-04', '14:32:56', 'Y', 'marnosudrajat@gmail.com');
+(162, 687, 'mas marno', '', 'maju terus indonesia', '2017-10-04', '14:32:56', 'Y', 'marnosudrajat@gmail.com'),
+(1, 1, 'aku', 'http://apalah.com', 'AKU KAYA AMMIINN', '2024-08-31', '00:36:47', 'Y', 'hal@gmail.com'),
+(3, 3, 'fjalfw', 'http://dsfskfi.id', 'fkahslfawad', '2024-08-07', '11:40:00', 'Y', 'jl@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -735,7 +818,33 @@ CREATE TABLE IF NOT EXISTS `logo` (
 --
 
 INSERT INTO `logo` (`id_logo`, `gambar`) VALUES
-(15, 'logokabkarawang.png');
+(15, 'logomWxU2oLeRihEKouDvQ2UASQpg.logokabkarawang.png');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `materi`
+--
+
+CREATE TABLE IF NOT EXISTS `materi` (
+  `id_materi` int NOT NULL AUTO_INCREMENT,
+  `judul_materi` varchar(255) NOT NULL,
+  PRIMARY KEY (`id_materi`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `member`
+--
+
+CREATE TABLE IF NOT EXISTS `member` (
+  `id_member` int NOT NULL AUTO_INCREMENT,
+  `nama` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  PRIMARY KEY (`id_member`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -751,40 +860,45 @@ CREATE TABLE IF NOT EXISTS `menu` (
   `aktif` enum('Ya','Tidak') NOT NULL DEFAULT 'Ya',
   `position` enum('Top','Bottom') DEFAULT 'Bottom',
   `urutan` int NOT NULL,
-  `deskripsi` text,
+  `deskripsi` text NOT NULL,
   PRIMARY KEY (`id_menu`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=190 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=154 ;
 
 --
 -- Dumping data for table `menu`
 --
 
 INSERT INTO `menu` (`id_menu`, `id_parent`, `nama_menu`, `link`, `aktif`, `position`, `urutan`, `deskripsi`) VALUES
-(129, 0, 'Profil123', '#', 'Ya', 'Bottom', 1, ''),
+(129, 0, 'Profil', '#', 'Ya', 'Bottom', 1, ''),
 (150, 0, 'Program', '#', 'Ya', 'Bottom', 2, ''),
 (151, 153, 'Rencana Kerja', '#', 'Ya', 'Bottom', 1, ''),
-(149, 134, 'Struktur Organisasi', 'halaman/detail/struktur-organisasi', 'Ya', 'Bottom', 1, ''),
-(131, 134, 'Sejarah', 'halaman/detail/sejarah-instansi', 'Ya', 'Bottom', 2, ''),
-(132, 134, 'Visi dan Misi', 'halaman/detail/visi-dan-misi', 'Ya', 'Bottom', 3, ''),
+(149, 134, 'Struktur Organisasi', 'struktur-organisasi', 'Ya', 'Bottom', 1, ''),
+(131, 134, 'Sejarah', 'sejarah-instansi', 'Ya', 'Bottom', 2, ''),
+(132, 134, 'Visi dan Misi', 'visi-dan-misi', 'Ya', 'Bottom', 3, ''),
 (153, 150, 'Program Dinas', '#', 'Ya', 'Bottom', 1, ''),
 (134, 129, 'Profil Dinas', '#', 'Ya', 'Bottom', 4, ''),
-(139, 135, 'BBM Pesawat Udara', '#', 'Ya', 'Bottom', 3, NULL),
+(138, 135, 'BBM Industri', '#', 'Ya', 'Bottom', 2, ''),
+(139, 135, 'BBM Pesawat Udara', '#', 'Ya', 'Bottom', 3, ''),
 (142, 0, 'MEDIA & INFORMASI', '#', 'Ya', 'Bottom', 3, ''),
 (143, 142, 'Berita & Artikel', '#', 'Ya', 'Bottom', 1, ''),
+(144, 142, 'AGENDA', '#', 'Ya', 'Bottom', 2, ''),
 (145, 144, 'Agenda Kegiatan', 'agenda', 'Ya', 'Bottom', 1, ''),
 (146, 143, 'Berita', 'berita', 'Ya', 'Bottom', 1, ''),
 (147, 143, 'Galeri', 'albums', 'Ya', 'Bottom', 2, ''),
 (148, 143, 'Video', 'playlist', 'Ya', 'Bottom', 3, ''),
-(152, 153, 'Rencana Strategis', '#', 'Ya', 'Bottom', 2, ''),
-(176, 170, 'Radhitya', 'admin', 'Ya', 'Bottom', 2, 'bflabfjbakdw'),
-(170, 150, 'GOAT', 'Messi or Ronaldo', 'Ya', 'Bottom', 1, 'Messi dan Ronaldo raja sepakbola'),
-(171, 172, 'Olahragawan', 'Messi or Ronaldo', 'Ya', 'Bottom', 2, 'YES'),
-(175, 170, 'Sepakbola', 'adafd', 'Ya', 'Bottom', 1, 'dakba'),
-(172, 171, 'Lionel Messi', 'goat sepakbola', 'Tidak', 'Top', 1, 'goat'),
-(166, 129, 'Informasi Sepakbola', 'Messi or Ronaldo', 'Ya', 'Top', 1, 'Messi GOAT'),
-(174, 173, 'rad', 'adaa', 'Ya', 'Bottom', 1, 'adnkan'),
-(177, 175, '123', 'Dugong', 'Ya', 'Bottom', 1, 'e11'),
-(178, 177, 'Kontak Rad', 'admin', 'Ya', 'Bottom', 2, '124');
+(152, 153, 'Rencana Strategis', '#', 'Ya', 'Bottom', 2, '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `metode_pembayaran`
+--
+
+CREATE TABLE IF NOT EXISTS `metode_pembayaran` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `gambar` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 -- --------------------------------------------------------
 
@@ -794,10 +908,10 @@ INSERT INTO `menu` (`id_menu`, `id_parent`, `nama_menu`, `link`, `aktif`, `posit
 
 CREATE TABLE IF NOT EXISTS `migrations` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
-  `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `migration` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `batch` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `migrations`
@@ -807,7 +921,48 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (1, '0001_01_01_000000_create_users_table', 1),
 (2, '0001_01_01_000001_create_cache_table', 1),
 (3, '0001_01_01_000002_create_jobs_table', 1),
-(4, '2024_08_12_082052_update_nullable_columns_in_users_table', 1);
+(4, '2024_08_12_082052_update_nullable_columns_in_users_table', 1),
+(5, '2024_08_23_022109_create_permission_tables', 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `mitra`
+--
+
+CREATE TABLE IF NOT EXISTS `mitra` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `gambar` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `model_has_permissions`
+--
+
+CREATE TABLE IF NOT EXISTS `model_has_permissions` (
+  `permission_id` bigint unsigned NOT NULL,
+  `model_type` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `model_id` bigint unsigned NOT NULL,
+  PRIMARY KEY (`permission_id`,`model_id`,`model_type`),
+  KEY `model_has_permissions_model_id_model_type_index` (`model_id`,`model_type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `model_has_roles`
+--
+
+CREATE TABLE IF NOT EXISTS `model_has_roles` (
+  `role_id` bigint unsigned NOT NULL,
+  `model_type` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `model_id` bigint unsigned NOT NULL,
+  PRIMARY KEY (`role_id`,`model_id`,`model_type`),
+  KEY `model_has_roles_model_id_model_type_index` (`model_id`,`model_type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -828,7 +983,7 @@ CREATE TABLE IF NOT EXISTS `modul` (
   `urutan` int NOT NULL,
   `link_seo` varchar(50) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   PRIMARY KEY (`id_modul`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=76 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=91 ;
 
 --
 -- Dumping data for table `modul`
@@ -844,7 +999,7 @@ INSERT INTO `modul` (`id_modul`, `nama_modul`, `username`, `link`, `static_conte
 (34, 'Tag Berita', 'admin', 'tagberita', '', '', 'Y', 'user', 'Y', 0, ''),
 (35, 'Komentar Berita', 'admin', 'komentarberita', '', '', 'Y', 'user', 'Y', 0, ''),
 (41, 'Agenda', 'admin', 'agenda', '', '', 'Y', 'user', 'Y', 0, ''),
-(43, 'Berita Foto', 'admin', 'album', '', '', 'Y', 'user', 'Y', 0, ''),
+(43, 'Berita Foto', 'admin', 'album', '', '', 'Y', 'admin', 'Y', 0, ''),
 (44, 'Galeri Berita Foto', 'admin', 'gallery', '', '', 'Y', 'user', 'Y', 0, ''),
 (45, 'Template Website', 'admin', 'templatewebsite', '', '', 'Y', 'user', 'Y', 0, ''),
 (46, 'Sensor Kata', 'admin', 'sensorkomentar', '', '', 'Y', 'user', 'Y', 0, ''),
@@ -863,7 +1018,17 @@ INSERT INTO `modul` (`id_modul`, `nama_modul`, `username`, `link`, `static_conte
 (72, 'Sekilas Info', 'admin', 'sekilasinfo', '', '', 'N', 'admin', 'N', 0, ''),
 (73, 'Yahoo Messanger', 'admin', 'ym', '', '', 'N', 'admin', 'N', 0, ''),
 (74, 'Download Area', 'admin', 'download', '', '', 'Y', 'admin', 'Y', 0, ''),
-(75, 'Alamat Kontak', 'admin', 'alamat', '', '', 'Y', 'admin', 'Y', 0, '');
+(75, 'Alamat Kontak', 'admin', 'alamat', '', '', 'Y', 'admin', 'Y', 0, ''),
+(81, 'IC', 'admin', 'https://localhost/lokodinas/APA', '', '', 'Y', 'admin', 'Y', 0, ''),
+(82, 'Testimoni', 'admin', 'testimoni', '', '', 'Y', 'admin', 'Y', 0, ''),
+(83, 'Trainer', 'admin', 'trainer', '', '', 'Y', 'admin', 'Y', 0, ''),
+(84, 'Program', 'admin', 'program', '', '', 'Y', 'admin', 'Y', 0, ''),
+(85, 'Materi', 'admin', 'materi', '', '', 'Y', 'admin', 'Y', 0, ''),
+(86, 'Member', 'admin', 'member', '', '', 'Y', 'admin', 'Y', 0, ''),
+(87, 'Rating', 'admin', 'rating', '', '', 'Y', 'admin', 'Y', 0, ''),
+(88, 'Kategori Program', 'admin', 'kategoriprogram', '', '', 'Y', 'admin', 'Y', 0, ''),
+(89, 'Mitra', 'admin', 'mitra', '', '', 'Y', 'admin', 'Y', 0, ''),
+(90, 'Metode Pembayaran', 'admin', 'metodepembayaran', '', '', 'Y', 'admin', 'Y', 0, '');
 
 -- --------------------------------------------------------
 
@@ -896,7 +1061,7 @@ CREATE TABLE IF NOT EXISTS `mod_ym` (
   `username` varchar(50) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   `ym_icon` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=13 ;
 
 -- --------------------------------------------------------
 
@@ -912,7 +1077,7 @@ CREATE TABLE IF NOT EXISTS `pasangiklan` (
   `gambar` varchar(100) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   `tgl_posting` date NOT NULL,
   PRIMARY KEY (`id_pasangiklan`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=34 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=40 ;
 
 --
 -- Dumping data for table `pasangiklan`
@@ -920,7 +1085,9 @@ CREATE TABLE IF NOT EXISTS `pasangiklan` (
 
 INSERT INTO `pasangiklan` (`id_pasangiklan`, `judul`, `username`, `url`, `gambar`, `tgl_posting`) VALUES
 (1, 'Iklan Sidebar Kiri', 'admin', 'http://www.lokomedia.web.id', 'lokomedia.png', '2017-10-11'),
-(2, 'Iklan Sidebar Kanan', 'admin', 'http://www.lokomedia.web.id', 'lawan-korupsi.png', '2018-08-31');
+(2, 'Iklan Sidebar Kanan', 'admin', 'http://www.lokomedia.web.id', 'lawan-korupsi.png', '2018-08-31'),
+(34, 'apa aja lah semoga bisa', 'admin', 'https://apa.com', 'Dashboard.png', '2024-08-27'),
+(39, 'bismillah bisa', 'admin', 'https://members.lokomedia.web.id', 'Screenshot (7).png', '2024-08-31');
 
 -- --------------------------------------------------------
 
@@ -929,10 +1096,26 @@ INSERT INTO `pasangiklan` (`id_pasangiklan`, `judul`, `username`, `url`, `gambar
 --
 
 CREATE TABLE IF NOT EXISTS `password_reset_tokens` (
-  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `token` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `permissions`
+--
+
+CREATE TABLE IF NOT EXISTS `permissions` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `guard_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `permissions_name_guard_name_unique` (`name`,`guard_name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -949,7 +1132,7 @@ CREATE TABLE IF NOT EXISTS `playlist` (
   `gbr_playlist` varchar(100) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   `aktif` enum('Y','N') CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL DEFAULT 'Y',
   PRIMARY KEY (`id_playlist`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=74 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=76 ;
 
 --
 -- Dumping data for table `playlist`
@@ -959,7 +1142,7 @@ INSERT INTO `playlist` (`id_playlist`, `jdl_playlist`, `username`, `playlist_seo
 (61, 'Video Umum', 'admin', 'video-umum', 'karawangku.jpg', 'Y'),
 (60, 'Kegiatan Karawang', 'admin', 'kegiatan-karawang', 'ilovekarawang.jpg', 'Y'),
 (68, 'MULAIIIII', 'admin', 'minecraft', '1723209275_Screenshot (8).png', 'Y'),
-(71, 'Minecraf', 'admin', 'minecraft-menyenangkannnnn', '1723208489_Screenshot (8).png', 'Y');
+(74, 'Dugong', 'admin', 'dugong', 'Dashboard.png', 'Y');
 
 -- --------------------------------------------------------
 
@@ -975,7 +1158,7 @@ CREATE TABLE IF NOT EXISTS `poling` (
   `rating` int NOT NULL DEFAULT '0',
   `aktif` enum('Y','N') CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   PRIMARY KEY (`id_poling`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=38 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=40 ;
 
 --
 -- Dumping data for table `poling`
@@ -992,6 +1175,84 @@ INSERT INTO `poling` (`id_poling`, `pilihan`, `status`, `username`, `rating`, `a
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `program`
+--
+
+CREATE TABLE IF NOT EXISTS `program` (
+  `id_pro` int NOT NULL AUTO_INCREMENT,
+  `id_program` varchar(255) NOT NULL,
+  `nama_program` varchar(255) DEFAULT NULL,
+  `tanggal` date DEFAULT NULL,
+  `harga` varchar(100) DEFAULT NULL,
+  `keterangan` text,
+  `judul` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id_pro`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb3 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `program`
+--
+
+INSERT INTO `program` (`id_pro`, `id_program`, `nama_program`, `tanggal`, `harga`, `keterangan`, `judul`) VALUES
+(1, '2f22c05b2de0041c258ed401e593c0d8', 'Laravel 11 Terbaru 2024', '2024-09-08', 'Rp. 2.000.000', '<p>AYO BELAJAR LARAVEL TERBARU</p>', 'Belajar Laravel React Node js Fundamental');
+
+--
+-- Triggers `program`
+--
+DROP TRIGGER IF EXISTS `after_insert_program`;
+DELIMITER //
+CREATE TRIGGER `after_insert_program` AFTER INSERT ON `program`
+ FOR EACH ROW BEGIN
+        INSERT INTO kategori_program_group (id_program, id_kategori)
+        SELECT NEW.id_program, id_kategori FROM kategori_program;
+    END
+//
+DELIMITER ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `rating`
+--
+
+CREATE TABLE IF NOT EXISTS `rating` (
+  `id_rating` int NOT NULL AUTO_INCREMENT,
+  `rate` int NOT NULL,
+  PRIMARY KEY (`id_rating`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `roles`
+--
+
+CREATE TABLE IF NOT EXISTS `roles` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `guard_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `roles_name_guard_name_unique` (`name`,`guard_name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `role_has_permissions`
+--
+
+CREATE TABLE IF NOT EXISTS `role_has_permissions` (
+  `permission_id` bigint unsigned NOT NULL,
+  `role_id` bigint unsigned NOT NULL,
+  PRIMARY KEY (`permission_id`,`role_id`),
+  KEY `role_has_permissions_role_id_foreign` (`role_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `sekilasinfo`
 --
 
@@ -1002,7 +1263,7 @@ CREATE TABLE IF NOT EXISTS `sekilasinfo` (
   `gambar` varchar(100) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   `aktif` enum('Y','N') CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL DEFAULT 'Y',
   PRIMARY KEY (`id_sekilas`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=12 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=15 ;
 
 --
 -- Dumping data for table `sekilasinfo`
@@ -1021,16 +1282,24 @@ INSERT INTO `sekilasinfo` (`id_sekilas`, `info`, `tgl_posting`, `gambar`, `aktif
 --
 
 CREATE TABLE IF NOT EXISTS `sessions` (
-  `id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `user_id` bigint unsigned DEFAULT NULL,
-  `ip_address` varchar(45) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `user_agent` text COLLATE utf8mb4_unicode_ci,
-  `payload` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ip_address` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `user_agent` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `payload` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `last_activity` int NOT NULL,
   PRIMARY KEY (`id`),
   KEY `sessions_user_id_index` (`user_id`),
   KEY `sessions_last_activity_index` (`last_activity`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `sessions`
+--
+
+INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
+('ikIKjo9qvOQ2IFSkVXNVpH9fRONTf8A1he78TgyZ', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoib0N2a09WdE13U2Q5TE9mZTlmWk1KR3U4Z1R3d2xuSE90NGlJcXZQYyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjg6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9iZXJpdGEiO319', 1725806283),
+('XJRTKzwqXpk3au5lKqiAq8L3C967JYAiLfVw9Ax4', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiQXBWVkJpRkZFcnl5TnB4MWlIVjVkaXpOeVNGNkVkZ2Z1bmNRaTQyNCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCI7fX0=', 1725799543);
 
 -- --------------------------------------------------------
 
@@ -2507,7 +2776,7 @@ CREATE TABLE IF NOT EXISTS `tag` (
   `tag_seo` varchar(100) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   `count` int NOT NULL,
   PRIMARY KEY (`id_tag`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=58 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=62 ;
 
 --
 -- Dumping data for table `tag`
@@ -2543,7 +2812,7 @@ CREATE TABLE IF NOT EXISTS `tagvid` (
   `tag_seo` varchar(100) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   `count` int NOT NULL,
   PRIMARY KEY (`id_tag`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=43 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=45 ;
 
 --
 -- Dumping data for table `tagvid`
@@ -2554,8 +2823,7 @@ INSERT INTO `tagvid` (`id_tag`, `nama_tag`, `username`, `tag_seo`, `count`) VALU
 (35, 'Teknologi', 'admin', 'teknologi', 0),
 (36, 'Nasional', 'admin', 'nasional', 1),
 (39, 'DPPKB', 'admin', 'dppkb', 0),
-(40, 'Kegiatan', 'admin', 'kegiatan', 0),
-(41, 'Wisata', 'admin', 'wisata', 0);
+(40, 'Kegiatan', 'admin', 'kegiatan', 0);
 
 -- --------------------------------------------------------
 
@@ -2611,14 +2879,70 @@ CREATE TABLE IF NOT EXISTS `templates` (
   `folder` varchar(50) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   `aktif` enum('Y','N') CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL DEFAULT 'N',
   PRIMARY KEY (`id_templates`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=28 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=31 ;
 
 --
 -- Dumping data for table `templates`
 --
 
 INSERT INTO `templates` (`id_templates`, `judul`, `username`, `pembuat`, `folder`, `aktif`) VALUES
-(27, 'dinas 1', 'admin', 'Admin Lokomedia', 'dinas-1', 'Y');
+(27, 'dinas 1', 'admin', 'Admin Lokomedia', 'dinas-1', 'N'),
+(28, 'dinas 3', 'admin', 'GMT', 'dinas-3', 'N'),
+(30, 'dinas-2', 'admin', 'saya', 'dinas-2', 'Y'),
+(31, 'myskill', 'admin', 'GMT', 'myskill', 'N');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `testimoni`
+--
+
+CREATE TABLE IF NOT EXISTS `testimoni` (
+  `id_testimoni` int NOT NULL AUTO_INCREMENT,
+  `gambar` varchar(50) NOT NULL,
+  `link` varchar(255) NOT NULL,
+  PRIMARY KEY (`id_testimoni`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb3 AUTO_INCREMENT=2 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `trainer`
+--
+
+CREATE TABLE IF NOT EXISTS `trainer` (
+  `id_tra` int NOT NULL AUTO_INCREMENT,
+  `id_trainer` varchar(255) NOT NULL,
+  `foto` varchar(50) DEFAULT NULL,
+  `nama_trainer` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id_tra`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 AUTO_INCREMENT=1 ;
+
+--
+-- Triggers `trainer`
+--
+DROP TRIGGER IF EXISTS `after_insert_trainer`;
+DELIMITER //
+CREATE TRIGGER `after_insert_trainer` AFTER INSERT ON `trainer`
+ FOR EACH ROW BEGIN
+        INSERT INTO trainer_program_group (id_trainer, id_kategori)
+        SELECT NEW.id_trainer, id_kategori FROM kategori_program;
+    END
+//
+DELIMITER ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `trainer_program_group`
+--
+
+CREATE TABLE IF NOT EXISTS `trainer_program_group` (
+  `id_tgroup` int NOT NULL AUTO_INCREMENT,
+  `id_trainer` varchar(255) NOT NULL,
+  `id_kategori` varchar(255) NOT NULL,
+  PRIMARY KEY (`id_tgroup`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2627,32 +2951,27 @@ INSERT INTO `templates` (`id_templates`, `judul`, `username`, `pembuat`, `folder
 --
 
 CREATE TABLE IF NOT EXISTS `users` (
-  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `nama_lengkap` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `no_telp` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `foto` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `level` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `blokir` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `id_session` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email_verified_at` timestamp NULL DEFAULT NULL,
-  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `nama_lengkap` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `email` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `no_telp` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `foto` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `level` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `blokir` enum('Y','N') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `id_session` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `users_email_unique` (`email`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=4 ;
+  UNIQUE KEY `username` (`username`,`email`,`no_telp`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci AUTO_INCREMENT=29 ;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `nama_lengkap`, `no_telp`, `foto`, `level`, `blokir`, `id_session`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'hal', NULL, NULL, NULL, NULL, NULL, NULL, 'example@gmail.com', NULL, '$2y$12$sbMmOTuo3m/RGf8MBVCEN.DMps3PYqZBX5OtCuEmN3gEIIWehBqU2', NULL, '2024-08-12 21:25:37', '2024-08-12 21:25:37'),
-(2, 'souichi', NULL, NULL, NULL, NULL, NULL, NULL, 'hal@gmail.com', NULL, '$2y$12$hI/wK2O5a8xWVEqgESwi2u.Rm.vqziOv5dFQ3Uo/b5sYFcVEKfjhC', NULL, '2024-08-13 16:15:01', '2024-08-13 16:15:01'),
-(3, 'kamil', NULL, NULL, NULL, NULL, NULL, NULL, 'mil@gmail.com', NULL, '$2y$12$xcRcnnu5nWEkoQjzYbQk/OZzEPhhl/osET8bKsHr.vsEocoPV9z1W', NULL, '2024-08-13 18:34:10', '2024-08-13 18:34:10');
+INSERT INTO `users` (`id`, `username`, `password`, `nama_lengkap`, `email`, `no_telp`, `foto`, `level`, `blokir`, `id_session`) VALUES
+(12, 'admin', '$2y$12$pS7Qca5XkKgYQo0/GFz6RuJv5fnJYqJ.s4fztFP3HyZ1BUYPC.FL6', 'radhitya hafif', 'admin@gmail.com', '081223539286', 'Baku Madarame_VH2meuydZurT30kRBMWcpb8tE.png', 'admin', 'N', 'cc34f9d330246a14c3619c01f1d3a1b9'),
+(28, 'pengguna', '$2y$12$bFtPn5Wn96VmIv3HVWjxxOXgJoitriuNKLDoi81zg2hQj7.Vc27vS', 'pengguna baru', 'pengguna@gmail.com', '081223539286', 'Screenshot (7).png', 'user', 'N', 'fcf7cf90e8d9a7eb39dc92d637ddc470');
 
 -- --------------------------------------------------------
 
@@ -2664,8 +2983,11 @@ CREATE TABLE IF NOT EXISTS `users_modul` (
   `id_umod` int NOT NULL AUTO_INCREMENT,
   `id_session` varchar(255) NOT NULL,
   `id_modul` int NOT NULL,
-  PRIMARY KEY (`id_umod`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
+  PRIMARY KEY (`id_umod`),
+  KEY `id_session` (`id_session`),
+  KEY `id_session_2` (`id_session`),
+  FULLTEXT KEY `id_session_3` (`id_session`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=138 ;
 
 --
 -- Dumping data for table `users_modul`
@@ -2686,7 +3008,109 @@ INSERT INTO `users_modul` (`id_umod`, `id_session`, `id_modul`) VALUES
 (12, '6bec9c852847242e384a4d5ac0962ba0-20170406140423', 18),
 (13, 'fa7688658d8b38aae731826ea1daebb5-20170521103501', 18),
 (14, '67cfd69a4e5fb27fc4aeb0fa8383161e-20240810155513', 18),
-(15, '67cfd69a4e5fb27fc4aeb0fa8383161e-20240810155513', 70);
+(15, '67cfd69a4e5fb27fc4aeb0fa8383161e-20240810155513', 70),
+(16, '03607b8e274694eb7a4cf8c212002277', 2),
+(17, '03607b8e274694eb7a4cf8c212002277', 18),
+(18, '03607b8e274694eb7a4cf8c212002277', 71),
+(19, '03607b8e274694eb7a4cf8c212002277', 10),
+(20, '03607b8e274694eb7a4cf8c212002277', 31),
+(21, '1e89af659f632bb77876e3b85367f9a5', 18),
+(22, '1e89af659f632bb77876e3b85367f9a5', 31),
+(23, '1e89af659f632bb77876e3b85367f9a5', 34),
+(47, '19770e7d4a6bc33d2e4c6a413a1a8115', 68),
+(45, '40a2e0bd16db8f3a81be9158b2ee4363', 35),
+(43, '40a2e0bd16db8f3a81be9158b2ee4363', 18),
+(27, 'dfe247b30012c47aba74022abb3b11d9', 18),
+(28, 'dfe247b30012c47aba74022abb3b11d9', 31),
+(29, 'dfe247b30012c47aba74022abb3b11d9', 34),
+(30, 'cc34f9d330246a14c3619c01f1d3a1b9', 18),
+(31, 'cc34f9d330246a14c3619c01f1d3a1b9', 31),
+(32, 'cc34f9d330246a14c3619c01f1d3a1b9', 34),
+(46, '19770e7d4a6bc33d2e4c6a413a1a8115', 67),
+(42, '40a2e0bd16db8f3a81be9158b2ee4363', 43),
+(41, '40a2e0bd16db8f3a81be9158b2ee4363', 41),
+(48, '19770e7d4a6bc33d2e4c6a413a1a8115', 74),
+(49, 'bc842a240c237c05e9153dd3c720072d', 18),
+(50, 'bc842a240c237c05e9153dd3c720072d', 31),
+(51, 'bc842a240c237c05e9153dd3c720072d', 34),
+(52, 'bc842a240c237c05e9153dd3c720072d', 41),
+(53, '27e2ec179e544adde36834b7098ccb3c', 18),
+(54, '981cdf5a7f773f5bb7d5e417510b0107', 18),
+(55, '981cdf5a7f773f5bb7d5e417510b0107', 10),
+(56, '981cdf5a7f773f5bb7d5e417510b0107', 31),
+(57, 'cc34f9d330246a14c3619c01f1d3a1b9', 2),
+(58, 'cc34f9d330246a14c3619c01f1d3a1b9', 71),
+(59, 'cc34f9d330246a14c3619c01f1d3a1b9', 10),
+(60, 'cc34f9d330246a14c3619c01f1d3a1b9', 33),
+(61, 'cc34f9d330246a14c3619c01f1d3a1b9', 35),
+(62, 'cc34f9d330246a14c3619c01f1d3a1b9', 41),
+(63, 'cc34f9d330246a14c3619c01f1d3a1b9', 43),
+(64, 'cc34f9d330246a14c3619c01f1d3a1b9', 44),
+(65, 'cc34f9d330246a14c3619c01f1d3a1b9', 45),
+(66, 'cc34f9d330246a14c3619c01f1d3a1b9', 46),
+(67, 'cc34f9d330246a14c3619c01f1d3a1b9', 61),
+(68, 'cc34f9d330246a14c3619c01f1d3a1b9', 57),
+(69, 'cc34f9d330246a14c3619c01f1d3a1b9', 59),
+(70, 'cc34f9d330246a14c3619c01f1d3a1b9', 62),
+(71, 'cc34f9d330246a14c3619c01f1d3a1b9', 63),
+(72, 'cc34f9d330246a14c3619c01f1d3a1b9', 64),
+(73, 'cc34f9d330246a14c3619c01f1d3a1b9', 65),
+(74, 'cc34f9d330246a14c3619c01f1d3a1b9', 66),
+(75, 'cc34f9d330246a14c3619c01f1d3a1b9', 67),
+(76, 'cc34f9d330246a14c3619c01f1d3a1b9', 68),
+(77, 'cc34f9d330246a14c3619c01f1d3a1b9', 69),
+(78, 'cc34f9d330246a14c3619c01f1d3a1b9', 70),
+(79, 'cc34f9d330246a14c3619c01f1d3a1b9', 72),
+(80, 'cc34f9d330246a14c3619c01f1d3a1b9', 73),
+(81, 'cc34f9d330246a14c3619c01f1d3a1b9', 74),
+(82, 'cc34f9d330246a14c3619c01f1d3a1b9', 75),
+(83, '012158343816ea9f8a48148e6b9c8285', 18),
+(84, '012158343816ea9f8a48148e6b9c8285', 31),
+(85, '012158343816ea9f8a48148e6b9c8285', 34),
+(86, '33b156a0fc55056ddb808eee39595073', 18),
+(87, '33b156a0fc55056ddb808eee39595073', 31),
+(88, '33b156a0fc55056ddb808eee39595073', 34),
+(89, '004e6e29d9dd89c55ef9c339880caca5', 59),
+(90, '004e6e29d9dd89c55ef9c339880caca5', 62),
+(91, '004e6e29d9dd89c55ef9c339880caca5', 63),
+(92, '004e6e29d9dd89c55ef9c339880caca5', 64),
+(93, 'ac098c7f03811f1497c1c4309f1b6b0f', 18),
+(94, 'ac098c7f03811f1497c1c4309f1b6b0f', 31),
+(95, 'ac098c7f03811f1497c1c4309f1b6b0f', 34),
+(105, '8e9314a074551ce48601adfc7c8c748b', 33),
+(104, '8e9314a074551ce48601adfc7c8c748b', 18),
+(106, '8e9314a074551ce48601adfc7c8c748b', 41),
+(107, 'bd0a16687f14c0c74f73483a4a271f3c', 18),
+(108, 'bd0a16687f14c0c74f73483a4a271f3c', 41),
+(109, 'bd0a16687f14c0c74f73483a4a271f3c', 59),
+(110, 'bd0a16687f14c0c74f73483a4a271f3c', 62),
+(111, '8a6559ff38148f19ad3830edfd428d70', 61),
+(112, '8a6559ff38148f19ad3830edfd428d70', 57),
+(113, '8a6559ff38148f19ad3830edfd428d70', 59),
+(114, 'feabf2abb7ad65b7f63f315ef338d8d9', 18),
+(115, 'feabf2abb7ad65b7f63f315ef338d8d9', 31),
+(116, 'feabf2abb7ad65b7f63f315ef338d8d9', 34),
+(117, '472456bb948c3291d3069b362ad9bcdb', 18),
+(118, '472456bb948c3291d3069b362ad9bcdb', 31),
+(119, '472456bb948c3291d3069b362ad9bcdb', 34),
+(120, 'e9978bec4422db2686bd1de7891cd807', 18),
+(121, 'e9978bec4422db2686bd1de7891cd807', 31),
+(122, 'e9978bec4422db2686bd1de7891cd807', 34),
+(123, '746d8263e3691aebd069e84419014d9a', 18),
+(124, '746d8263e3691aebd069e84419014d9a', 31),
+(125, '746d8263e3691aebd069e84419014d9a', 34),
+(126, '746d8263e3691aebd069e84419014d9a', 63),
+(127, 'fcf7cf90e8d9a7eb39dc92d637ddc470', 18),
+(128, 'fcf7cf90e8d9a7eb39dc92d637ddc470', 31),
+(129, 'fcf7cf90e8d9a7eb39dc92d637ddc470', 34),
+(130, 'cc34f9d330246a14c3619c01f1d3a1b9', 82),
+(131, 'cc34f9d330246a14c3619c01f1d3a1b9', 83),
+(132, 'cc34f9d330246a14c3619c01f1d3a1b9', 84),
+(133, 'cc34f9d330246a14c3619c01f1d3a1b9', 85),
+(134, 'cc34f9d330246a14c3619c01f1d3a1b9', 86),
+(135, 'cc34f9d330246a14c3619c01f1d3a1b9', 87),
+(136, 'cc34f9d330246a14c3619c01f1d3a1b9', 88),
+(137, 'cc34f9d330246a14c3619c01f1d3a1b9', 89);
 
 -- --------------------------------------------------------
 
@@ -2710,7 +3134,7 @@ CREATE TABLE IF NOT EXISTS `video` (
   `jam` time NOT NULL,
   `tagvid` varchar(100) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   PRIMARY KEY (`id_video`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=183 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=185 ;
 
 --
 -- Dumping data for table `video`
@@ -2718,8 +3142,30 @@ CREATE TABLE IF NOT EXISTS `video` (
 
 INSERT INTO `video` (`id_video`, `id_playlist`, `username`, `jdl_video`, `video_seo`, `keterangan`, `gbr_video`, `video`, `youtube`, `dilihat`, `hari`, `tanggal`, `jam`, `tagvid`) VALUES
 (176, 61, 'admin', 'Visit Karawang', 'visit-karawang', '<p>Salah satu Kabupaten yang terletak di Provinsi Jawa Barat yang terkenal sebagai Lumbung Padi Nasional. Kota Pangkal Perjuangan. Kota Industri terbesar se Asia Tenggara.</p>\r\n\r\n<p>BANGGA JADI URANG KARAWANG. Banyak sejarah, kekayaan yang KARAWANG miliki.</p>\r\n', '', '', 'https://www.youtube.com/watch?v=GYfEZwbopIQ', 11, 'Rabu', '2019-01-09', '16:06:47', 'wisata'),
-(177, 61, 'admin', 'Kuliner Karawang', 'kuliner-karawang', '<p>Acara &quot;Tau Gak Sih&quot; Trans 7 meliput wisata kuliner di Karawang</p>\r\n', '', '', 'https://www.youtube.com/watch?v=y-zy7RW9P4E', 4, 'Rabu', '2019-01-09', '16:09:32', 'wisata'),
-(182, 71, 'admin', 'GILAKKK SANZZ', 'gilakkk-sanzz', '<p><strong>COBA LAH</strong></p>', 'GILAKKK SANZZ.ylZ2exZU8Z9euuq6jKUOsHZ79.png', '', 'https://apaaja.com', 1, 'Monday', '2024-08-19', '03:36:37', 'perang,kegiatan,wisata');
+(177, 61, 'admin', 'Kuliner Karawang', 'kuliner-karawang', '<p>Acara &quot;Tau Gak Sih&quot; Trans 7 meliput wisata kuliner di Karawang</p>\r\n', '', '', 'https://www.youtube.com/watch?v=y-zy7RW9P4E', 4, 'Rabu', '2019-01-09', '16:09:32', 'wisata');
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `model_has_permissions`
+--
+ALTER TABLE `model_has_permissions`
+  ADD CONSTRAINT `model_has_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `model_has_roles`
+--
+ALTER TABLE `model_has_roles`
+  ADD CONSTRAINT `model_has_roles_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `role_has_permissions`
+--
+ALTER TABLE `role_has_permissions`
+  ADD CONSTRAINT `role_has_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `role_has_permissions_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
