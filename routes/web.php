@@ -191,7 +191,7 @@ Route::get('/bootcamp', function () {
     return view('./myskill/pages/program/bootcamp');
 })->name('Program & Bootcamp');
 
-Route::get('/digital-marketing', function () {
+Route::get('/bootcamp/digital-marketing', function () {
     return view('./myskill/pages/program/digital-marketing');
 })->name('Digital Marketing');
 
