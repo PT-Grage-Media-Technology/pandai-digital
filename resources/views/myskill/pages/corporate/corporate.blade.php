@@ -11,7 +11,7 @@
 
         <div class="text-left sm:ml-5 max-sm:ml-3 lg:text-left max-md:m-4 lg:ml-4 text-black lg:text-white">
             <button type="button"
-                class="focus:outline-none text-white bg-gray-900 font-medium rounded-full text-sm px-5 py-2.5 me-2 dark:focus:ring-yellow-900">GMT
+                class="focus:outline-none text-white bg-gray-900 font-medium rounded-full text-sm px-5 py-2.5 me-2 dark:focus:ring-yellow-900">Pandai Digital
                 for Business</button>
             <p class="text-xl lg:text-4xl lg:w-4/5 font-bold mb-2 lg:mb-4 text-white">
                 Layanan Pengembangan Skill dan Peningkatan Performa Karyawan
@@ -47,7 +47,7 @@
     </section>
 
     <div class="flex flex-col items-center">
-        <h3 class="text-center mt-4 text-3xl font-bold mb-4 text-black">Mengapa Ratusan Perusahaan Memilih GMTrainer?
+        <h3 class="text-center mt-4 text-3xl font-bold mb-4 text-black">Mengapa Ratusan Perusahaan Memilih Pandai Digitalrainer?
         </h3>
         <div class="flex flex-col sm:flex-row justify-center mb-4 space-y-4 sm:space-y-0 sm:space-x-4 px-2">
             <div class="bg-white text-black p-4 rounded-lg w-full sm:w-56 border border-spacing-2 max-lg:text-sm">
@@ -71,7 +71,7 @@
     </div>
 
     <section class="w-full h-auto">
-        <h3 class="text-center mt-4 mr-12 text-3xl font-bold mb-4 text-black w-full">Berbagai Program GMTrainer</h3>
+        <h3 class="text-center mt-4 mr-12 text-3xl font-bold mb-4 text-black w-full">Berbagai Program Pandai Digitalrainer</h3>
         <!-- Corporate Training -->
         <div class="flex flex-col lg:flex-row gap-8 px-4 py-6 items-center">
             <img src="./assets/corporate/corporate-training.webp" alt="Corporate Training"
@@ -158,7 +158,7 @@
 
         <div class="min-h-screen flex items-center justify-center mt-9 px-4 sm:px-6 lg:px-8" id="call">
             <div class="w-full max-w-lg">
-                <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-center">Hubungi GMTrainer untuk Diskusi
+                <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-center">Hubungi Pandai Digitalrainer untuk Diskusi
                     Lebih Lanjut</h2>
                 <form class="bg-white space-y-4 sm:space-y-6 p-4 sm:p-6">
                     <div class="grid grid-cols-1 gap-4 sm:gap-6">

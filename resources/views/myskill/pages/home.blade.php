@@ -12,7 +12,7 @@
         @endforeach
     </div>
     <div>
-        <h2 class="text-xl md:text-2xl text-center py-14 font-bold text-black">Mari Merintis Karir Bersama GMT</h2>
+        <h2 class="text-xl md:text-2xl text-center py-14 font-bold text-black">Mari Merintis Karir Bersama Pandai Digital</h2>
     </div>
 
 
@@ -110,7 +110,7 @@
     </div>
 </div>
 <div>
-    <h3 class="py-12 text-center font-bold text-2xl text-black">Berbagai Macam Program di GMT</h3>
+    <h3 class="py-12 text-center font-bold text-2xl text-black">Berbagai Macam Program di Pandai Digital</h3>
 </div>
 
 <div class="grid md:grid-cols-2 lg:py-10">
