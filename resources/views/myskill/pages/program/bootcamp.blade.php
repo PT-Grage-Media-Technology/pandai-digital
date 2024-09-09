@@ -238,9 +238,6 @@
                 </div>
             </div>
         </div>
-
-
-
     </div>
 
     <!-- end grid -->
