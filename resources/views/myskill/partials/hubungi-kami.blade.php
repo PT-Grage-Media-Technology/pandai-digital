@@ -1,6 +1,6 @@
 <div class="min-h-screen flex items-center justify-center mt-9 px-4 sm:px-6 lg:px-8" id="call">
     <div class="w-full max-w-lg">
-        <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-center">Hubungi GMTrainer untuk Diskusi
+        <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-center">Hubungi Pandai Digital untuk Diskusi
             Lebih Lanjut</h2>
         <form class="bg-white space-y-4 sm:space-y-6 p-4 sm:p-6">
             <div class="grid grid-cols-1 gap-4 sm:gap-6">
